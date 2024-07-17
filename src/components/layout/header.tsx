@@ -197,7 +197,7 @@ const Header = () => {
                             <div className="col-xl-3 col-lg-7 col-md-7 col-6">
                                 <div className="">
                                     <div className="logo">
-                                        <Link href="/">
+                                        <Link href={"/"}>
                                             <Image src={redigerlogo} alt="logo"  style={{width:"160px" , height:"50px"}}/>
                                         </Link>
                                     </div>
