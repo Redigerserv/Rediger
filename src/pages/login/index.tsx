@@ -70,15 +70,15 @@ const Login = () => {
                                     </div>
                                     <div className="input-check mb-20">
                                         <input type="checkbox"/>
-                                        <span>I have read and agree to the Terms & Conditions</span>
+                                        <span className='mx-2'>I have read and agree to the Terms & Conditions</span>
                                     </div>
                                     <div className="col-12">
                                         <div className="submit-btn">
                                             <button className="signup-btn btn-1" type="submit">Submit Now</button>
-                                            <span className="divider">OR</span>
+                                            {/* <span className="divider">OR</span>
                                             <button className="signup-btn"><Image className="mr-20"
                                                     src={google} alt="icon"/> Sign Up With
-                                                Google</button>
+                                                Google</button> */}
                                         </div>
                                     </div>
                                 </form>

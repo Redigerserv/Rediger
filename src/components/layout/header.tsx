@@ -16,7 +16,7 @@ import { MdOutlineWork } from "react-icons/md";
 
 
 // import redigerlogo from '../../assets/img/logo/LOGO HD Sub white.png'
-import redigerlogo from '../../assets/img/logo/rediger-logo.jpeg'
+import redigerlogo from '../../assets/img/Rediger/logo.png'
 
 import logo from "../../assets/img/logo/logo.svg"
 import cart from "../../assets/img/icon/cart.svg"
@@ -198,7 +198,7 @@ const Header = () => {
                                 <div className="">
                                     <div className="logo">
                                         <Link href="/">
-                                            <Image src={redigerlogo} alt="logo" width={460} height={60} style={{width:"460px" , height:"60px"}}/>
+                                            <Image src={redigerlogo} alt="logo"  style={{width:"160px" , height:"50px"}}/>
                                         </Link>
                                     </div>
                                     {/* <div className="search-form d-none d-md-inline-block">
