@@ -194,7 +194,7 @@ const Header = () => {
                 <div className={`main-header-area header-bottom pt-lg-15 pb-lg-15 pt-md-15 pb-md-15 pt-xs-15 pb-xs-15 ${isSticky ? 'sticky-header' : ''}`} ref={headerRef}>
                     <div className="px-5">
                         <div className="row align-items-center">
-                            <div className="col-xl-4 col-lg-7 col-md-7 col-6">
+                            <div className="col-xl-3 col-lg-7 col-md-7 col-6">
                                 <div className="">
                                     <div className="logo">
                                         <Link href="/">
@@ -212,7 +212,7 @@ const Header = () => {
                                     </div> */}
                                 </div>
                             </div>
-                            <div className="col-xl-8 col-lg-5 col-md-5 col-6 d-flex justify-content-end align-items-center p-0">
+                            <div className="col-xl-9 col-lg-5 col-md-5 col-6 d-flex justify-content-end align-items-center p-0">
                                 <div className="main-menu d-none d-xl-block">
                                     <ul>
                                         <li className="has-dropdown">

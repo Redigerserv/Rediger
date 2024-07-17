@@ -1,5 +1,8 @@
 /* Default Css */
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   width: 10px;
@@ -22,7 +25,7 @@ body {
   color: #505050;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 
@@ -93,7 +96,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #161b2d;
   font-weight: 700;
   line-height: 1.4;
@@ -327,7 +330,7 @@ label {
   margin-top: 30px;
 }
 .ctn-preloader .txt-loading .letters-loading {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 8px;
   display: inline-block;
@@ -6892,7 +6895,7 @@ label {
   color: #ffffff;
   font-size: 14px;
   border: 1px solid rgb(243, 243, 243);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   padding: 10px 18px;
   line-height: 1;
@@ -8832,7 +8835,7 @@ label {
   font-size: 14px;
   line-height: 1;
   font-weight: 400;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   border-bottom: 1px solid #41acec;
   display: inline-block;
   margin-bottom: 13px;
@@ -8849,7 +8852,7 @@ label {
   color: #161b2d;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 15px;
 }
 .figure-caption .price .old-price {
@@ -8903,7 +8906,7 @@ label {
 .sort-item {
   color: #ffffff;
   font-size: 16px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .sort-item .sort-btn {
   line-height: 20px;
@@ -9004,7 +9007,7 @@ label {
 .product__details .price-list .new-price {
   font-size: 22px;
   color: #161b2d;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .product__details .stock-text {
   color: #161b2d;
@@ -9017,7 +9020,7 @@ label {
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   background: #161b2d;
   padding: 14px 40px;
@@ -9115,7 +9118,7 @@ label {
   border-radius: 0;
   color: #505050;
   font-size: 17px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 30px;
   display: inline-block;
