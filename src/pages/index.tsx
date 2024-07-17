@@ -68,7 +68,7 @@ import { Accordion } from "react-bootstrap";
 import Link from "next/link";
 
 
-export default function Home() {
+const Home = () => {
 
     useAOS({
         offset: 200,
@@ -1115,3 +1115,5 @@ export default function Home() {
         </>
     );
 }
+
+export default Home;
