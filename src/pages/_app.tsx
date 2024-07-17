@@ -24,6 +24,8 @@ import '@/assets/scss/_off-canvas-menu.scss'
 import '@/assets/scss/_overlay.scss'
 import '@/assets/scss/main.scss'
 import '@/assets/scss/_default.scss'
+import '@/assets/scss/_faq.scss'
+
 
 
 
