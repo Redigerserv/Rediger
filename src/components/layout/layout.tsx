@@ -15,11 +15,14 @@ const Layout = ({ children }: { children: JSX.Element }): JSX.Element => {
 
   return (
     <>
-      <Preloader />
+    <div className="main-page-wrapper">
+    <Preloader />
       <Header />
       <main className="">{children}</main>
       <Footer />
       <ScrollToTopButton />
+    </div>
+    
     </>
   )
 

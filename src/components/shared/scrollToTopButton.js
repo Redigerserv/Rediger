@@ -32,14 +32,19 @@ const ScrollToTopButton = () => {
     //     <i className="fa-regular fa-arrow-up-from-bracket"></i>
     //   </a>
 
-    <a
-      type="button"
-      onClick={scrollToTop}
-      id="scrollToTopBtn"
-      className={`progress-wrap ${isVisible ? 'show' : ""}`}
-    >
-      <i className="fa-regular fa-arrow-up-from-bracket"></i>
-    </a>
+    // <a
+    //   type="button"
+    //   onClick={scrollToTop}
+    //   id="scrollToTopBtn"
+    //   className={`progress-wrap ${isVisible ? 'show' : ""}`}
+    // >
+    //   <i className="fa-regular fa-arrow-up-from-bracket"></i>
+    // </a>
+    
+		<button class="scroll-top" style={{display: isVisible ? '' : 'none'}} onClick={scrollToTop}>
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+
   );
 };
 
