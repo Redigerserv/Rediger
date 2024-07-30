@@ -335,12 +335,13 @@ a {
 
 .sideNavItem{
   padding: 8px 25px;
-  color: rgb(32, 70, 95);
+  /* color: rgb(32, 70, 95); */
+  color: #000;
   font-weight: 500;
   cursor: pointer;
 }
 .sideNavItem:hover {
-  background-color: #efefef;
+  color: #FF6725;
 }
 .accordion-button:not(.collapsed){
   background-color: #fff !important;
@@ -350,7 +351,7 @@ a {
   box-shadow: none !important;
 }
 .sideNavHeading button{
-  color: rgb(32, 70, 95);
+  color: #000 !important;
   font-weight: 600;
 }
 .accordion-item:first-of-type>.accordion-header .accordion-button:hover{
@@ -380,7 +381,7 @@ background-color: #efefef;
 }
 .labelName{
   font-size: 13px;
-  color: rgb(32, 70, 95);
+  color: #000;
 }
 .form-control{
   box-shadow: none !important;
@@ -453,3 +454,24 @@ background-color: #efefef;
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 } */
+
+
+/* .slick-slide{
+  margin: auto I !important;
+} */
+
+.feedback-section-one .slick-dots {
+  bottom: -78px !important;
+}
+
+.agent-card-one.position-relative {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+ul.slick-dots {
+  text-align: center;
+}
+.featureFour{
+  background-image: url(../assets/images/media/img_11.jpg);
+}

@@ -1,74 +1,43 @@
 import Head from "next/head";
-
-
-import Image from "next/image";
-import bg from '../assets/img/hero/hero-pattern-bg-2.jpg'
-import hat from '../assets/img/icon/hat-b.svg'
-import hatv from '../assets/img/icon/hat.svg'
-import book from '../assets/img/icon/book.svg'
-// import mainhero from '../assets/img/hero/hero-main-img-3.png'
-import mainhero from '../assets/img/Rediger/489x713.jpg'
-import shape1 from '../assets/img/Rediger/138xx138.jpg'
-import st1 from '../assets/img/Rediger/40x40.png'
-import st2 from '../assets/img/Rediger/40x40.png'
-import st3 from '../assets/img/Rediger/40x40.png'
-import st4 from '../assets/img/Rediger/40x40.png'
-import shape4 from '../assets/img/shape/pattern-2.svg'
-import course1 from '../assets/img/icon/course-icon-1.svg'
-import course2 from '../assets/img/icon/course-icon-2.svg'
-import course3 from '../assets/img/icon/course-icon-3.svg'
-import course4 from '../assets/img/icon/course-icon-4.svg'
-import course5 from '../assets/img/icon/course-icon-5.svg'
-import course6 from '../assets/img/icon/course-icon-6.svg'
-import course7 from '../assets/img/icon/course-icon-7.svg'
-import course8 from '../assets/img/icon/course-icon-8.svg'
-
-import about4 from '../assets/img/Rediger/415x690.jpg'
-import aboutthumb from '../assets/img/Rediger/184x184.jpg'
-import shaperound from '../assets/img/shape/bg-round-shape-1.svg'
-import icon1 from '../assets/img/icon/icon-1.svg'
-import videoimg from '../assets/img/Rediger/1280x600.jpg'
-import countersvg from '../assets/img/icon/about-us-counter-1.svg'
-import countersvg2 from '../assets/img/icon/about-us-counter-2.svg'
-import countersvg3 from '../assets/img/icon/about-us-counter-3.svg'
-import choose4 from '../assets/img/chose/chose-4.svg'
-import choose5 from '../assets/img/chose/chose-5.svg'
-import choose6 from '../assets/img/Rediger/184x184.jpg'
-import choose7 from '../assets/img/Rediger/680x674.jpg'
-import vector from '../assets/img/icon/Vector.svg'
-import thumb19 from '../assets/img/course/course-thumb-19.jpg'
-import doc2 from '../assets/img/icon/document-2.svg'
-import user3 from '../assets/img/icon/3-User.svg'
-import thumb20 from '../assets/img/course/course-thumb-20.jpg'
-import thumb21 from '../assets/img/course/course-thumb-21.jpg'
-import thumb22 from '../assets/img/course/course-thumb-22.jpg'
-import studentrepo from '../assets/img/hero/student-repot.png'
-
-import partner11 from '../assets/img/brand/partner-11.svg'
-import partner12 from '../assets/img/brand/partner-12.svg'
-import partner13 from '../assets/img/brand/partner-13.svg'
-import partner14 from '../assets/img/brand/partner-14.svg'
-import partner15 from '../assets/img/brand/partner-15.svg'
-
-
-import tauthor5 from '../assets/img/Rediger/555x628.jpg'
-import tauthor6 from '../assets/img/Rediger/184x184.jpg'
-import tshape1 from '../assets/img/testimonial/t-shape-1.png'
-import blog19 from '../assets/img/blog/blog-19.jpg'
-import blog20 from '../assets/img/blog/blog-20.jpg'
-import blog21 from '../assets/img/blog/blog-21.jpg'
-import blogauthor from '../assets/img/blog/blog-author-1.jpg'
-import archieve from '../assets/img/icon/archive.svg'
-import filter2 from '../assets/img/icon/filter-2.svg'
-
-
-
 import useAOS from "../hooks/useAOS";
-import { Accordion } from "react-bootstrap";
 import Link from "next/link";
+import Image from "next/image";
+import Slider from "react-slick"
+// import mainbgImg from "../assets/images/lazy.svg"
+import mainbgImg from "../assets/images/assets/ils_01.svg"
+import homeImg from "../assets/images/icon/icon_01.svg"
+import service2 from "../assets/images/icon/icon_02.svg"
+import service3 from "../assets/images/icon/icon_03.svg"
+import shape1 from "../assets/images/shape/shape_01.svg"
+import screen01 from "../assets/images/assets/screen_01.png"
+
+import agent01 from "../assets/images/agent/img_01.jpg"
+import agent02 from "../assets/images/agent/img_02.jpg"
+import agent03 from "../assets/images/agent/img_03.jpg"
+import agent04 from "../assets/images/agent/img_04.jpg"
+import agent05 from "../assets/images/agent/img_05.jpg"
+import screen12 from "../assets/images/assets/screen_12.png"
+
+import icon07 from "../assets/images/icon/icon_07.svg"
+import icon08 from "../assets/images/icon/icon_08.svg"
+import icon09 from "../assets/images/icon/icon_09.svg"
+
+
+import titleshape08 from "../assets/images/shape/title_shape_08.svg"
+import ils02 from "../assets/images/assets/ils_02.svg"
+import Login from "@/components/shared/login";
+import { useState } from "react";
+
+
+
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 
 const Home = () => {
+
+    const [showModal, setShowModal] = useState(false);
+
 
     useAOS({
         offset: 200,
@@ -77,1041 +46,555 @@ const Home = () => {
         delay: 100,
     });
 
+    var settings = {
+        dots: true,
+        arrows: false,
+        // infinite: true,
+        // speed: 500,
+        // slidesToShow: 1,
+        // slidesToScroll: 1,
+        // centerMode: true
+    };
+
+
+    var agents = {
+        dots: true,
+        infinite: false,
+        arrows: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
     return (
         <>
             <Head>
                 <title>Rediger App</title>
                 <meta name="description" content="Generated by create next app" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.png" />
+
             </Head>
-            <div className="" style={{ overflow: "hidden" }}>
-                <div className="hero-section-3 pt-85 pb-40" style={{
-                    backgroundImage: `url(${bg.src})`,
-                    width: '100%',
-                    height: '100%',
-                }} >
-                    <div className="s-shape-1">
-                        <Image src={hat} alt="icon" />
-                    </div>
-                    <div className="s-shape-2">
-                        <Image src={book} alt="icon" />
-                        {/* <Image src="assets/img/icon/book.svg" alt="icon"/> */}
-                    </div>
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-xl-6 col-lg-7">
-                                <div className="hero-content-3 text-lg-start text-center">
-                                    <div className="sub-title">
-                                        <p>Start To New Journey</p>
-                                    </div>
-                                    <div className="title">
-                                        <h1>We take care of All your business compliance needs!</h1>
-                                    </div>
-                                    <div className="description">
-                                        <p>An online business compliance platform that helps entrepreneurs and other individuals with various, registrations, tax filings, and other legal matters.</p>
-                                    </div>
-                                    <div className="theme-btn">
-                                        <Link href={"/login"}>Register Now</Link>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-6 col-lg-5 text-center mt-lg-50 mt-md-50 mt-xs-50">
-                                <div className="hero-thumb-3">
-                                    <div className="thumb">
-                                        <Image src={mainhero} alt="thumb" />
-                                        <div className="bubble-bg-1"></div>
-                                        <div className="bubble-bg-2"></div>
-                                        <div className="bubble-bg-3"></div>
-                                    </div>
-                                    <div className="shape-1">
-                                        <Image src={shape1} alt="thumb" width={138} height={138}/>
-                                    </div>
-                                    <Link href="/login" className="join-btn">
-                                        Join <br /> Now
-                                    </Link>
-                                    <div className="student-thumbs">
-                                        <h4>1000+ Happy
-                                            Customers</h4>
-                                        <div className="student-thumbs-box">
-                                            <span><Image src={st1} alt="thumb" width={40} height={40} /></span>
-                                            <span><Image src={st2} alt="thumb" width={40} height={40}/></span>
-                                            <span><Image src={st3} alt="thumb" width={40} height={40} /></span>
-                                            <span><Image src={st4} alt="thumb" width={40} height={40}/></span>
-                                            <span className="add-more"><i className="fa-solid fa-plus"></i></span>
-                                        </div>
-                                    </div>
-                                    <div className="shape-4">
-                                        <Image src={shape4} alt="thumb" />
-                                    </div>
-                                </div>
-                            </div>
+            <div className="hero-banner-one bg-pink z-1 pt-225 xl-pt-200 pb-250 xl-pb-150 lg-pb-100 position-relative">
+                <div className="container position-relative">
+                    <div className="row">
+                        <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 m-auto">
+                            <h1 className="hero-heading text-center wow fadeInUp">We take care of All your business compliance needs! <span className="d-inline-block position-relative"><img src="images/lazy.svg" data-src="images/shape/shape_01.svg" alt="" className="lazy-img" /></span></h1>
+                            <p className="fs-24 color-dark text-center pt-35 pb-35 wow fadeInUp" data-wow-delay="0.1s">An online business compliance platform that helps entrepreneurs and other individuals with various, registrations, tax filings, and other legal matters.</p>
                         </div>
                     </div>
-                </div>
-
-                <div className="course-section-3 pt-150 pb-150 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50">
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-xl-5 col-lg-7 col-md-10">
-                                <div className="section-title text-center mb-50 aos-init " data-aos="fade-up" data-aos-delay="200">
-                                    <div className="title">
-                                        <h2>Our Services</h2>
-                                    </div>
-                                    {/* <div className="description">
-                            <p>On the other hand, we denounce with righteous indignation and is dislike men who
-                                are
-                                so
-                                beguiled .</p>
-                        </div> */}
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="row feature-layout mt-50">
-                            <div className="col-xl-3 col-md-6">
-                                <div className="feature-wrap-3" data-aos="fade-up" data-aos-delay="200">
-                                    <div className="icon">
-                                        <Image src={course1} alt="icon" />
-                                    </div>
-                                    <div className="title">
-                                        <h3>Private Limited company</h3>
-                                    </div>
-                                    <div className="text">
-                                        <p>Beginner Diploma In Basic English
-                                            Grammar</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-md-6">
-                                <div className="feature-wrap-3" data-aos="fade-up" data-aos-delay="200">
-                                    <div className="icon">
-                                        <Image src={course2} alt="icon" />
-                                    </div>
-                                    <div className="title">
-                                        <h3>Fssai Registration</h3>
-                                    </div>
-                                    <div className="text">
-                                        <p>Completed Landing Page Design &
-                                            Conversion Rate 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-md-6">
-                                <div className="feature-wrap-3" data-aos="fade-up" data-aos-delay="200">
-                                    <div className="icon">
-                                        <Image src={course3} alt="icon" />
-                                    </div>
-                                    <div className="title">
-                                        <h3>Limited Liability Company</h3>
-                                    </div>
-                                    <div className="text">
-                                        <p>Join Our Training Course &
-                                            Build Your Skill.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-md-6">
-                                <div className="feature-wrap-3" data-aos="fade-up" data-aos-delay="200">
-                                    <div className="icon">
-                                        <Image src={course4} alt="icon" />
-                                    </div>
-                                    <div className="title">
-                                        <h3>Sole Proprietorship</h3>
-                                    </div>
-                                    <div className="text">
-                                        <p>Completed Landing Page Design &
-                                            Conversion Rate 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-md-6">
-                                <div className="feature-wrap-3" data-aos="fade-up" data-aos-delay="250">
-                                    <div className="icon">
-                                        <Image src={course5} alt="icon" />
-                                    </div>
-                                    <div className="title">
-                                        <h3>Msme Registration</h3>
-                                    </div>
-                                    <div className="text">
-                                        <p>Completed Landing Page Design &
-                                            Conversion Rate 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-md-6">
-                                <div className="feature-wrap-3" data-aos="fade-up" data-aos-delay="250">
-                                    <div className="icon">
-                                        <Image src={course6} alt="icon" />
-                                    </div>
-                                    <div className="title">
-                                        <h3>One person Company</h3>
-                                    </div>
-                                    <div className="text">
-                                        <p>Completed Landing Page Design &
-                                            Conversion Rate 2022</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-md-6">
-                                <div className="feature-wrap-3" data-aos="fade-up" data-aos-delay="250">
-                                    <div className="icon">
-                                        <Image src={course7} alt="icon" />
-                                    </div>
-                                    <div className="title">
-                                        <h3>Partnership Firm</h3>
-                                    </div>
-                                    <div className="text">
-                                        <p>Beginner Diploma In Basic English
-                                            Grammar - Better Search</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-3 col-md-6">
-                                <div className="feature-wrap-3" data-aos="fade-up" data-aos-delay="250">
-                                    <div className="icon">
-                                        <Image src={course8} alt="icon" />
-                                    </div>
-                                    <div className="title">
-                                        <h3>Provident Fund</h3>
-                                    </div>
-                                    <div className="text">
-                                        <p>Join Our Training Course &
-                                            Build Your Skill.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="about-section-3 pt-80 pb-lg-80 pb-md-80 pt-xs-50 pb-xs-50">
-                    <div className="shape-1">
-                        <Image src={book} alt="shape" />
-                    </div>
-                    <div className="shape-2">
-                        <Image src={hat} alt="shape" />
-                    </div>
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-lg-6 text-center mb-lg-50 mb-md-50 mb-xs-50">
-                                <div className="about-thumb-3">
-                                    <div className="thumb">
-                                        <Image className="w-100" src={about4} alt="thumb" />
-                                    </div>
-                                    <div className="round-thumb">
-                                        <Image src={aboutthumb} alt="thumb" />
-                                    </div>
-                                    <div className="round-bg-shape">
-                                        <Image className="img-fluid" src={shaperound} alt="shape" />
-                                    </div>
-                                    <div className="history-box text-start">
-                                        <div className="icon">
-                                            <Image src={icon1} alt="icon" />
-                                        </div>
-                                        <h6 className="exp-title">25+ Years Experience</h6>
-                                    </div>
-                                    <div className="course-count-section">
-                                        <div className="course-count">
-                                            <div className="number">
-                                                <h6 className="odometer" data-count="535">000</h6>
+                    <div className="row">
+                        <div className="col-lg-3 m-auto">
+                            <div className="search-wrapper-one layout-one bg position-relative">
+                                <div className="bg-wrapper">
+                                        <div className="">
+                                            <div className="">
+                                                <div className="input-box-one lg-mt-10">
+                                                    <button className="fw-500 tran3s search-btn" onClick={() => setShowModal(true)}>Register Now</button>
+                                                </div>
                                             </div>
-                                            <span className="count-mark">+</span>
-                                            <p>Services</p>
                                         </div>
-                                    </div>
                                 </div>
                             </div>
-                            <div className="col-lg-6">
-                                <div className="about-content-3 ps-xxl-5" data-aos="fade-left" data-aos-delay="200">
-                                    <div className="section-title">
-                                        <div className="sub-title">
-                                            <p>About Our Company</p>
-                                        </div>
-                                        <div className="title">
-                                            <h2>We Have Best Experts who can guide you</h2>
-                                        </div>
-                                    </div>
-                                    <div className="description">
-                                        <p>Our All-In-One Platform And Team Of Experts Will Help Direct You In The Right Path.</p>
-                                    </div>
-                                    <div className="list">
-                                        <ul>
-                                            <li>
-                                                <i className="fa-light fa-square-check"></i>
-                                                <span>Best Support</span>
-                                            </li>
-                                            <li>
-                                                <i className="fa-light fa-square-check"></i>
-                                                <span>Service From Expert</span>
-                                            </li>
-                                            <li>
-                                                <i className="fa-light fa-square-check"></i>
-                                                <span>Highly Experienced</span>
-                                            </li>
-                                            <li>
-                                                <i className="fa-light fa-square-check"></i>
-                                                <span>350+ Filings</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="theme-btn">
-                                        <a href="contact.html">Book Appointment</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div className="video-section-3 pt-150 pt-lg-120 pt-md-80 pt-xs-50">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-12">
-                                <div className="section-title text-center mb-50">
-                                    <div className="sub-title mb-10" data-aos="fade-up" data-aos-delay="150">
-                                        <p>Registered Customers</p>
-                                    </div>
-                                    <div className="title" data-aos="fade-up" data-aos-delay="200">
-                                        <h2>It’s easy To Register</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-xl-12">
-                                <div className="video-wrapper" data-aos="fade-up" data-aos-delay="300">
-                                    <div className="thumb">
-                                        <Image className="w-100" src={videoimg} alt="video" />
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
+                <Image src={mainbgImg} alt="" className="lazy-img shapes w-100 illustration" style={{ height: "auto" }} />
+            </div>
 
-                <div className="counter-section-3 pt-80 pb-100 pb-lg-90 pb-md-50 pt-xs-50 pb-xs-20">
-                    <div className="container">
-                        <div className="row text-center">
-                            <div className="col-lg-3 col-md-6">
-                                <div className="counter-wrap-3 mb-30" data-aos="fade-up" data-aos-delay="200">
-                                    <div className="icon">
-                                        <Image src={countersvg} alt="icon" />
-                                    </div>
-                                    <div className="counter-info">
-                                        <div className="number">
-                                            <h3 className="odometer" data-count="14,500">00</h3>
-                                        </div>
-                                        <div className="counter-separator"></div>
-                                        <div className="text">
-                                            <p>Happy Customers</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6">
-                                <div className="counter-wrap-3 mb-30" data-aos="fade-up" data-aos-delay="250">
-                                    <div className="icon">
-                                        <Image src={countersvg2} alt="icon" />
-                                    </div>
-                                    <div className="counter-info">
-                                        <div className="number">
-                                            <h3 className="odometer" data-count="569">00</h3>
-                                        </div>
-                                        <div className="counter-separator"></div>
-                                        <div className="text">
-                                            <p>Good Comment</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6">
-                                <div className="counter-wrap-3 mb-30" data-aos="fade-up" data-aos-delay="300">
-                                    <div className="icon">
-                                        <Image src={countersvg3} alt="icon" />
-                                    </div>
-                                    <div className="counter-info">
-                                        <div className="number">
-                                            <h3 className="odometer" data-count="32,500">00</h3>
-                                        </div>
-                                        <div className="counter-separator"></div>
-                                        <div className="text">
-                                            <p>Services Download</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6">
-                                <div className="counter-wrap-3 mb-30" data-aos="fade-up" data-aos-delay="350">
-                                    <div className="icon">
-                                        <Image src={vector} alt="icon" />
-                                    </div>
-                                    <div className="counter-info">
-                                        <div className="counter-inner">
-                                            <div className="number">
-                                                <h3 className="odometer" data-count="32">00</h3>
-                                            </div>
-                                            <span className="counter-quantity">k</span>
-                                        </div>
-                                        <div className="counter-separator"></div>
-                                        <div className="text">
-                                            <p>Best Awards</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="career-section-3 pt-80 pb-50">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-12">
-                                <div className="section-title text-center mb-50">
-                                    <div className="sub-title mb-10" data-aos="fade-up" data-aos-delay="150">
-                                        <p>Choose Your Career</p>
-                                    </div>
-                                    <div className="title" data-aos="fade-up" data-aos-delay="200">
-                                        <h2>Discover Your Gain</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div className="row">
-                            <div className="col-xl-6 col-lg-6">
-                                <div className="career-wrap" data-aos="fade-up" data-aos-delay="300">
-                                    <div className="thumb">
-                                        <Image src={choose4} alt="chose" />
-                                    </div>
-                                    <div className="content">
-                                        <p>Start From Today</p>
-                                        <h4>
-                                            <a href="#">Join Our Group & Build Your Career.</a>
-                                        </h4>
-                                        <a className="read-more" href="#">Join Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-6 col-lg-6">
-                                <div className="career-wrap" data-aos="fade-up" data-aos-delay="300">
-                                    <div className="thumb">
-                                        <Image src={choose5} alt="chose" />
-                                    </div>
-                                    <div className="content">
-                                        <p>Build Your Career</p>
-                                        <h4>
-                                            <a href="#">Educating You Early & Improving your Growth</a>
-                                        </h4>
-                                        <a className="read-more" href="#">Join Now</a>
+            <div className="feedback-section-one position-relative z-1 pt-70 md-pt-50 pb-60 md-pb-60">
+                <div className="main-content m-auto">
+                    <Slider {...settings}>
+                        <div>
+                            <div className="item">
+                                <div className="feedback-block-one text-center">
+                                    <div className="row align-items-center">
+                                        <div className="col-md-3">
+                                            <img src="images/media/img_01.jpg" alt="" className="rounded-circle m-auto avatar" />
+                                            <h6 className="fs-20 m0 pt-10">Jonathan Harry</h6>
+                                            <span className="fs-16">Milan, Itlay</span>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <blockquote>Efficient, knowledgeable, & made our home search a smooth experience. Highly recommended agency!</blockquote>
+                                        </div>
+                                        <div className="col-md-3">
+                                            <img src="images/lazy.svg" data-src="images/assets/rating_01.png" alt="" className="lazy-img m-auto" />
+                                            <p className="text-center m0 pt-10"><span className="fw-500 color-dark">13k rating</span> (4.7 Rating)</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                {/* <div className="course-list-section pt-150 pb-120 pt-lg-120 pb-lg-90 pt-md-80 pb-md-50 pt-xs-50 pb-xs-20">
-        <div className="container">
-            <div className="row">
-                <div className="col-xl-12">
-                    <div className="section-title text-center mb-50">
-                        <div className="sub-title mb-10" data-aos="fade-up" data-aos-delay="150">
-                            <p>Our Services</p>
+                        <div>
+                            <div className="item">
+                                <div className="feedback-block-one text-center">
+                                    <div className="row align-items-center">
+                                        <div className="col-md-3">
+                                            <img src="images/media/img_02.jpg" alt="" className="rounded-circle m-auto avatar" />
+                                            <h6 className="fs-20 m0 pt-10">Sofia Rena</h6>
+                                            <span className="fs-16">New York, USA</span>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <blockquote>People who are sentinels are definitely the working very hard now, so that they can enjoy the fruits.</blockquote>
+                                        </div>
+                                        <div className="col-md-3">
+                                            <img src="images/lazy.svg" data-src="images/assets/rating_01.png" alt="" className="lazy-img m-auto" />
+                                            <p className="text-center m0 pt-10"><span className="fw-500 color-dark">10k rating</span> (4.5 Rating)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="title" data-aos="fade-up" data-aos-delay="200">
-                            <h2>Most Popular Services</h2>
+                        <div>
+                            <div className="item">
+                                <div className="feedback-block-one text-center">
+                                    <div className="row align-items-center">
+                                        <div className="col-md-3">
+                                            <img src="images/media/img_03.jpg" alt="" className="rounded-circle m-auto avatar" />
+                                            <h6 className="fs-20 m0 pt-10">Rashed Kabir</h6>
+                                            <span className="fs-16">Dhaka, BD</span>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <blockquote>They are very strict about themselves and their work, and do not have a carefree attitude to anything in life.</blockquote>
+                                        </div>
+                                        <div className="col-md-3">
+                                            <img src="images/lazy.svg" data-src="images/assets/rating_01.png" alt="" className="lazy-img m-auto" />
+                                            <p className="text-center m0 pt-10"><span className="fw-500 color-dark">11k rating</span> (4.8 Rating)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </Slider>
                 </div>
             </div>
-            <div className="row justify-content-center">
-                <div className="col-lg-6 col-md-6">
-                    <div className="course-list-content mb-30" data-aos="fade-up" data-aos-delay="250">
-                        <div className="course-img">
-                            <Image src={thumb19} alt="thumb"/>
+
+
+            <div className="block-feature-one mt-150 xl-mt-50">
+                <div className="container">
+                    <div className="title-one text-center mb-50 xl-mb-30 lg-mb-20 wow fadeInUp">
+                        <h3> <span>Our Services <Image src={shape1} alt="" className="lazy-img" /></span></h3>
+                        <p className="fs-24">Your trusted real estate partner in every transaction.</p>
+                    </div>
+                    <div className="row gx-xl-5">
+                        <div className="col-md-4">
+                            <div className="card-style-one text-center wow fadeInUp mt-40">
+                                <Image src={homeImg} alt="" className="lazy-img m-auto h-auto icon" />
+                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Private Limited Company</div>
+                                <p className="fs-24 ps-xxl-4 pe-xxl-4">Explore Private Limited Company and uncover your ideal working space.</p>
+                            </div>
                         </div>
-                        <div className="course-content-list">
-                            <div className="course-meta">
-                                <div className="category">
-                                    <div className="cat-1">
-                                        <a href="#">Internet</a>
-                                    </div>
-                                    <div className="cat-2">
-                                        <a href="#">Merketing</a>
-                                    </div>
-                                </div>
-                                <div className="price">$19.00</div>
+                        <div className="col-md-4">
+                            <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
+                                <Image src={service2} alt="" className="lazy-img  h-auto m-auto icon" />
+                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Fssai Registration</div>
+                                <p className="fs-24 ps-xxl-3 pe-xxl-3">Discover a rental you'll love on homy, thanks to 35+ filters and tailored keywords.</p>
                             </div>
-                            <div className="course-list-title">
-                                <a href="course-details.html">The Most Complete Design Thinking Online
-                                    Course On The Market</a>
-                            </div>
-                            <div className="course-meta-bottom">
-                                <span>
-                                    <Image src={doc2} alt="icon"/>
-                                    10 Lesson
-                                </span>
-                                <span>
-                                    <Image src={user3} alt="icon"/>
-                                    64 Students
-                                </span>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
+                                <Image src={service3} alt="" className="lazy-img  h-auto m-auto icon" />
+                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Provident Fund</div>
+                                <p className="fs-24 ps-xxl-4 pe-xxl-4">List, sell, thrive – with our top-notch real estate agency. It’s super easy & fun.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-lg-6 col-md-6">
-                    <div className="course-list-content mb-30" data-aos="fade-up" data-aos-delay="300">
-                        <div className="course-img">
-                            <Image src={thumb20} alt="thumb"/>
+                    <div className="row gx-xl-5">
+                        <div className="col-md-4">
+                            <div className="card-style-one text-center wow fadeInUp mt-40">
+                                <Image src={homeImg} alt="" className="lazy-img m-auto h-auto icon" />
+                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Msme Registration</div>
+                                <p className="fs-24 ps-xxl-4 pe-xxl-4">Explore homy’s 2 million+ homes and uncover your ideal living space.</p>
+                            </div>
                         </div>
-                        <div className="course-content-list">
-                            <div className="course-meta">
-                                <div className="category">
-                                    <div className="cat-1">
-                                        <a href="#">Design</a>
-                                    </div>
-                                    <div className="cat-2">
-                                        <a href="#">Development</a>
-                                    </div>
-                                </div>
-                                <div className="price">$29.99</div>
+                        <div className="col-md-4">
+                            <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
+                                <Image src={service2} alt="" className="lazy-img  h-auto m-auto icon" />
+                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">One person Company</div>
+                                <p className="fs-24 ps-xxl-3 pe-xxl-3">Discover a rental you'll love on homy, thanks to 35+ filters and tailored keywords.</p>
                             </div>
-                            <div className="course-list-title">
-                                <a href="course-details.html">Language Page Design &amp;Conversion Rate Is
-                                    Course On The Market</a>
-                            </div>
-                            <div className="course-meta-bottom">
-                                <span>
-                                    <Image src={doc2} alt="icon"/>
-                                    12 Lesson
-                                </span>
-                                <span>
-                                    <Image src={user3} alt="icon"/>
-                                    64 Students
-                                </span>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
+                                <Image src={service3} alt="" className="lazy-img  h-auto m-auto icon" />
+                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Partnership Firm</div>
+                                <p className="fs-24 ps-xxl-4 pe-xxl-4">List, sell, thrive – with our top-notch real estate agency. It’s super easy & fun.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-lg-6 col-md-6">
-                    <div className="course-list-content mb-30" data-aos="fade-up" data-aos-delay="350">
-                        <div className="course-img">
-                            <Image src={thumb21} alt="thumb"/>
-                        </div>
-                        <div className="course-content-list">
-                            <div className="course-meta">
-                                <div className="category">
-                                    <div className="cat-1">
-                                        <a href="#">Intermediate</a>
-                                    </div>
-                                    <div className="cat-2">
-                                        <a href="#">Expert</a>
-                                    </div>
-                                </div>
-                                <div className="price">$12.19</div>
-                            </div>
-                            <div className="course-list-title">
-                                <a href="course-details.html">The Challenge Of Global Learning Public is
-                                    Education</a>
-                            </div>
-                            <div className="course-meta-bottom">
-                                <span>
-                                <Image src={doc2} alt="icon"/>
-                                    24 Lesson
-                                </span>
-                                <span>
-                                <Image src={user3} alt="icon"/>
-                                    64 Students
-                                </span>
+                    <div className="row gx-xl-5">
+                        <div className="col-md-4">
+                            <div className="card-style-one text-center wow fadeInUp mt-40">
+                                <Image src={homeImg} alt="" className="lazy-img m-auto h-auto icon" />
+                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Limited Liability Company</div>
+                                <p className="fs-24 ps-xxl-4 pe-xxl-4">Explore homy’s 2 million+ homes and uncover your ideal living space.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className="col-lg-6 col-md-6">
-                    <div className="course-list-content mb-30" data-aos="fade-up" data-aos-delay="400">
-                        <div className="course-img">
-                            <Image src={thumb22} alt="thumb"/>
+                        <div className="col-md-4">
+                            <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
+                                <Image src={service2} alt="" className="lazy-img  h-auto m-auto icon" />
+                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Import and Export</div>
+                                <p className="fs-24 ps-xxl-3 pe-xxl-3">Discover a rental you'll love on homy, thanks to 35+ filters and tailored keywords.</p>
+                            </div>
                         </div>
-                        <div className="course-content-list">
-                            <div className="course-meta">
-                                <div className="category">
-                                    <div className="cat-1">
-                                        <a href="#">Language </a>
-                                    </div>
-                                    <div className="cat-2">
-                                        <a href="#">English</a>
-                                    </div>
-                                </div>
-                                <div className="price">$29.00</div>
-                            </div>
-                            <div className="course-list-title">
-                                <a href="course-details.html">Beginner Diploma In English Grammar On Online
-                                    Education</a>
-                            </div>
-                            <div className="course-meta-bottom">
-                                <span>
-                                <Image src={doc2} alt="icon"/>
-                                    25 Lesson
-                                </span>
-                                <span>
-                                <Image src={user3} alt="icon"/>
-                                    64 Students
-                                </span>
+                        <div className="col-md-4">
+                            <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
+                                <Image src={service3} alt="" className="lazy-img  h-auto m-auto icon" />
+                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Sole Proprietorship</div>
+                                <p className="fs-24 ps-xxl-4 pe-xxl-4">List, sell, thrive – with our top-notch real estate agency. It’s super easy & fun.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div> */}
-                <div className="choose-section-3 overflow-hidden pt-80 pb-80 pt-xs-50 pb-xs-50">
-                    <div className="container">
-                        <div className="row align-items-center justify-content-center">
-                            <div className="col-xl-6 col-lg-6">
-                                <div className="about-us-choose-content" data-aos="fade-right" data-aos-delay="200">
-                                    <div className="section-title">
-                                        <div className="sub-title mb-10">
-                                            <p>Why Choose Us</p>
-                                        </div>
-                                        <div className="title">
-                                            <h2>Start New business On Your Own</h2>
-                                        </div>
-                                    </div>
-                                    <div className="text">
-                                        <p>The standard chunk of Ipsum since the reproduced below for those interested.
-                                            Sections
-                                            and
-                                            from
-                                        </p>
-                                    </div>
-                                    <div className="list">
-                                        <ul>
-                                            <li>
-                                                <i className="fa-regular fa-square-check"></i>
-                                                <span>Consultation from Industry Experts.</span>
-                                            </li>
-                                            <li>
-                                                <i className="fa-regular fa-square-check"></i>
-                                                <span>Value For Money and hassle free service.</span>
-                                            </li>
-                                            <li>
-                                                <i className="fa-regular fa-square-check"></i>
-                                                <span>10 Lakh++ Happy Customers.</span>
-                                            </li>
-                                            <li>
-                                                <i className="fa-regular fa-square-check"></i>
-                                                <span>Money Back Guarantee.</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div className="choose-btn-2">
-                                        <div className="theme-btn">
-                                            <a href="contact.html">Get Started</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-6 col-lg-6 text-center mt-md-50 mt-xs-50">
-                                <div className="choose-3-thumb">
-                                    <div className="thumb">
-                                        <Image className="w-100" src={choose7} alt="thumb" />
-                                    </div>
-                                    <div className="thumb-2" data-aos="zoom-in" data-aos-delay="200">
-                                        <Image src={choose6} alt="thumb" />
-                                    </div>
-                                    <div className="student-report">
-                                        <Image src={shape1} alt="thumb"  height={174} width={174}/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                {/* <div className="partner-section-3 pt-60 pb-60" data-aos="fade-up" data-aos-delay="200">
-        <div className="container">
-            <div className="row text-center">
-                <div className="col-xl-12">
-                    <div className="swiper brand-layout-2">
-                        <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <div className="brand-item">
-                                    <Image src={partner11} alt="thumb"/>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="brand-item">
-                                    <Image src={partner12} alt="thumb"/>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="brand-item">
-                                    <Image src={partner13} alt="thumb"/>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="brand-item">
-                                    <Image src={partner14} alt="thumb"/>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="brand-item">
-                                    <Image src={partner15} alt="thumb"/>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="brand-item">
-                                    <Image src={partner11} alt="thumb"/>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="brand-item">
-                                    <Image src={partner12} alt="thumb"/>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="brand-item">
-                                    <Image src={partner11} alt="thumb"/>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="brand-item">
-                                    <Image src={partner12} alt="thumb"/>
+
+            <div className="block-feature-two mt-150 xl-mt-110 mb-30">
+                <div className="wrapper">
+                    <div className="row gx-xl-5">
+                        <div className="col-xxl-7 col-md-6 d-flex wow fadeInLeft">
+                            <div className="block-one w-100 h-100">
+                                <div className="position-relative z-1 h-100">
+                                    <h3 className="mb-55">Secure your family's dream home.</h3>
+                                    <a className="fancybox video-icon d-flex align-items-center justify-content-center rounded-circle ms-3" data-fancybox="" href="https://www.youtube.com/embed/aXFSJTjVjw0">
+                                        <i className="fa-solid fa-play"></i>
+                                    </a>
+                                    <div className="card-box text-center">
+                                        <h3 className="main-count fw-500">0<span className="counter">7</span>+</h3>
+                                        <p className="fs-20">Years Experience <br />with proud.</p>
+                                    </div>
+                                    <Image src={screen01} alt="" className="lazy-img shapes screen_01" />
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> */}
-                <div className="testimonial-section-3 pt-150 pb-50 pt-lg-120 pb-lg-120 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-xl-6 col-lg-6 text-lg-start text-center mb-md-50 mb-xs-50">
-                                <div className="testimonial-thumb-3" data-aos="fade-right" data-aos-delay="200">
-                                    <div className="thumb">
-                                        <Image src={tauthor5} alt="thumb" />
-                                    </div>
-                                    <div className="shape-1">
-                                        <Image src={tauthor6} alt="thumb" />
-                                    </div>
-                                    <div className="shape-2">
-                                        <Image src={tshape1} alt="shape" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-6 col-lg-6">
-                                <div className="swiper testimonial-slider-active-3">
-                                    <div className="swiper-wrapper">
-                                        <div className="swiper-slide single-slide">
-                                            <div className="testimonial-content-3">
-                                                <div className="icon">
-                                                    <Image src={vector} alt="icon" />
-                                                </div>
-                                                <div className="text">
-                                                    <p>Rediger is a renowned group of individual professionals that has established itself as a market leader in guiding corporate houses and entrepreneurs. We specialize in Company Incorporation, Tax, and all other services rendered by professionals independently. We assist entrepreneurs and start-ups in providing consultations for their businesses. We have a tailor-made solution in the best interests of your business, and we provide a guaranteed and satisfactory service.
-                                                    </p>
-                                                </div>
-                                                <div className="name">
-                                                    <h3>Vijendra</h3>
-                                                </div>
-                                                <div className="info">
-                                                    <p>General Manager & CEO</p>
+                        <div className="col-xxl-5 col-md-6 wow fadeInRight">
+                            <div className="block-two">
+                                <div className="bg-wrapper">
+                                    <h4>Who we are?</h4>
+                                    <p className="fs-22 mt-20">Your premier partner in real estate. <br /> Transforming properties into dreams. Let us guide you home with expertise.</p>
+                                    <div className="counter-wrapper ps-xl-3 pb-30 mt-45 mb-50">
+                                        <div className="row">
+                                            <div className="col-6">
+                                                <div className="counter-block-one mt-20">
+                                                    <div className="main-count fw-500 color-dark"><span className="counter">1.7</span>K+</div>
+                                                    <span>Completed Project</span>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="swiper-slide single-slide">
-                                            <div className="testimonial-content-3">
-                                                <div className="icon">
-                                                    <Image src={vector} alt="icon" />
-                                                </div>
-                                                <div className="text">
-                                                    <p>Objectively redefine out the box technologie multimedia based
-                                                        networks.
-                                                        Education Proactively is architect economically sound synergy
-                                                        progressive value a time online Authoritatively engage is
-                                                        out-of-the-box
-                                                        users for interoperable core competencies. Appropriately pontificate
-                                                        of.</p>
-                                                </div>
-                                                <div className="name">
-                                                    <h3>Davied Jone</h3>
-                                                </div>
-                                                <div className="info">
-                                                    <p>General Manager & CEO</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper-slide single-slide">
-                                            <div className="testimonial-content-3">
-                                                <div className="icon">
-                                                    <Image src={vector} alt="icon" />
-                                                </div>
-                                                <div className="text">
-                                                    <p>Objectively redefine out the box technologie multimedia based
-                                                        networks.
-                                                        Education Proactively is architect economically sound synergy
-                                                        progressive value a time online Authoritatively engage is
-                                                        out-of-the-box
-                                                        users for interoperable core competencies. Appropriately pontificate
-                                                        of.</p>
-                                                </div>
-                                                <div className="name">
-                                                    <h3>Davied Jone</h3>
-                                                </div>
-                                                <div className="info">
-                                                    <p>General Manager & CEO</p>
+                                            <div className="col-6">
+                                                <div className="counter-block-one mt-20">
+                                                    <div className="main-count fw-500 color-dark"><span className="counter">1.3</span>mil+</div>
+                                                    <span>Happy Customers</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="swiper-pagination-3"></div>
+                                    <ul className="list-style-one fs-22 color-dark style-none">
+                                        <li>Loan & low Interest facility</li>
+                                        <li>Over 100k+ property & update regularly</li>
+                                        <li>Expert agent consultation</li>
+                                    </ul>
+                                    <div className="d-inline-flex flex-wrap align-items-center mt-15 md-mt-10">
+                                        <a href="about_us_01.html" className="btn-two mt-20 me-4"><span>More Details</span></a>
+                                        <a href="contact.html" className="btn-three mt-20"><span>Request a Callback</span> <i className="fa-light fa-arrow-right-long"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                {/* <div className="blog-grid-section-3 pt-80 pb-80 pt-xs-50 pb-xs-50">
-        <div className="container">
-            <div className="row">
-                <div className="col-xl-12">
-                    <div className="section-title text-center mb-50">
-                        <div className="sub-title mb-10" data-aos="fade-up" data-aos-delay="150">
-                            <p>Our Recent Articles</p>
-                        </div>
-                        <div className="title" data-aos="fade-up" data-aos-delay="200">
-                            <h2>Latest Blog & News</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="row align-items-center justify-content-center">
-                <div className="col-lg-4 col-md-6">
-                    <div className="blog-wrap-3 mb-30" data-aos="fade-up" data-aos-delay="250">
-                        <div className="blog-img">
-                            <Image src={blog19} alt="blog"/>
-                        </div>
-                        <div className="content">
-                            <div className="meta">
-                                <a href="#">
-                                    <Image src={hatv} alt="icon"/>
-                                    Education
-                                </a>
-                            </div>
-                            <h3 className="title">
-                                <a href="blog-details.html">
-                                    Educating Your Child Early & Take
-                                    Spread Knowledge
-                                </a>
-                            </h3>
-                            <div className="info">
-                                <div className="thumb">
-                                    <Image src={blogauthor} alt="icon"/>
-                                    <div className="name">
-                                        <h4>Mili Smith</h4>
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <Image src={archieve} alt="icon"/>
-                                    21 Jan 2023
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4 col-md-6">
-                    <div className="blog-wrap-3 mb-30" data-aos="fade-up" data-aos-delay="300">
-                        <div className="blog-img">
-                            <Image src={blog20} alt="blog"/>
-                        </div>
-                        <div className="content">
-                            <div className="meta">
-                                <a href="#">
-                                    <Image src={hatv} alt="icon"/>
-                                    Learning
-                                </a>
-                            </div>
-                            <h3 className="title">
-                                <a href="blog-details.html">
-                                    Online Education Also & Take The
-                                    Knowledge
-                                </a>
-                            </h3>
-                            <div className="info">
-                                <div className="thumb">
-                                    <Image src={blogauthor} alt="blog"/>
-                                    <div className="name">
-                                        <h4>Creation</h4>
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <Image src={archieve} alt="icon"/>
-                                    21 Jan 2023
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4 col-md-6">
-                    <div className="blog-wrap-3 mb-30" data-aos="fade-up" data-aos-delay="350">
-                        <div className="blog-img">
-                            <Image src={blog21} alt="blog"/>
-                        </div>
-                        <div className="content">
-                            <div className="meta">
-                                <a href="#">
-                                    <Image src={filter2} alt="blog"/>
-                                    Art & Design
-                                </a>
-                            </div>
-                            <h3 className="title">
-                                <a href="blog-details.html">
-                                    Art & Design Your Early & Improve
-                                    Spread Skills.
-                                </a>
-                            </h3>
-                            <div className="info">
-                                <div className="thumb">
-                                    <Image src={blogauthor} alt="blog"/>
-                                    <div className="name">
-                                        <h4>Hardson</h4>
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <Image src={archieve} alt="icon"/>
-                                    21 Jan 2023
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="row text-center mt-20">
-                <div className="col-xl-12">
-                    <div className="theme-btn" data-aos="fade-up" data-aos-delay="200">
-                        <a href="blog-classNameic.html">Read All Blogs</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> */}
 
-                <div className="faq-section pt-20 pb-100 pt-lg-100 pb-lg-100 pt-md-80 pb-md-80 pt-xs-50 pb-xs-50">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-12">
-                                <div className="faq-wrapper">
-                                    <div className="row">
-                                        <div className="col-xl-5 col-lg-6 mb-md-50 mb-xs-50">
-                                            <div className="contract-phone" data-aos="fade-right">
-                                                <div className="title">
-                                                    <h2>Get In Touch</h2>
-                                                </div>
-                                                <form action="#">
-                                                    <div className="input-wrap">
-                                                        <input type="text" placeholder="Phone" />
-                                                    </div>
-                                                    <div className="input-wrap">
-                                                        <input type="text" placeholder="Email" />
-                                                    </div>
-                                                    <div className="input-wrap">
-                                                        <input type="text" placeholder="Location" />
-                                                    </div>
-                                                    <div className="input-wrap">
-                                                        <textarea placeholder="Write Messeage"></textarea>
-                                                    </div>
-                                                    <div className="submit-btn">
-                                                        <button type="submit">Submit Request</button>
-                                                    </div>
-                                                </form>
-                                            </div>
+            <div className="fancy-banner-one position-relative z-1 pt-160 xl-pt-140 lg-pt-80 pb-140 xl-pb-120 lg-pb-100">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 wow fadeInLeft">
+                            <div className="title-one mb-45 lg-mb-30">
+                                <h3 className="text-white">Exclusive <span>Monthly <img src="images/lazy.svg" data-src="images/shape/title_shape_04.svg" alt="" className="lazy-img" /></span>Deal for you.</h3>
+                                <p className="fs-24 text-white pe-xl-5 me-xxl-5">Don't miss out on this personalized monthly exclusive offer for you.</p>
+                            </div>
+                            <a href="listing_details_02.html" className="btn-six">More Details</a>
+                        </div>
+                        <div className="col-lg-6 wow fadeInRight">
+                            <div className="property-item md-mt-60 position-relative z-1">
+                                <div className="row gx-0">
+                                    <div className="col-md-5 d-flex">
+                                        <div className="gutter border-right w-100 h-100">
+                                            <div className="tag mb-20">FOR SELL</div>
+                                            <h4 className="mb-70 sm-mb-40">Luxury fisa orkit villa.</h4>
+                                            <ul className="style-none d-flex action-icons">
+                                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                                <li><a href="#"><i className="fa-light fa-bookmark"></i></a></li>
+                                                <li><a href="#"><i className="fa-light fa-circle-plus"></i></a></li>
+                                            </ul>
                                         </div>
-                                        <div className="col-xl-7 col-lg-6">
-                                            <div className="faq-content-wrap">
-                                                <div className="section-title mb-50">
-                                                    <div className="sub-title mb-10">
-                                                        <p>Frequently Asked Question</p>
-                                                    </div>
-                                                    <div className="title">
-                                                        <h2>Have Your Any Question?</h2>
-                                                    </div>
+                                    </div>
+                                    <div className="col-md-7 d-flex">
+                                        <div className="gutter w-100 h-100">
+                                            <p>Mirpur 10, National Stadium, 1210, Dhaka, BD</p>
+                                            <h2 className="price text-center">$28,100.00</h2>
+                                            <ul className="style-none d-flex feature">
+                                                <li>
+                                                    <strong className="d-block color-dark fw-500 fs-20">2137</strong>
+                                                    <span className="fs-16">sqft</span>
+                                                </li>
+                                                <li className="text-center">
+                                                    <strong className="d-block color-dark fw-500 fs-20">03</strong>
+                                                    <span className="fs-16">bed</span>
+                                                </li>
+                                                <li className="text-end">
+                                                    <strong className="d-block color-dark fw-500 fs-20">02</strong>
+                                                    <span className="fs-16">bath</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="button-group gutter d-flex justify-content-between align-items-center">
+                                    <a href="listing_details_02.html" className="btn-three"><span>Check Full Details</span></a>
+                                    <a href="listing_details_02.html" className="btn-four rounded-circle"><i className="bi bi-arrow-up-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="agent-section-one position-relative z-1 mt-150 xl-mt-120">
+                <div className="container">
+                    <div className="position-relative">
+                        <div className="title-one mb-85 lg-mb-50 wow fadeInLeft">
+                            <h3>Our <span>Agents<img src="images/lazy.svg" data-src="images/shape/title_shape_05.svg" alt="" className="lazy-img" /></span></h3>
+                            <p className="fs-22 mt-xs">Lorem  is placeholder text commonly used  graphic </p>
+                        </div>
+                        <div className="wrapper position-relative z-1">
+                            <div className="agent-slider-one">
+                                <Slider {...agents}>
+                                    <div>
+                                        <div className="item">
+                                            <div className="agent-card-one position-relative">
+                                                <div className="img border-20">
+                                                    <Image src={agent01} alt="" className="w-100 tran5s" />
                                                 </div>
-                                                <Accordion defaultActiveKey="0" className="faq-accordion">
-                                                    <Accordion.Item eventKey="0">
-                                                        <Accordion.Header>
-                                                            How Can I Register?
-                                                        </Accordion.Header>
-                                                        <Accordion.Body>
-                                                            Globally engineer high-payoff potentialities with impactful
-                                                            e-business. Interactively leverage existing
-                                                            backward-compatible
-                                                            ideas with user-centric e-services. Globally enhance.
-                                                        </Accordion.Body>
-                                                    </Accordion.Item>
-                                                    <Accordion.Item eventKey="1">
-                                                        <Accordion.Header>What Is Process To Get Expert Team?</Accordion.Header>
-                                                        <Accordion.Body>
-                                                            Globally engineer high-payoff potentialities with impactful
-                                                            e-business. Interactively leverage existing
-                                                            backward-compatible
-                                                            ideas with user-centric e-services. Globally enhance.
-                                                        </Accordion.Body>
-                                                    </Accordion.Item>
-                                                    <Accordion.Item eventKey="2">
-                                                        <Accordion.Header>How Does About Online Services?</Accordion.Header>
-                                                        <Accordion.Body>
-                                                            Globally engineer high-payoff potentialities with impactful
-                                                            e-business. Interactively leverage existing
-                                                            backward-compatible
-                                                            ideas with user-centric e-services. Globally enhance.
-                                                        </Accordion.Body>
-                                                    </Accordion.Item>
-                                                </Accordion>
-                                                <div className="theme-btn mt-50">
-                                                    <a href="#">Add Questions</a>
+                                                <div className="text-center">
+                                                    <h6>Mark Filo</h6>
+                                                    <a href="agent_details.html" className="stretched-link">CEO & Founder</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* <div className="subscribe-section bg-white pb-md-80 pb-xs-50">
-        <div className="container">
-            <div className="row">
-                <div className="col-xl-12">
-                    <div className="subscribe-wrapper" data-aos="fade-up" data-aos-delay="200">
-                        <div className="row align-items-center">
-                            <div className="col-xl-7 col-lg-6">
-                                <div className="subscribe-title text-lg-start text-center">
-                                    <h3>Subscribe To Our Newsletter</h3>
-                                </div>
-                            </div>
-                            <div className="col-xl-5 col-lg-6 mt-md-30 mt-xs-30">
-                                <div className="subscribe-form text-lg-start text-center">
-                                    <form action="#">
-                                        <div className="input-wrap">
-                                            <input type="email" placeholder="Enter Your Mail"/>
-                                            <button type="submit">Subscribe</button>
+                                    <div>
+                                        <div className="item">
+                                            <div className="agent-card-one position-relative">
+                                                <div className="img border-20">
+                                                    <Image src={agent02} alt="" className="w-100 tran5s" />
+                                                </div>
+                                                <div className="text-center">
+                                                    <h6>Chris Matial</h6>
+                                                    <a href="agent_details.html" className="stretched-link">Retailer</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </form>
+                                    </div>
+                                    <div>
+                                        <div className="item">
+                                            <div className="agent-card-one position-relative">
+                                                <div className="img border-20">
+                                                    <Image src={agent03} alt="" className="w-100 tran5s" />
+                                                </div>
+                                                <div className="text-center">
+                                                    <h6>Jubayer Al Hasan</h6>
+                                                    <a href="agent_details.html" className="stretched-link">Marketing Expert</a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="item">
+                                            <div className="agent-card-one position-relative">
+                                                <div className="img border-20">
+                                                    <Image src={agent04} alt="" className="w-100 tran5s" />
+                                                </div>
+                                                <div className="text-center">
+                                                    <h6>Jannatul Ferdaus</h6>
+                                                    <a href="agent_details.html" className="stretched-link">Broker</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div className="item">
+                                            <div className="agent-card-one position-relative">
+                                                <div className="img border-20">
+                                                    <Image src={agent05} alt="" className="w-100 tran5s" />
+                                                </div>
+                                                <div className="text-center">
+                                                    <h6>Chris Matial</h6>
+                                                    <a href="agent_details.html" className="stretched-link">Broker</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </Slider>
+                            </div>
+                        </div>
+                        <div className="section-btn text-center md-mt-60">
+                            <a href="agent.html" className="btn-one fw-normal">Meet Entire Team</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="block-feature-four mt-170 xl-mt-130 md-mt-40">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 d-flex order-lg-last">
+                            <div className="ps-xxl-5 ms-xl-4 pt-100 xl-pt-80 pb-45 w-100 h-100 wow fadeInRight">
+                                <div className="title-one mb-60 lg-mb-40">
+                                    <div className="upper-title">CB ESTIMATE</div>
+                                    <h3>Get quick <span>estimate<img src="images/lazy.svg" data-src="images/shape/title_shape_06.svg" alt="" className="lazy-img" /></span> on your home.</h3>
+                                    <p className="fs-24 color-dark">Master your property's valuation for a poised entry into the real estate market, armed with self-assurance and insight.</p>
+                                </div>
+                                <form action="#" className="me-xl-4">
+                                    <input type="email" placeholder="Your Email Address..." />
+                                    <button>Find out</button>
+                                </form>
+                                <div className="fs-16 mt-10 opacity-75">*For accurate info please <a href="contact.html" className="fst-italic color-dark text-decoration-underline">contact us.</a></div>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 d-flex">
+                            <div className="img-gallery position-relative z-1 w-100 h-100 me-lg-5 wow fadeInLeft">
+                                {/* <div className="img-bg" style="background-image: url(images/media/img_11.jpg);"></div> */}
+                                <div className="img-bg featureFour"></div>
+                                <div className="card-one">
+                                    <div className="text text-center z-1">
+                                        <h6>Your estimate is in!</h6>
+                                        <h3>$378,30.00</h3>
+                                    </div>
+                                    <Image src={screen12} alt="" className="lazy-img w-100" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div> */}
 
 
-
+            <div className="block-feature-five position-relative z-1 bg-pink pt-100 lg-pt-80 pb-130 xl-pb-100 lg-pb-80 mt-225 xl-mt-200 lg-mt-150">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-8 m-auto">
+                            <div className="title-one text-center mb-35 lg-mb-20">
+                                <h3>We’r here to help <br /> you get your <span>dream home<img src="images/lazy.svg" data-src="images/shape/title_shape_07.svg" alt="" className="lazy-img" /></span></h3>
+                                <p className="fs-24 color-dark">It’s easy to start with us with these simple steps</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row justify-content-between">
+                        <div className="col-xxl-11 m-auto">
+                            <div className="row gx-xl-5 justify-content-center">
+                                <div className="col-lg-4 col-sm-6">
+                                    <div className="card-style-one text-center wow fadeInUp mt-40">
+                                        <Image src={icon07} alt="" className="lazy-img m-auto icon" />
+                                        <h5 className="mt-50 lg-mt-30 mb-15">Create Account</h5>
+                                        <p className="pe-xxl-4 ps-xxl-4">It’s very easy to open an account and start your journey.</p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 col-sm-6">
+                                    <div className="card-style-one text-center wow fadeInUp mt-40 arrow position-relative" data-wow-delay="0.1s">
+                                        <Image src={icon08} alt="" className="lazy-img m-auto icon" />
+                                        <h5 className="mt-50 lg-mt-30 mb-15">Find Home</h5>
+                                        <p className="pe-xxl-4 ps-xxl-4">Complete your profile with all the info to get attention of client.</p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4 col-sm-6">
+                                    <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
+                                        <Image src={icon09} alt="" className="lazy-img m-auto icon" />
+                                        <h5 className="mt-50 lg-mt-30 mb-15">Quick Process</h5>
+                                        <p className="pe-xxl-4 ps-xxl-4">Apply & get your preferable jobs with all the requirements and get it.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/lazy.svg" data-src="images/shape/shape_07.svg" alt="" className="lazy-img shapes shape_01" />
+                <img src="images/lazy.svg" data-src="images/shape/shape_08.svg" alt="" className="lazy-img shapes shape_02" />
             </div>
+
+
+            <div className="fancy-banner-two position-relative z-1 pt-90 lg-pt-50 pb-90 lg-pb-50">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6">
+                            <div className="title-one text-center text-lg-start md-mb-40 pe-xl-5">
+                                <h3 className="text-white m0">Start your <span>Journey<img src="images/lazy.svg" data-src="images/shape/title_shape_06.svg" alt="" className="lazy-img" /></span> As a Customer.</h3>
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="form-wrapper me-auto ms-auto me-lg-0">
+                                <form action="#">
+                                    <input type="email" placeholder="Email address" />
+                                    <button>Get Started</button>
+                                </form>
+                                <div className="fs-16 mt-10 text-white">Already a Agent? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in.</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div className="fancy-banner-three position-relative text-center z-1 pt-200 xl-pt-150 lg-pt-100 pb-250 xl-pb-200 lg-pb-120">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-7 col-md-8 m-auto">
+                            <div className="title-one mb-45 md-mb-30">
+                                <h2>Any Inquiry? <span>Feel free<Image src={titleshape08} alt="" className="lazy-img" /></span> To contact Us.</h2>
+                            </div>
+                            <a href="contact.html" className="btn-five text-uppercase">SEND MESSAGE</a>
+                        </div>
+                    </div>
+                </div>
+                <Image src={ils02} alt="" className="lazy-img shapes h-auto w-100 illustration" />
+            </div>
+
+
+            <Login showModal={showModal} setShowModal={setShowModal}/>
+
+
         </>
     );
 }

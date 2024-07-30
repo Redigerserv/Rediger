@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef} from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Link from 'next/link'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import { IoIosMenu } from "react-icons/io"
@@ -15,16 +15,16 @@ import Accordion from 'react-bootstrap/Accordion';
 import { MdOutlineWork } from "react-icons/md";
 
 
-// import redigerlogo from '../../assets/img/logo/LOGO HD Sub white.png'
-import redigerlogo from '../../assets/img/Rediger/logo.png'
 
-import logo from "../../assets/img/logo/logo.svg"
-import cart from "../../assets/img/icon/cart.svg"
-import user from "../../assets/img/icon/user.svg"
+// import cart from "../../assets/img/icon/cart.svg"
+// import user from "../../assets/images/logo/logo_01.svg"
 import Image from 'next/image';
+import { Modal } from 'react-bootstrap';
+import Login from '../shared/login';
 
 const Header = () => {
     const [show, setShow] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     const handleClose = () => setShow(false);
     const toggleShow = () => setShow((s) => !s);
@@ -52,251 +52,184 @@ const Header = () => {
 
     return (
 
-        // <header>
-        //     <nav className="toolbar">
-        //         <div className="px-4 py-2">
-        //             <div className="d-flex justify-content-between align-items-center">
-
-        //                 <div className="d-flex align-items-center">
-        //                     <IoIosMenu className='toolbar-menu' onClick={toggleShow} />
-        //                     <Offcanvas show={show} onHide={handleClose} scroll={true} backdropClassName='true'>
-        //                         <Offcanvas.Header closeButton>
-        //                             <Offcanvas.Title>Rediger Portal</Offcanvas.Title>
-        //                         </Offcanvas.Header>
-        //                         <Offcanvas.Body>
-        //                             <ul className="list-group list-group-flush" style={{ fontSize: '13px' }}>
-        //                                 <li className="list-group-item p-0">
-        //                                     <Link
-        //                                         href={'/'}
-        //                                         className="text-black text-decoration-none d-flex justify-content-start align-items-center px-1 py-2"
-        //                                         onClick={handleClose}
-        //                                     >
-        //                                         <IoHomeOutline strokeWidth={0} size={25} className='fs-4 me-2' />
-        //                                         <span className="text-uppercase">Home</span>
-        //                                     </Link>
-        //                                 </li>
-        //                                 <li className="list-group-item p-0">
-        //                                     <Link
-        //                                         href={'/'}
-        //                                         className="text-black text-decoration-none d-flex justify-content-start align-items-center px-1 py-2"
-        //                                         onClick={handleClose}
-        //                                     >
-        //                                         <LuAlignHorizontalJustifyStart strokeWidth={1} size={25} className='fs-4 me-2' />
-        //                                         <span className="text-uppercase">START A BUSINESS</span>
-        //                                     </Link>
-        //                                 </li>
-        //                                 <li className="list-group-item p-0">
-        //                                     <Link
-        //                                         href={'/'}
-        //                                         className="text-black text-decoration-none d-flex justify-content-start align-items-center px-1 py-2"
-        //                                         onClick={handleClose}
-        //                                     >
-        //                                         <MdOutlineAppRegistration strokeWidth={0} size={25} className='fs-4 me-2' />
-        //                                         <span className="text-uppercase">
-        //                                             LICENCE/REGISTRATION
-        //                                         </span>
-        //                                     </Link>
-        //                                 </li>
-        //                                 <li className="list-group-item p-0">
-        //                                     <Link
-        //                                         href={'/'}
-        //                                         className="text-black text-decoration-none d-flex justify-content-start align-items-center px-1 py-2"
-        //                                         onClick={handleClose}
-        //                                     >
-        //                                         <RxDashboard strokeWidth={0} size={25} className='fs-4 me-2' />
-        //                                         <span className="text-uppercase">
-        //                                             GST REGISTRATION
-        //                                         </span>
-        //                                     </Link>
-        //                                 </li>
-        //                                 <li className="list-group-item p-0">
-        //                                     <Link
-        //                                         href={'/'}
-        //                                         className="text-black text-decoration-none d-flex justify-content-start align-items-center px-1 py-2"
-        //                                         onClick={handleClose}
-        //                                     >
-        //                                         <SiTaxbuzz strokeWidth={0} size={25} className='fs-4 me-2' />
-        //                                         <span className="text-uppercase">
-        //                                             LEGAL DRAFT
-        //                                         </span>
-        //                                     </Link>
-        //                                 </li>
-        //                                 <li className="list-group-item p-0">
-        //                                     <Link
-        //                                         href={'/'}
-        //                                         className="text-black text-decoration-none d-flex justify-content-start align-items-center px-1 py-2"
-        //                                         onClick={handleClose}
-        //                                     >
-        //                                         <LuAlignHorizontalJustifyStart strokeWidth={1} size={25} className='fs-4 me-2' />
-        //                                         <span className="text-uppercase">CAREERS</span>
-        //                                     </Link>
-        //                                 </li>
-        //                                 <li className="list-group-item p-0">
-        //                                     <Link
-        //                                         href={'/'}
-        //                                         className="text-black text-decoration-none d-flex justify-content-start align-items-center px-1 py-2"
-        //                                         onClick={handleClose}
-        //                                     >
-        //                                         <MdWorkOutline strokeWidth={0} size={25} className='fs-4 me-2' />
-        //                                         <span className="text-uppercase">ADMIN</span>
-        //                                     </Link>
-        //                                 </li>
-        //                             </ul>
-        //                         </Offcanvas.Body>
-        //                     </Offcanvas>
-
-        //                     <Link
-        //                         href={'/'}
-        //                         className="toolbar-brand text-white text-decoration-none"
-        //                     >
-        //                         REDIGER
-        //                     </Link>
-        //                 </div>
-
-        //                 <ul className="d-flex align-items-center list-unstyled toolbar-filter">
-        //                     <li>
-        //                         <Link
-        //                             href="/aboutUs"
-        //                             className="text-white text-decoration-none"
-        //                         >About us</Link>
-        //                     </li>
-        //                     <li>
-        //                         <Link
-        //                             href="/login"
-        //                             className="text-white text-decoration-none"
-        //                         >Login</Link>
-        //                     </li>
-        //                     <li>
-        //                         <Link href={'/'} className="text-white ">
-        //                             <div className="position-relative customMsgBadge">
-        //                                 <IoNotifications size={22} />
-        //                                 <span className="position-absolute start-100 translate-middle bg-danger rounded-circle countBadge">
-        //                                     0
-        //                                 </span>
-        //                             </div>
-        //                         </Link>
-        //                     </li>
-        //                     <li>
-        //                         <Link
-        //                             href="/"
-        //                             className="text-white text-decoration-none"
-        //                         ><IoSettingsOutline size={22} /></Link>
-        //                     </li>
-        //                 </ul>
-        //             </div>
-        //         </div>
-        //     </nav>
-        // </header>
-
         <>
-            <header className="header-area header-style-3">
-                {/* <div className="main-header-area header-bottom pt-lg-15 pb-lg-15 pt-md-15 pb-md-15 pt-xs-15 pb-xs-15 "> */}
-                <div className={`main-header-area header-bottom pt-lg-15 pb-lg-15 pt-md-15 pb-md-15 pt-xs-15 pb-xs-15 ${isSticky ? 'sticky-header' : ''}`} ref={headerRef}>
-                    <div className="px-5">
-                        <div className="row align-items-center">
-                            <div className="col-xl-3 col-lg-7 col-md-7 col-6">
-                                <div className="">
-                                    <div className="logo">
-                                        <Link href={"/"}>
-                                            <Image src={redigerlogo} alt="logo"  style={{width:"160px" , height:"50px"}}/>
-                                        </Link>
-                                    </div>
-                                    {/* <div className="search-form d-none d-md-inline-block">
-                                        <form action="#">
-                                            <div className="input-wrap">
-                                                <input type="email" placeholder="Search" />
-                                                <button type="submit"><i
-                                                    className="fa-regular fa-magnifying-glass"></i></button>
-                                            </div>
-                                        </form>
-                                    </div> */}
-                                </div>
-                            </div>
-                            <div className="col-xl-9 col-lg-5 col-md-5 col-6 d-flex justify-content-end align-items-center p-0">
-                                <div className="main-menu d-none d-xl-block">
-                                    <ul>
-                                        <li className="has-dropdown">
-                                            <a>Start Business</a>
-                                            <ul className="sub-menu">
-                                                <li><Link href={"/"}>Private limited Company</Link></li>
-                                                <li><Link href={"/"}>One Person Company</Link></li>
-                                                <li><Link href={"/"}>Limited Liability Comapny</Link></li>
-                                                <li><Link href={"/"}>Partnership Firm</Link></li>
-                                                <li><Link href={"/"}>Sole Proprietorship</Link></li>
-                                                <li><Link href={"/"}>DSC</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li className="has-dropdown">
-                                            <a>Licence/Registration</a>
-                                            <ul className="sub-menu">
-                                                <li><Link href={"/"}>Fssai Registration</Link></li>
-                                                <li><Link href={"/"}>Msme Registration</Link></li>
-                                                <li><Link href={"/"}>Trade Registration</Link></li>
-                                                <li><Link href={"/"}>Shop Act</Link></li>
-                                                <li><Link href={"/"}>Trade Licence</Link></li>
-                                                <li><Link href={"/"}>Import and Export</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li className="has-dropdown">
-                                            <a>Tax</a>
-                                            <ul className="sub-menu">
-                                                <li><Link href={"/"}>GST Registration</Link></li>
-                                                <li><Link href={"/"}>TDS Return Filing</Link></li>
-                                                <li><Link href={"/"}>Professional Tax Registration</Link></li>
-                                                <li><Link href={"/"}>Provident Fund</Link></li>
-                                                <li><Link href={"/"}>ESIS</Link></li>
-                                                <li><Link href={"/"}>LUT Filing Under GST</Link></li>
-                                            </ul>
-                                        </li>
-                                        {/* <li><Link href={"/aboutUs"}>Careers</Link> </li> */}
-                                        <li className="has-dropdown">
-                                            <a>Legal draft</a>
-                                            <ul className="sub-menu">
-                                                <li><Link href={"/"}>Non-Disclosure Agreement</Link></li>
-                                                <li><Link href={"/"}>Partnership Deed</Link></li>
-                                                <li><Link href={"/"}>Memorandum of Understanding MOU</Link></li>
-                                            </ul>
-                                        </li>
-                                        {/* <li><Link href={"/aboutUs"}>About Us</Link> </li> */}
-                                        {/* <li><a href="contact.html">Contact</a></li> */}
+            <header className={`theme-main-menu menu-overlay menu-style-one sticky-menu ${isSticky ? 'fixed' : ''}`} ref={headerRef} >
 
-                                        <li className="has-dropdown">
-                                            <a>More</a>
-                                            <ul className="sub-menu">
-                                                <li><Link href={"/"}>Careers </Link></li>
-                                                <li><Link href={"/aboutUs"}>About Us</Link></li>
-                                                <li><Link href={"/login"}>Login</Link></li>
+                <div className="alert-wrapper text-center">
+                    <p className="fs-16 m0 text-white">The <a href="listing_01.html" className="fw-500">flash sale</a> go on. The offer will end in — <span>This Sunday</span></p>
+                </div>
+
+                <div className="inner-content gap-one">
+                    <div className="top-header position-relative">
+                        <div className="d-flex align-items-center justify-content-between">
+                            <div className="logo order-lg-0">
+                                <Link href="/" className="d-flex align-items-center">
+                                    Rediger
+                                    {/* <Image src={user} alt=""/> */}
+                                </Link>
+                            </div>
+                            <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
+                                <ul className="d-flex align-items-center style-none">
+                                    <li>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" className="btn-one" onClick={() => setShowModal(true)}><i className="fa-regular fa-lock"></i> <span>Login</span></a>
+                                    </li>
+                                    {/* <li className="d-none d-md-inline-block ms-3">
+                                        <a href="dashboard/add-property.html" className="btn-two" target="_blank"><span>Add Listing</span> <i className="fa-thin fa-arrow-up-right"></i></a>
+                                    </li> */}
+                                </ul>
+                            </div>
+                            <nav className="navbar navbar-expand-lg p0 order-lg-2">
+                                <button className="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation" onClick={toggleShow}>
+                                    <span></span>
+                                </button>
+                                <div className="collapse navbar-collapse" id="navbarNav">
+                                    <ul className="navbar-nav align-items-lg-center">
+                                        <li className="d-block d-lg-none"><div className="logo"><a href="index.html" className="d-block"><img src="images/logo/logo_01.svg" alt="" /></a></div></li>
+                                        <li className="nav-item dashboard-menu">
+                                            <a className="nav-link" href="dashboard/dashboard-index.html" target="_blank">Dashboard</a>
+                                        </li>
+                                        <li className="nav-item dropdown">
+                                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                data-bs-auto-close="outside" aria-expanded="false">Home
+                                            </a>
+                                            <ul className="dropdown-menu">
+                                                <li><a href="index.html" className="dropdown-item"><span>Home 01</span></a></li>
+                                                <li><a href="index-2.html" className="dropdown-item"><span>Home 02</span></a></li>
+                                                <li><a href="index-3.html" className="dropdown-item"><span>Home 03</span></a></li>
+                                                <li><a href="index-4.html" className="dropdown-item"><span>Home 04</span></a></li>
+                                                <li><a href="index-5.html" className="dropdown-item"><span>Home 05</span></a></li>
+                                                <li><a href="index-6.html" className="dropdown-item"><span>Home 06</span></a></li>
+                                                <li><a href="index-7.html" className="dropdown-item"><span>Home 07</span></a></li>
                                             </ul>
+                                        </li>
+                                        <li className="nav-item dropdown mega-dropdown-sm">
+                                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Listing
+                                            </a>
+                                            <ul className="dropdown-menu">
+                                                <li className="row gx-1">
+                                                    <div className="col-lg-4">
+                                                        <div className="menu-column">
+                                                            <h6 className="mega-menu-title">Listing Type</h6>
+                                                            <ul className="style-none mega-dropdown-list">
+                                                                <li><a href="listing_01.html" className="dropdown-item"><span>Grid Sidebar-1</span></a></li>
+                                                                <li><a href="listing_05.html" className="dropdown-item"><span>Grid Sidebar-2</span></a></li>
+                                                                <li><a href="listing_02.html" className="dropdown-item"><span>List Sidebar-1</span></a></li>
+                                                                <li><a href="listing_06.html" className="dropdown-item"><span>List Sidebar-2</span></a></li>
+                                                                <li><a href="listing_03.html" className="dropdown-item"><span>Grid Top Filter-1</span></a></li>
+                                                                <li><a href="listing_07.html" className="dropdown-item"><span>Grid Top Filter-2</span></a></li>
+                                                                <li><a href="listing_04.html" className="dropdown-item"><span>List Top Filter-1</span></a></li>
+                                                                <li><a href="listing_08.html" className="dropdown-item"><span>List Top Filter-2</span></a></li>
+                                                                <li><a href="listing_09.html" className="dropdown-item"><span>Grid Banner Filter-1</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-4">
+                                                        <div className="menu-column">
+                                                            <h6 className="mega-menu-title">Listing Type</h6>
+                                                            <ul className="style-none mega-dropdown-list">
+                                                                <li><a href="listing_11.html" className="dropdown-item"><span>Grid Banner Filter-2</span></a></li>
+                                                                <li><a href="listing_10.html" className="dropdown-item"><span>List Banner Filter-1</span></a></li>
+                                                                <li><a href="listing_12.html" className="dropdown-item"><span>List Banner Filter-2</span></a></li>
+                                                                <li><a href="listing_13.html" className="dropdown-item"><span>Grid Fullwidth</span></a></li>
+                                                                <li><a href="listing_14.html" className="dropdown-item"><span>Grid Fullwidth Map-1</span></a></li>
+                                                                <li><a href="listing_16.html" className="dropdown-item"><span>Grid Fullwidth Map-2</span></a></li>
+                                                                <li><a href="listing_15.html" className="dropdown-item"><span>List Fullwidth Map-1</span></a></li>
+                                                                <li><a href="listing_17.html" className="dropdown-item"><span>List Fullwidth Map-2</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-4">
+                                                        <div className="menu-column">
+                                                            <h6 className="mega-menu-title">Single Listing</h6>
+                                                            <ul className="style-none mega-dropdown-list">
+                                                                <li><a href="listing_details_01.html" className="dropdown-item"><span>Listing Details-1</span></a></li>
+                                                                <li><a href="listing_details_02.html" className="dropdown-item"><span>Listing Details-2</span></a></li>
+                                                                <li><a href="listing_details_03.html" className="dropdown-item"><span>Listing Details-3</span></a></li>
+                                                                <li><a href="listing_details_04.html" className="dropdown-item"><span>Listing Details-4</span></a></li>
+                                                                <li><a href="listing_details_05.html" className="dropdown-item"><span>Listing Details-5</span></a></li>
+                                                                <li><a href="listing_details_06.html" className="dropdown-item"><span>Listing Details-6</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li className="nav-item dropdown mega-dropdown-sm">
+                                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                data-bs-auto-close="outside" aria-expanded="false">Pages
+                                            </a>
+                                            <ul className="dropdown-menu">
+                                                <li className="row gx-1">
+                                                    <div className="col-lg-4">
+                                                        <div className="menu-column">
+                                                            <h6 className="mega-menu-title">Essential</h6>
+                                                            <ul className="style-none mega-dropdown-list">
+                                                                <li><a href="about_us_01.html" className="dropdown-item"><span>About us -1</span></a></li>
+                                                                <li><a href="about_us_02.html" className="dropdown-item"><span>About us -2</span></a></li>
+                                                                <li><a href="agency.html" className="dropdown-item"><span>Agency</span></a></li>
+                                                                <li><a href="agency_details.html" className="dropdown-item"><span>Agency Details</span></a></li>
+                                                                <li><a href="agent.html" className="dropdown-item"><span>Agent</span></a></li>
+                                                                <li><a href="agent_details.html" className="dropdown-item"><span>Agent Details</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-4">
+                                                        <div className="menu-column">
+                                                            <h6 className="mega-menu-title">Features</h6>
+                                                            <ul className="style-none mega-dropdown-list">
+                                                                <li><a href="project_01.html" className="dropdown-item"><span>Project -1</span></a></li>
+                                                                <li><a href="project_02.html" className="dropdown-item"><span>Project -2</span></a></li>
+                                                                <li><a href="project_03.html" className="dropdown-item"><span>Project -3</span></a></li>
+                                                                <li><a href="project_04.html" className="dropdown-item"><span>Project -4</span></a></li>
+                                                                <li><a href="project_details_01.html" className="dropdown-item"><span>Project Details</span></a></li>
+                                                                <li><a href="service_01.html" className="dropdown-item"><span>Services -1</span></a></li>
+                                                                <li><a href="service_02.html" className="dropdown-item"><span>Services -2</span></a></li>
+                                                                <li><a href="service_details.html" className="dropdown-item"><span>Service Details</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-lg-4">
+                                                        <div className="menu-column">
+                                                            <h6 className="mega-menu-title">Others</h6>
+                                                            <ul className="style-none mega-dropdown-list">
+                                                                <li><a href="compare.html" className="dropdown-item"><span>Property Compare</span></a></li>
+                                                                <li><a href="pricing_01.html" className="dropdown-item"><span>Pricing -1</span></a></li>
+                                                                <li><a href="pricing_02.html" className="dropdown-item"><span>Pricing -2</span></a></li>
+                                                                <li><a href="contact.html" className="dropdown-item"><span>Contact Us</span></a></li>
+                                                                <li><a href="faq.html" className="dropdown-item"><span>FAQ's</span></a></li>
+                                                                <li><a href="404.html" className="dropdown-item"><span>404-Error</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li className="nav-item dropdown">
+                                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                data-bs-auto-close="outside" aria-expanded="false">Blog
+                                            </a>
+                                            <ul className="dropdown-menu">
+                                                <li><a href="blog_01.html" className="dropdown-item"><span>Blog Grid</span></a></li>
+                                                <li><a href="blog_02.html" className="dropdown-item"><span>Blog List</span></a></li>
+                                                <li><a href="blog_03.html" className="dropdown-item"><span>Blog 2 column</span></a></li>
+                                                <li><a href="blog_details.html" className="dropdown-item"><span>Blog Details</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li className="d-md-none ps-2 pe-2 mt-20">
+                                            <a href="dashboard/add-property.html" className="btn-two w-100" target="_blank"><span>Add Listing</span> <i className="fa-thin fa-arrow-up-right"></i></a>
                                         </li>
                                     </ul>
                                 </div>
-
-                                <div className="header-dropdown d-none d-md-block" style={{ marginLeft: "30px" }}>
-                                    <form action="#">
-                                        <div className="select-wrap nice-select-active">
-                                            <select className='form-select'>
-                                                <option value="Category">Category</option>
-                                                <option value="Category">Web Development</option>
-                                                <option value="Category">Software</option>
-                                                <option value="Category">UI/UX Design</option>
-                                                <option value="Category">Data Science</option>
-                                                <option value="Category">Artificial Int</option>
-                                                <option value="Category">Miscellaneous</option>
-                                            </select>
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <div className="open-menu-bar d-xl-none d-inline-block" onClick={toggleShow}>
-                                    <div className="bar-1"></div>
-                                    <div className="bar-2"></div>
-                                    <div className="bar-3"></div>
-                                </div>
-                            </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </header>
+
+
+           <Login showModal={showModal} setShowModal={setShowModal}/>
 
             <Offcanvas show={show} onHide={handleClose} placement='end'>
                 <Offcanvas.Header closeButton>
@@ -381,9 +314,7 @@ const Header = () => {
                             <div className="info-widget">
                                 <h4 className="offset-title mb-20">About Us</h4>
                                 <p className="mb-30">
-                                    But I must explain to you how all this mistaken idea of denouncing pleasure and
-                                    praising pain was born and will give you a complete account of the system and
-                                    expound the actual teachings of the great explore
+                                    Rediger is a renowned group of individual professionals that has established itself as a market leader in guiding corporate houses and entrepreneurs. We specialize in Company Incorporation, Tax, and all other services rendered by professionals independently.
                                 </p>
                             </div>
                         </div>
@@ -391,29 +322,31 @@ const Header = () => {
                             <div className="info-widget info-widget2">
                                 <h4 className="offset-title mb-20">Contact Info</h4>
                                 <p>
-                                    <i className="fal fa-address-book"></i>
-                                    23/A, Miranda City Likaoli Prikano, Dope</p>
+                                    <i className="fal fa-address-book mx-2"></i>
+                                    Pratima Arcade, Flat No:201, KPHB VI Phase, Hyderabad Nexus Lane, Land Mark: Karnataka Bank (in the Same Building 2nd Floor), KV Rangareddy District, Hyderabad, Telangana-500085</p>
                                 <p>
-                                    <i className="fal fa-phone"></i>
-                                    +0989 7876 9865 9
+                                    <i className="fal fa-phone mx-2"></i>
+                                    +91-9032225574
                                 </p>
                                 <p>
-                                    <i className="fal fa-envelope-open"></i>
-                                    info@example.com
+                                    <i className="fal fa-envelope-open mx-2"></i>
+                                    Vijendra@rediger.in
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="header-buttons d-flex justify-content-center mt-20">
                         <a href="login.html">
-                            <Image src={user} alt="icon" />
+                            {/* <Image src={user} alt="icon" /> */}
                         </a>
                         <a href="cart.html">
-                            <Image src={cart} alt="icon" />
+                            {/* <Image src={cart} alt="icon" /> */}
                         </a>
                     </div>
                 </Offcanvas.Body>
             </Offcanvas>
+
+
 
         </>
     )
