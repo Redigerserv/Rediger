@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 
+import loadingLogo from '../../assets/images/Rediger/favicon.png'
 
 const Preloader = () => {
 
@@ -19,9 +20,9 @@ const Preloader = () => {
         <>
             <div className={`preloader ${isPreloader ? 'd-none' : ''}`} >
                 <div id="ctn-preloader" className="ctn-preloader">
-                    <div className="icon">
+                    <div className="icon"><Image src={loadingLogo} alt="" className="m-auto d-block" width="60" />
                     </div>
-                    <div className="txt-loading">
+                    <div className="txt-loading" style={{fontSize:"30px" , fontWeight:'600'}}>
                         <span data-text-preloader="R" className="letters-loading">
                             R
                         </span>

@@ -41,8 +41,8 @@ const ScrollToTopButton = () => {
     //   <i className="fa-regular fa-arrow-up-from-bracket"></i>
     // </a>
     
-		<button class="scroll-top" style={{display: isVisible ? '' : 'none'}} onClick={scrollToTop}>
-    <i class="bi bi-arrow-up-short"></i>
+		<button className="scroll-top" style={{display: isVisible ? '' : 'none'}} onClick={scrollToTop}>
+    <i className="bi bi-arrow-up-short"></i>
   </button>
 
   );
