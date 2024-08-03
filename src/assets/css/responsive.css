@@ -770,3 +770,9 @@
   .dashboard-body .dashboard-header .profile-notification .dropdown-menu {max-width: 300px; padding: 20px 15px 20px 15px;}
   .dashboard-body .user-avatar-setting .upload-btn,.dashboard-body .user-avatar-setting .delete-btn {font-size: 14px;}
 }
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .theme-main-menu .nav-item .nav-link {
+    font-size: 14px;
+  }
+}
