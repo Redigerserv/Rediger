@@ -3,11 +3,12 @@ import { Modal } from "react-bootstrap";
 
 import googleImg from "../../assets/images/icon/google.png"
 import facebookImg from "../../assets/images/icon/facebook.png"
+import Link from "next/link";
 
-const Login = ({showModal,setShowModal }: any) => {
-    return(
+const Login = ({ showModal, setShowModal }: any) => {
+    return (
         <>
-         <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+            <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
                 <div className="container">
                     <div className="user-data-form modal-content">
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={() => setShowModal(false)}></button>
@@ -24,7 +25,7 @@ const Login = ({showModal,setShowModal }: any) => {
                                 <div className="tab-pane show active" role="tabpanel" id="fc1">
                                     <div className="text-center mb-20">
                                         <h2>Welcome Back!</h2>
-                                        <p className="fs-20 color-dark">Still don't have an account? <a href="#">Sign up</a></p>
+                                        <p className="fs-20 color-dark">Still don't have an account? <Link href="/">Sign up</Link></p>
                                     </div>
                                     <form action="#">
                                         <div className="row">
@@ -38,17 +39,19 @@ const Login = ({showModal,setShowModal }: any) => {
                                                 <div className="input-group-meta position-relative mb-20">
                                                     <label>Password*</label>
                                                     <input type="password" placeholder="Enter Password" className="pass_log_id" />
-                                                    <span className="placeholder_icon"><span className="passVicon"><img src="images/icon/icon_68.svg" alt="" /></span></span>
+                                                    <span className="placeholder_icon">
+                                                        {/* <span className="passVicon"><img src="images/icon/icon_68.svg" alt="" /></span> */}
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div className="col-12">
-                                                <div className="agreement-checkbox d-flex justify-content-between align-items-center">
+                                                {/* <div className="agreement-checkbox d-flex justify-content-between align-items-center">
                                                     <div>
                                                         <input type="checkbox" id="remember" />
                                                         <label htmlFor="remember">Keep me logged in</label>
                                                     </div>
                                                     <a href="#">Forget Password?</a>
-                                                </div>
+                                                </div> */}
                                             </div>
                                             <div className="col-12">
                                                 <button className="btn-two w-100 text-uppercase d-block mt-20">Login</button>
@@ -98,7 +101,7 @@ const Login = ({showModal,setShowModal }: any) => {
                                 </div>
                             </div>
 
-                            <div className="d-flex align-items-center mt-30 mb-10">
+                            {/* <div className="d-flex align-items-center mt-30 mb-10">
                                 <div className="line"></div>
                                 <span className="pe-3 ps-3 fs-6">OR</span>
                                 <div className="line"></div>
@@ -116,7 +119,7 @@ const Login = ({showModal,setShowModal }: any) => {
                                         <span className="ps-3">Signup with Facebook</span>
                                     </a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

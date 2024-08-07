@@ -4,10 +4,16 @@ import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick"
 // import mainbgImg from "../assets/images/lazy.svg"
-import mainbgImg from "../assets/images/assets/ils_01.svg"
-import homeImg from "../assets/images/icon/icon_01.svg"
-import service2 from "../assets/images/icon/icon_02.svg"
-import service3 from "../assets/images/icon/icon_03.svg"
+import mainbgImg from "../assets/images/portalRediger/image2.jpg"
+import homeImg from "../assets/images/portalRediger/icon1.png"
+import service2 from "../assets/images/portalRediger/icon2.png"
+import service3 from "../assets/images/portalRediger/icon3.png"
+import service4 from "../assets/images/portalRediger/icon4.png"
+import service5 from "../assets/images/portalRediger/icon5.png"
+import service6 from "../assets/images/portalRediger/icon6.png"
+import service7 from "../assets/images/portalRediger/icon7.png"
+import service8 from "../assets/images/portalRediger/icon8.png"
+import service9 from "../assets/images/portalRediger/icon9.png"
 import shape1 from "../assets/images/shape/shape_01.svg"
 import screen01 from "../assets/images/assets/screen_01.png"
 
@@ -101,12 +107,12 @@ const Home = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <div className="hero-banner-one bg-pink z-1 pt-225 xl-pt-200 pb-250 xl-pb-150 lg-pb-100 position-relative">
+            <div className="hero-banner-one  z-1 pt-225 xl-pt-200 pb-400 xl-pb-150 lg-pb-100 position-relative">
                 <div className="container position-relative">
                     <div className="row">
                         <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 m-auto">
                             <h1 className="hero-heading text-center wow fadeInUp">Your Go-To Platform for Top Professional Services in India <span className="d-inline-block position-relative"><img src="images/lazy.svg" data-src="images/shape/shape_01.svg" alt="" className="lazy-img" /></span></h1>
-                            <p className="fs-24 color-dark text-center pt-35 pb-35 wow fadeInUp" data-wow-delay="0.1s">Bridging you to experts for easy legal tax, and compliance management. Expert connections for hassle-free legal, tax, and compliance solutions.</p>
+                            <p className="fs-24 color-dark text-center pt-35 pb-35 wow fadeInUp" data-wow-delay="0.1s">Bridging you to experts for easy legal tax, and compliance management. Expert connections for hassle-free legal tax, and compliance solutions.</p>
                         </div>
                     </div>
                     <div className="row">
@@ -130,7 +136,7 @@ const Home = () => {
             </div>
 
 
-            <div className="feedback-section-one position-relative z-1 pt-70 md-pt-50 pb-60 md-pb-60">
+            {/* <div className="feedback-section-one position-relative z-1 pt-0 md-pt-50 pb-60 md-pb-60">
                 <div className="main-content m-auto">
                     <Slider {...settings}>
                         <div>
@@ -195,10 +201,10 @@ const Home = () => {
                         </div>
                     </Slider>
                 </div>
-            </div>
+            </div> */}
 
 
-            <div className="block-feature-one mt-150 xl-mt-50">
+            <div className="block-feature-one mt-65 xl-mt-50">
                 <div className="container">
                     <div className="title-one text-center mb-50 xl-mb-30 lg-mb-20 wow fadeInUp">
                         <h3> <span>Our Services <Image src={shape1} alt="" className="lazy-img" /></span></h3>
@@ -209,67 +215,67 @@ const Home = () => {
                             <div className="card-style-one text-center wow fadeInUp mt-40">
                                 <Image src={homeImg} alt="" className="lazy-img m-auto h-auto icon" />
                                 <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Private Limited Company</div>
-                                <p className="fs-24 ps-xxl-4 pe-xxl-4">Explore Private Limited Company and uncover your ideal working space.</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Get expert assistance for Indian company registration, including SPICe-INC-32, eMoA-INC-33, and eAOA-INC-34 filings on MCA, along with DSC provisions, all completed in one go for your company.</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
                                 <Image src={service2} alt="" className="lazy-img  h-auto m-auto icon" />
                                 <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Fssai Registration</div>
-                                <p className="fs-24 ps-xxl-3 pe-xxl-3">Discover a rental you'll love on homy, thanks to 35+ filters and tailored keywords.</p>
+                                <p className="fs-16 ps-xxl-3 pe-xxl-3">Our FSSAI experts recommend the right license for your business: basic, state, or central. Benefit from quick document filing, expert support, and registration. Renew or Modify Your License in <b>48 Hours</b></p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
                                 <Image src={service3} alt="" className="lazy-img  h-auto m-auto icon" />
                                 <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Provident Fund</div>
-                                <p className="fs-24 ps-xxl-4 pe-xxl-4">List, sell, thrive – with our top-notch real estate agency. It’s super easy & fun.</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Fastest PF registration turnaround time in India with Guaranteed application filing in 3 days or get a full refund T&C* . Track the progress of your application anytime, anywhere</p>
                             </div>
                         </div>
                     </div>
                     <div className="row gx-xl-5">
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40">
-                                <Image src={homeImg} alt="" className="lazy-img m-auto h-auto icon" />
+                                <Image src={service4} alt="" className="lazy-img m-auto h-auto icon" />
                                 <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Msme Registration</div>
-                                <p className="fs-24 ps-xxl-4 pe-xxl-4">Explore homy’s 2 million+ homes and uncover your ideal living space.</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Give your startup government recognition. Opt for quick MSME online registration. Documentation and filing by top Legal experts T&C* Track the progress of your application anytime, anywhere</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
-                                <Image src={service2} alt="" className="lazy-img  h-auto m-auto icon" />
+                                <Image src={service5} alt="" className="lazy-img  h-auto m-auto icon" />
                                 <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">One person Company</div>
-                                <p className="fs-24 ps-xxl-3 pe-xxl-3">Discover a rental you'll love on homy, thanks to 35+ filters and tailored keywords.</p>
+                                <p className="fs-16 ps-xxl-3 pe-xxl-3">Fully expert-assisted company registration process. Our packages include <b>DIN, PAN, DSC, MOA, AOA and SPICE+</b> Compliance. Start your One Person Company Registration</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
-                                <Image src={service3} alt="" className="lazy-img  h-auto m-auto icon" />
+                                <Image src={service6} alt="" className="lazy-img  h-auto m-auto icon" />
                                 <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Partnership Firm</div>
-                                <p className="fs-24 ps-xxl-4 pe-xxl-4">List, sell, thrive – with our top-notch real estate agency. It’s super easy & fun.</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Partnership firm registration deed drafted within <b>3 days,</b> completely online & hasslefree Transparent process through follow-up and regular updates</p>
                             </div>
                         </div>
                     </div>
                     <div className="row gx-xl-5">
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40">
-                                <Image src={homeImg} alt="" className="lazy-img m-auto h-auto icon" />
+                                <Image src={service7} alt="" className="lazy-img m-auto h-auto icon" />
                                 <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Limited Liability Company</div>
-                                <p className="fs-24 ps-xxl-4 pe-xxl-4">Explore homy’s 2 million+ homes and uncover your ideal living space.</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Application submission  Guaranteed within <b>14 days,</b> completely online & hasslefree. Transparent registration process starting</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
-                                <Image src={service2} alt="" className="lazy-img  h-auto m-auto icon" />
+                                <Image src={service8} alt="" className="lazy-img  h-auto m-auto icon" />
                                 <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Import and Export</div>
-                                <p className="fs-24 ps-xxl-3 pe-xxl-3">Discover a rental you'll love on homy, thanks to 35+ filters and tailored keywords.</p>
+                                <p className="fs-16 ps-xxl-3 pe-xxl-3">Guaranteed submission of IEC application within two days in the DGFT office. Make your business global. Apply from anywhere in India with IEC code</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
-                                <Image src={service3} alt="" className="lazy-img  h-auto m-auto icon" />
+                                <Image src={service9} alt="" className="lazy-img  h-auto m-auto icon" />
                                 <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Sole Proprietorship</div>
-                                <p className="fs-24 ps-xxl-4 pe-xxl-4">List, sell, thrive – with our top-notch real estate agency. It’s super easy & fun.</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Fastest registration turnaround time in India with Guaranteed document upload to the government portal under 7 days or get a full refund.Transparent process.</p>
                             </div>
                         </div>
                     </div>
@@ -283,15 +289,16 @@ const Home = () => {
                         <div className="col-xxl-7 col-md-6 d-flex wow fadeInLeft">
                             <div className="block-one w-100 h-100">
                                 <div className="position-relative z-1 h-100">
-                                    <h3 className="mb-55">Secure your family's dream home.</h3>
-                                    <a className="fancybox video-icon d-flex align-items-center justify-content-center rounded-circle ms-3" data-fancybox="" href="https://www.youtube.com/embed/aXFSJTjVjw0">
-                                        <i className="fa-solid fa-play"></i>
-                                    </a>
+                                    <h3 className="mb-55" style={{ color: "#fff" }}>Consultation from Industry Experts.</h3>
+                                    {/* <a className="fancybox video-icon d-flex align-items-center justify-content-center rounded-circle ms-3" data-fancybox="" href="https://www.youtube.com/embed/aXFSJTjVjw0"> */}
+                                    {/* <i className="fa-solid fa-play"></i> */}
+                                    {/* <Image src={handImg} alt="icon"/> */}
+                                    {/* </a> */}
                                     <div className="card-box text-center">
-                                        <h3 className="main-count fw-500">0<span className="counter">7</span>+</h3>
+                                        <h3 className="main-count fw-500"><span className="counter">10</span>+</h3>
                                         <p className="fs-20">Years Experience <br />with proud.</p>
                                     </div>
-                                    <Image src={screen01} alt="" className="lazy-img shapes screen_01" />
+                                    {/* <Image src={screen01} alt="" className="lazy-img shapes screen_01" /> */}
                                 </div>
                             </div>
                         </div>
@@ -299,8 +306,10 @@ const Home = () => {
                             <div className="block-two">
                                 <div className="bg-wrapper">
                                     <h4>Who we are?</h4>
-                                    <p className="fs-22 mt-20">Your premier partner in real estate. <br /> Transforming properties into dreams. Let us guide you home with expertise.</p>
-                                    <div className="counter-wrapper ps-xl-3 pb-30 mt-45 mb-50">
+                                    <p className="fs-16 mt-20">Hailing from Hyderabad, India, Vijendra & Co was incorporated under the leading light of highly experienced and veteran professionals. The company came into existence with a view to provide broad spectrum of quality professional services in the domain of Corporate Management Consultancy.<br />
+                                        Over the years, with utmost dedication, we have been successfully serving the clientele with the unparalleled services that has helped us to boast our prominent position in the market.
+                                    </p>
+                                    {/* <div className="counter-wrapper ps-xl-3 pb-30 mt-45 mb-50">
                                         <div className="row">
                                             <div className="col-6">
                                                 <div className="counter-block-one mt-20">
@@ -315,15 +324,18 @@ const Home = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <ul className="list-style-one fs-22 color-dark style-none">
-                                        <li>Loan & low Interest facility</li>
-                                        <li>Over 100k+ property & update regularly</li>
-                                        <li>Expert agent consultation</li>
+                                        <li>CERTIFICATION</li>
+                                        <li>MANAGEMENT SERVICES</li>
+                                        <li>COMPANY LAW</li>
+                                        <li>FINANCIAL & TAXATION</li>
+                                        <li>ADVISORY SERVICES</li>
+                                        <li>COMPLIANCE SERVICES</li>
                                     </ul>
                                     <div className="d-inline-flex flex-wrap align-items-center mt-15 md-mt-10">
-                                        <a href="about_us_01.html" className="btn-two mt-20 me-4"><span>More Details</span></a>
-                                        <a href="contact.html" className="btn-three mt-20"><span>Request a Callback</span> <i className="fa-light fa-arrow-right-long"></i></a>
+                                        <Link href="/" className="btn-two mt-20 me-4"><span>More Details</span></Link>
+                                        <Link href="/" className="btn-three mt-20"><span>Request a Callback</span> <i className="fa-light fa-arrow-right-long"></i></Link>
                                     </div>
                                 </div>
                             </div>
@@ -333,7 +345,7 @@ const Home = () => {
             </div>
 
 
-            <div className="fancy-banner-one position-relative z-1 pt-160 xl-pt-140 lg-pt-80 pb-140 xl-pb-120 lg-pb-100">
+            {/* <div className="fancy-banner-one position-relative z-1 pt-160 xl-pt-140 lg-pt-80 pb-140 xl-pb-120 lg-pb-100">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 wow fadeInLeft">
@@ -386,10 +398,10 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
-            <div className="agent-section-one position-relative z-1 mt-150 xl-mt-120">
+            {/* <div className="agent-section-one position-relative z-1 mt-150 xl-mt-120">
                 <div className="container">
                     <div className="position-relative">
                         <div className="title-one mb-85 lg-mb-50 wow fadeInLeft">
@@ -474,9 +486,9 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <div className="block-feature-four mt-170 xl-mt-130 md-mt-40">
+            {/* <div className="block-feature-four mt-170 xl-mt-130 md-mt-40">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 d-flex order-lg-last">
@@ -495,7 +507,6 @@ const Home = () => {
                         </div>
                         <div className="col-lg-6 d-flex">
                             <div className="img-gallery position-relative z-1 w-100 h-100 me-lg-5 wow fadeInLeft">
-                                {/* <div className="img-bg" style="background-image: url(images/media/img_11.jpg);"></div> */}
                                 <div className="img-bg featureFour"></div>
                                 <div className="card-one">
                                     <div className="text text-center z-1">
@@ -508,16 +519,16 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
-            <div className="block-feature-five position-relative z-1 bg-pink pt-100 lg-pt-80 pb-130 xl-pb-100 lg-pb-80 mt-225 xl-mt-200 lg-mt-150">
+            <div className="block-feature-five position-relative z-1 bg-pink pt-100 lg-pt-80 pb-130 xl-pb-100 lg-pb-80 mt-150 xl-mt-200 lg-mt-150">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-8 m-auto">
                             <div className="title-one text-center mb-35 lg-mb-20">
-                                <h3>We’r here to help <br /> you get your <span>dream home<img src="images/lazy.svg" data-src="images/shape/title_shape_07.svg" alt="" className="lazy-img" /></span></h3>
-                                <p className="fs-24 color-dark">It’s easy to start with us with these simple steps</p>
+                                <h3>Security, Confidentiality & Results Fine Home  <br /> <span>–Find Service <Image src={shape1} alt="" className="lazy-img" /></span></h3>
+                                <p className="fs-24 color-dark">Find your required service and make payment.</p>
                             </div>
                         </div>
                     </div>
@@ -534,7 +545,7 @@ const Home = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="card-style-one text-center wow fadeInUp mt-40 arrow position-relative" data-wow-delay="0.1s">
                                         <Image src={icon08} alt="" className="lazy-img m-auto icon" />
-                                        <h5 className="mt-50 lg-mt-30 mb-15">Find Home</h5>
+                                        <h5 className="mt-50 lg-mt-30 mb-15">Find Service</h5>
                                         <p className="pe-xxl-4 ps-xxl-4">Complete your profile with all the info to get attention of client.</p>
                                     </div>
                                 </div>
@@ -542,7 +553,7 @@ const Home = () => {
                                     <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
                                         <Image src={icon09} alt="" className="lazy-img m-auto icon" />
                                         <h5 className="mt-50 lg-mt-30 mb-15">Quick Process</h5>
-                                        <p className="pe-xxl-4 ps-xxl-4">Apply & get your preferable jobs with all the requirements and get it.</p>
+                                        <p className="pe-xxl-4 ps-xxl-4">Our team will coordinate you and update your requirement status.</p>
                                     </div>
                                 </div>
                             </div>
@@ -554,7 +565,7 @@ const Home = () => {
             </div>
 
 
-            <div className="fancy-banner-two position-relative z-1 pt-90 lg-pt-50 pb-90 lg-pb-50">
+            <div className="fancy-banner-two position-relative z-1 pt-90 lg-pt-50 pb-200 lg-pb-50">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
@@ -564,11 +575,11 @@ const Home = () => {
                         </div>
                         <div className="col-lg-6">
                             <div className="form-wrapper me-auto ms-auto me-lg-0">
-                                <form action="#">
+                                <form action="">
                                     <input type="email" placeholder="Email address" />
                                     <button>Get Started</button>
                                 </form>
-                                <div className="fs-16 mt-10 text-white">Already a Agent? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in.</a></div>
+                                {/* <div className="fs-16 mt-10 text-white">Already a Agent? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in.</a></div> */}
                             </div>
                         </div>
                     </div>
@@ -577,18 +588,18 @@ const Home = () => {
 
 
 
-            <div className="fancy-banner-three position-relative text-center z-1 pt-200 xl-pt-150 lg-pt-100 pb-250 xl-pb-200 lg-pb-120">
+            <div className="fancy-banner-three position-relative text-center z-1 pt-300 xl-pt-150 lg-pt-100 pb-400 xl-pb-200 lg-pb-120">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-7 col-md-8 m-auto">
                             <div className="title-one mb-45 md-mb-30">
                                 <h2>Any Inquiry? <span>Feel free<Image src={titleshape08} alt="" className="lazy-img" /></span> To contact Us.</h2>
                             </div>
-                            <a href="contact.html" className="btn-five text-uppercase">SEND MESSAGE</a>
+                            <Link href="/" className="btn-five text-uppercase">SEND MESSAGE</Link>
                         </div>
                     </div>
                 </div>
-                <Image src={ils02} alt="" className="lazy-img shapes h-auto w-100 illustration" />
+                <Image src={mainbgImg} alt="" className="lazy-img shapes h-auto w-100 illustration" />
             </div>
 
 
