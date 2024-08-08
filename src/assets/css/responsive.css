@@ -22,7 +22,7 @@
 
 /*Grid xl Start*/
 @media (max-width: 1399px) { 
-  .btn-two,.btn-one,.btn-ten {font-size: 16px; line-height: 48px;}
+  .btn-two,.btn-one,.btn-ten {font-size: 11px; line-height: 48px;padding: 0;}
   .btn-five,.btn-six {line-height: 50px; padding: 0 30px; font-size: 16px;}
   .btn-three {font-size: 16px;}
   .btn-five.text-uppercase {font-size: 14px;}
@@ -260,7 +260,7 @@
   .btn-thirteen {width: 55px; height: 55px;}
   .theme-main-menu .gap-one {padding: 20px 12px;}
   .theme-main-menu .gap-two {padding: 15px 12px;}
-  .theme-main-menu .nav-item .nav-link {font-size: 16px;}
+  .theme-main-menu .nav-item .nav-link {font-size: 12px;}
   .justify-content-between .navbar {position: static; transform: none;}
   .input-box-one.border-left.border-lg-0 {border:0;}
   .search-wrapper-one .bg-wrapper .search-btn {width: 100%;}

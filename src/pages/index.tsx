@@ -4,7 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick"
 // import mainbgImg from "../assets/images/lazy.svg"
-import mainbgImg from "../assets/images/portalRediger/image2.jpg"
+// import mainbgImg from "../assets/images/portalRediger/1.png"
+// import mainbgImg from "../assets/images/portalRediger/regBG.png"
+import mainbgImg from "../assets/images/portalRediger/regBG.svg"
+import inquiryImg from "../assets/images/portalRediger/image2.jpg"
 import homeImg from "../assets/images/portalRediger/icon1.png"
 import service2 from "../assets/images/portalRediger/icon2.png"
 import service3 from "../assets/images/portalRediger/icon3.png"
@@ -107,7 +110,7 @@ const Home = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <div className="hero-banner-one  z-1 pt-225 xl-pt-200 pb-400 xl-pb-150 lg-pb-100 position-relative">
+            <div className="hero-banner-one  z-1 pt-225 xl-pt-200 pb-463 xl-pb-150 lg-pb-250 position-relative">
                 <div className="container position-relative">
                     <div className="row">
                         <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 m-auto">
@@ -204,11 +207,11 @@ const Home = () => {
             </div> */}
 
 
-            <div className="block-feature-one mt-65 xl-mt-50">
+            <div className="block-feature-one pt-65 xl-pt-60" style={{backgroundColor:"#f6f7f9"}}>
                 <div className="container">
                     <div className="title-one text-center mb-50 xl-mb-30 lg-mb-20 wow fadeInUp">
                         <h3> <span>Our Services <Image src={shape1} alt="" className="lazy-img" /></span></h3>
-                        <p className="fs-24">Your trusted real estate partner in every transaction.</p>
+                        {/* <p className="fs-24">Your trusted real estate partner in every transaction.</p> */}
                     </div>
                     <div className="row gx-xl-5">
                         <div className="col-md-4">
@@ -522,7 +525,7 @@ const Home = () => {
             </div> */}
 
 
-            <div className="block-feature-five position-relative z-1 bg-pink pt-100 lg-pt-80 pb-130 xl-pb-100 lg-pb-80 mt-150 xl-mt-200 lg-mt-150">
+            <div className="block-feature-five position-relative z-1 pt-100 lg-pt-80 pb-130 xl-pb-100 lg-pb-80 mt-150 xl-mt-200 lg-mt-150">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-8 m-auto">
@@ -599,7 +602,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <Image src={mainbgImg} alt="" className="lazy-img shapes h-auto w-100 illustration" />
+                <Image src={inquiryImg} alt="" className="lazy-img shapes h-auto w-100 illustration" />
             </div>
 
 
