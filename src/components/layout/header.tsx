@@ -14,6 +14,7 @@ import { IoSettingsOutline } from "react-icons/io5"
 import Accordion from 'react-bootstrap/Accordion';
 import { MdOutlineWork } from "react-icons/md";
 
+import backImg from "../../assets/images/portalRediger/blueimage.png"
 
 
 // import cart from "../../assets/img/icon/cart.svg"
@@ -31,6 +32,8 @@ const Header = () => {
 
     const [isSticky, setIsSticky] = useState(false);
     const headerRef = useRef(null);
+
+    const b = '/blueimage.png'
 
     useEffect(() => {
         const handleScroll = () => {
@@ -53,14 +56,14 @@ const Header = () => {
     return (
 
         <>
-            <header className={`theme-main-menu menu-overlay menu-style-one sticky-menu ${isSticky ? 'fixed' : ''}`} ref={headerRef} >
+            <header className={`theme-main-menu menu-overlay menu-style-one backimg sticky-menu ${isSticky ? 'fixed' : ''}`} ref={headerRef}  >
 
                 <div className="alert-wrapper text-center">
                     {/* <p className="fs-16 m0 text-white">The <a href="listing_01.html" className="fw-500">flash sale</a> go on. The offer will end in — <span>This Sunday</span></p> */}
                     <p className="fs-16 m0 text-white">Last-minute ITR filing? Don't worry, we've got you covered — <span>Let our experts handle it — <Link href="" className="fw-500">File today!"</Link></span></p>
                 </div>
 
-                <div className="inner-content gap-one">
+                <div className="inner-content gap-one" >
                     <div className="top-header position-relative">
                         <div className="d-flex align-items-center justify-content-between">
                             <div className="logo order-lg-0">
@@ -184,7 +187,10 @@ const Header = () => {
                                 </div>
                             </nav>
                         </div>
+
                     </div>
+                    {/* <Image src={backImg} alt="" className="lazy-img shapes w-100 illustration" style={{ height: "auto" }} /> */}
+
                 </div>
             </header>
 
