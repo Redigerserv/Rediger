@@ -476,6 +476,8 @@ ul.slick-dots {
   background-image: url(../assets/images/media/img_11.jpg);
 }
 
-.backimg{
-/* background-color: #f6f7f9 !important; */
+.border-img{
+  border: 2px solid #f3e7e7;
+  border-radius: 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 3px 0px;
 }
