@@ -112,7 +112,7 @@ const Home = () => {
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <div className="">
-            <div className="hero-banner-one  z-1 pt-225 xl-pt-200 pb-340 xl-pb-150 lg-pb-250 position-relative">
+            <div className="hero-banner-one  z-1 pt-225 xl-pt-200 pb-444 xl-pb-150 lg-pb-250 position-relative">
                 <div className="container position-relative">
                     <div className="row">
                         <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 m-auto">
@@ -137,7 +137,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <Image src={mainbgImg} alt="" className="lazy-img shapes w-100 illustration" />
+                <Image src={mainbgImg} alt="" className="lazy-img shapes w-100 illustration" style={{height:"auto"}} />
             </div>
             </div>
        
