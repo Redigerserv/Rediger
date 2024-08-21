@@ -4,7 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick"
 // import mainbgImg from "../assets/images/lazy.svg"
-import mainbgImg from "../assets/images/portalRediger/1.png"
+// import mainbgImg from "../assets/images/portalRediger/1.png"
+import mainbgImg from "../assets/images/portalRediger/mainBGImage.jpeg"
+
 // import mainbgImg from "../assets/images/portalRediger/regBG.png"
 // import mainbgImg from "../assets/images/portalRediger/regBG.svg"
 
@@ -28,9 +30,9 @@ import agent04 from "../assets/images/agent/img_04.jpg"
 import agent05 from "../assets/images/agent/img_05.jpg"
 import screen12 from "../assets/images/assets/screen_12.png"
 
-import icon07 from "../assets/images/icon/icon_07.svg"
-import icon08 from "../assets/images/icon/icon_08.svg"
-import icon09 from "../assets/images/icon/icon_09.svg"
+import icon07 from "../assets/images/portalRediger/createAccount.jpeg"
+import icon08 from "../assets/images/portalRediger/findService.jpeg"
+import icon09 from "../assets/images/portalRediger/quickProcess.jpeg"
 
 
 import titleshape08 from "../assets/images/shape/title_shape_08.svg"
@@ -112,7 +114,7 @@ const Home = () => {
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <div className="">
-            <div className="hero-banner-one  z-1 pt-225 xl-pt-200 pb-444 xl-pb-150 lg-pb-250 position-relative">
+            <div className="hero-banner-one  z-1 pt-225 xl-pt-200  position-relative">
                 <div className="container position-relative">
                     <div className="row">
                         <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 m-auto">
@@ -137,7 +139,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <Image src={mainbgImg} alt="" className="lazy-img shapes w-100 illustration" style={{height:"auto"}} />
+                <Image src={mainbgImg} alt="" className="lazy-img shapes w-100 illustration" />
             </div>
             </div>
        
@@ -544,21 +546,21 @@ const Home = () => {
                             <div className="row gx-xl-5 justify-content-center">
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="card-style-one text-center wow fadeInUp mt-40">
-                                        <Image src={icon07} alt="" className="lazy-img m-auto icon" />
+                                        <Image src={icon07} alt="" className="lazy-img m-auto icon border-img" style={{height:"auto"}} />
                                         <h5 className="mt-50 lg-mt-30 mb-15">Create Account</h5>
                                         <p className="pe-xxl-4 ps-xxl-4">It’s very easy to open an account and start your journey.</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="card-style-one text-center wow fadeInUp mt-40 arrow position-relative" data-wow-delay="0.1s">
-                                        <Image src={icon08} alt="" className="lazy-img m-auto icon" />
+                                        <Image src={icon08} alt="" className="lazy-img m-auto icon border-img" style={{height:"auto"}}/>
                                         <h5 className="mt-50 lg-mt-30 mb-15">Find Service</h5>
                                         <p className="pe-xxl-4 ps-xxl-4">Complete your profile with all the info to get attention of client.</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
-                                        <Image src={icon09} alt="" className="lazy-img m-auto icon" />
+                                        <Image src={icon09} alt="" className="lazy-img m-auto icon border-img" style={{height:"auto"}} />
                                         <h5 className="mt-50 lg-mt-30 mb-15">Quick Process</h5>
                                         <p className="pe-xxl-4 ps-xxl-4">Our team will coordinate you and update your requirement status.</p>
                                     </div>

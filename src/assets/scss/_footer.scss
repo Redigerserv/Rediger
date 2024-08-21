@@ -1,10 +1,12 @@
 // Footer One
 .footer-one {
     .footer-intro {
-        background: url(../images/shape/shape_09.svg) no-repeat center;
+        // background: url(../images/shape/shape_09.svg) no-repeat center;
         background-size: cover;
         padding: 30px;
-        background-color: blanchedalmond;
+        border: 2px solid #f56d32;
+        border-radius: 30px;
+        // background-color: blanchedalmond;
         .bg-wrapper {
             background: #fff;
             padding: 50px 30px;
