@@ -5,6 +5,7 @@ import Footer from "./footer"
 import Header from "./header"
 import ScrollToTopButton from "../shared/scrollToTopButton"
 import Preloader from "./preloader"
+import Chatbot from "../shared/chatbot"
 
 
 
@@ -21,6 +22,7 @@ const Layout = ({ children }: { children: JSX.Element }): JSX.Element => {
       <main className="">{children}</main>
       <Footer />
       <ScrollToTopButton />
+      <Chatbot/>
     </div>
     
     </>

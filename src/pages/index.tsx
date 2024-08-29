@@ -139,7 +139,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <Image src={mainbgImg} alt="" className="lazy-img shapes w-100 illustration" />
+                <Image src={mainbgImg} alt="" className="lazy-img shapes w-100 illustration" style={{height:"-webkit-fill-available"}}/>
             </div>
             </div>
        
@@ -223,21 +223,21 @@ const Home = () => {
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40">
                                 <Image src={homeImg} alt="" className="lazy-img m-auto h-auto icon border-img" />
-                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Private Limited Company</div>
+                                <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Private Limited Company</div>
                                 <p className="fs-16 ps-xxl-4 pe-xxl-4">Get expert assistance for Indian company registration, including SPICe-INC-32, eMoA-INC-33, and eAOA-INC-34 filings on MCA, along with DSC provisions, all completed in one go for your company.</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
                                 <Image src={service2} alt="" className="lazy-img  h-auto m-auto icon border-img" />
-                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Fssai Registration</div>
+                                <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Fssai Registration</div>
                                 <p className="fs-16 ps-xxl-3 pe-xxl-3">Our FSSAI experts recommend the right license for your business: basic, state, or central. Benefit from quick document filing, expert support, and registration. Renew or Modify Your License in <b>48 Hours</b></p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
                                 <Image src={service3} alt="" className="lazy-img  h-auto m-auto icon border-img" />
-                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Provident Fund</div>
+                                <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Provident Fund</div>
                                 <p className="fs-16 ps-xxl-4 pe-xxl-4">Fastest PF registration turnaround time in India with Guaranteed application filing in 3 days or get a full refund T&C* . Track the progress of your application anytime, anywhere</p>
                             </div>
                         </div>
@@ -246,21 +246,21 @@ const Home = () => {
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40">
                                 <Image src={service4} alt="" className="lazy-img m-auto h-auto icon border-img" />
-                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Msme Registration</div>
+                                <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Msme Registration</div>
                                 <p className="fs-16 ps-xxl-4 pe-xxl-4">Give your startup government recognition. Opt for quick MSME online registration. Documentation and filing by top Legal experts T&C* Track the progress of your application anytime, anywhere</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
                                 <Image src={service5} alt="" className="lazy-img  h-auto m-auto icon border-img" />
-                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">One person Company</div>
+                                <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">One person Company</div>
                                 <p className="fs-16 ps-xxl-3 pe-xxl-3">Fully expert-assisted company registration process. Our packages include <b>DIN, PAN, DSC, MOA, AOA and SPICE+</b> Compliance. Start your One Person Company Registration</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
                                 <Image src={service6} alt="" className="lazy-img  h-auto m-auto icon border-img" />
-                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Partnership Firm</div>
+                                <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Partnership Firm</div>
                                 <p className="fs-16 ps-xxl-4 pe-xxl-4">Partnership firm registration deed drafted within <b>3 days,</b> completely online & hasslefree Transparent process through follow-up and regular updates</p>
                             </div>
                         </div>
@@ -269,21 +269,21 @@ const Home = () => {
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40">
                                 <Image src={service7} alt="" className="lazy-img m-auto h-auto icon border-img" />
-                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Limited Liability Company</div>
+                                <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Limited Liability Company</div>
                                 <p className="fs-16 ps-xxl-4 pe-xxl-4">Application submission  Guaranteed within <b>14 days,</b> completely online & hasslefree. Transparent registration process starting</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
                                 <Image src={service8} alt="" className="lazy-img  h-auto m-auto icon border-img" />
-                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Import and Export</div>
+                                <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Import and Export</div>
                                 <p className="fs-16 ps-xxl-3 pe-xxl-3">Guaranteed submission of IEC application within two days in the DGFT office. Make your business global. Apply from anywhere in India with IEC code</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
                                 <Image src={service9} alt="" className="lazy-img  h-auto m-auto icon border-img" />
-                                <div className="fs-16 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Sole Proprietorship</div>
+                                <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Sole Proprietorship</div>
                                 <p className="fs-16 ps-xxl-4 pe-xxl-4">Fastest registration turnaround time in India with Guaranteed document upload to the government portal under 7 days or get a full refund.Transparent process.</p>
                             </div>
                         </div>
