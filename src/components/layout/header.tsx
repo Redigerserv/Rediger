@@ -99,9 +99,9 @@ const Header = () => {
                                                 data-bs-auto-close="outside" aria-expanded="false">Start a Business
                                             </a>
                                             <ul className="dropdown-menu">
-                                                <li><Link href="index.html" className="dropdown-item"><span>Private Limited Company</span></Link></li>
-                                                <li><Link href="index-2.html" className="dropdown-item"><span>One Person Company</span></Link></li>
-                                                <li><Link href="index-3.html" className="dropdown-item"><span>Limited Liability Company</span></Link></li>
+                                                <li><Link href={"/services/start-business/privateLimitedCompany"} className="dropdown-item"><span>Private Limited Company</span></Link></li>
+                                                <li><Link href={"/services/start-business/onePersonCompany"} className="dropdown-item"><span>One Person Company</span></Link></li>
+                                                <li><Link href={"/services/start-business/limitedLiabilityCompany"} className="dropdown-item"><span>Limited Liability Company</span></Link></li>
                                                 <li><Link href="index-4.html" className="dropdown-item"><span>Partnership Firm</span></Link></li>
                                                 <li><Link href="index-5.html" className="dropdown-item"><span>Nidhi Company Registration</span></Link></li>
                                                 <li><Link href="index-6.html" className="dropdown-item"><span>Sole Proprietorship</span></Link></li>
@@ -146,7 +146,7 @@ const Header = () => {
                                             </ul>
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="nav-link" href="/" >About Us</Link>
+                                            <Link className="nav-link" href="/aboutUs" >About Us</Link>
                                             {/* <ul className="dropdown-menu">
                                                 <li><a href="index.html" className="dropdown-item"><span>Home 01</span></a></li>
                                                 <li><a href="index-2.html" className="dropdown-item"><span>Home 02</span></a></li>
@@ -158,7 +158,7 @@ const Header = () => {
                                             </ul> */}
                                         </li>
                                         <li className="nav-item">
-                                            <Link className="nav-link" href="/">Contact us</Link>
+                                            <Link className="nav-link" href="/contactUs">Contact us</Link>
                                             {/* <ul className="dropdown-menu">
                                                 <li><a href="index.html" className="dropdown-item"><span>Home 01</span></a></li>
                                                 <li><a href="index-2.html" className="dropdown-item"><span>Home 02</span></a></li>

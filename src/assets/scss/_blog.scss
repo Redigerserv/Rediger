@@ -234,9 +234,11 @@
 // Blog Sidebar
 .blog-sidebar {
     &.dot-bg {
-        background: url(../images/shape/shape_69.svg) no-repeat center;
+        // background: url(../images/shape/shape_69.svg) no-repeat center;
         background-size: cover;
         padding: 30px;
+        border: 2px solid #f56d32;
+        border-radius: 20px;
     }
     .bg-wrapper {
         padding: 30px;

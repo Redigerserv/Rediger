@@ -481,3 +481,69 @@ ul.slick-dots {
   border-radius: 50%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 3px 0px;
 }
+.chatBot {
+  width: 300px;
+  position: fixed;
+  bottom: 54px;
+  left: 41px;
+  z-index: 1051;
+  text-align: center;
+  background: #fff;
+  font-size: 16px;
+  border-radius: 20px 20px 20px 3px;
+  transition: all 0.3s ease-in-out;
+}
+.chatbotIcon{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  position: fixed;
+  bottom: 20px;
+  left: 15px;
+  z-index: 9999;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #FF6725;
+  transition: all 0.3s ease-in-out;
+}
+.sendBtn{
+  background-color: #FF6725 !important;
+  border: none !important;
+}
+.videoBgImg{
+  background-image: url("../assets/images/Rediger/1280x600.jpg");
+}
+.figurebgImg{
+  background-image: url("../assets/images/blog/blog_img_11.jpg")
+}
+
+.list-item {
+  padding: 10px 0 15px;
+}
+
+
+
+  .list-item li:after {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Pro";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1em;
+}
+
+.list-item li {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  position: relative;
+  padding-left: 33px;
+  margin-bottom: 25px;
+}
+
+b{
+  color: #f56d32;
+}

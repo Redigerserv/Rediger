@@ -136,7 +136,7 @@ const Footer = () => {
         // </footer>
         <>
 
-            <div className="footer-one">
+            <div className="footer-one" style={{borderTop:"1px solid #000"}}>
                 <div className="position-relative z-1">
                     <div className="container py-3">
                         <div className="row justify-content-between">
