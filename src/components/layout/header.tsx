@@ -102,7 +102,7 @@ const Header = () => {
                                                 <li><Link href={"/services/start-business/privateLimitedCompany"} className="dropdown-item"><span>Private Limited Company</span></Link></li>
                                                 <li><Link href={"/services/start-business/onePersonCompany"} className="dropdown-item"><span>One Person Company</span></Link></li>
                                                 <li><Link href={"/services/start-business/limitedLiabilityCompany"} className="dropdown-item"><span>Limited Liability Company</span></Link></li>
-                                                <li><Link href="index-4.html" className="dropdown-item"><span>Partnership Firm</span></Link></li>
+                                                <li><Link href={"/services/start-business/partnershipFirm"} className="dropdown-item"><span>Partnership Firm</span></Link></li>
                                                 <li><Link href="index-5.html" className="dropdown-item"><span>Nidhi Company Registration</span></Link></li>
                                                 <li><Link href="index-6.html" className="dropdown-item"><span>Sole Proprietorship</span></Link></li>
                                                 <li><Link href="index-7.html" className="dropdown-item"><span>Section 8 Company or NPO</span></Link></li>

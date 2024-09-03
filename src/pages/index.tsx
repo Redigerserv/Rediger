@@ -130,6 +130,7 @@ const Home = () => {
                                         <div className="">
                                             <div className="input-box-one lg-mt-10">
                                                 <button className="fw-500 tran3s search-btn" onClick={() => setShowModal(true)}>Consult Our Expert</button>
+                                                <button className="fw-500 tran3s search-btn mt-3"><Link href={"/webForm"}>Web Form</Link></button>
                                             </div>
                                         </div>
                                     </div>
@@ -224,21 +225,21 @@ const Home = () => {
                             <div className="card-style-one text-center wow fadeInUp mt-40">
                                 <Image src={homeImg} alt="" className="lazy-img m-auto h-auto icon border-img" />
                                 <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Private Limited Company</div>
-                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Get expert assistance for Indian company registration, including SPICe-INC-32, eMoA-INC-33, and eAOA-INC-34 filings on MCA, along with DSC provisions, all completed in one go for your company.</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4 textAlignLeft">Get expert assistance for Indian company registration, including SPICe-INC-32, eMoA-INC-33, and eAOA-INC-34 filings on MCA, along with DSC provisions, all completed in one go for your company.</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
                                 <Image src={service2} alt="" className="lazy-img  h-auto m-auto icon border-img" />
                                 <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Fssai Registration</div>
-                                <p className="fs-16 ps-xxl-3 pe-xxl-3">Our FSSAI experts recommend the right license for your business: basic, state, or central. Benefit from quick document filing, expert support, and registration. Renew or Modify Your License in <b>48 Hours</b></p>
+                                <p className="fs-16 ps-xxl-3 pe-xxl-3 textAlignLeft">Our FSSAI experts recommend the right license for your business: basic, state, or central. Benefit from quick document filing, expert support, and registration. Renew or Modify Your License in <b>48 Hours</b></p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
                                 <Image src={service3} alt="" className="lazy-img  h-auto m-auto icon border-img" />
                                 <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Provident Fund</div>
-                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Fastest PF registration turnaround time in India with Guaranteed application filing in 3 days or get a full refund T&C* . Track the progress of your application anytime, anywhere</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4 textAlignLeft">Fastest PF registration turnaround time in India with Guaranteed application filing in 3 days or get a full refund T&C* . Track the progress of your application anytime, anywhere</p>
                             </div>
                         </div>
                     </div>
@@ -247,21 +248,21 @@ const Home = () => {
                             <div className="card-style-one text-center wow fadeInUp mt-40">
                                 <Image src={service4} alt="" className="lazy-img m-auto h-auto icon border-img" />
                                 <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Msme Registration</div>
-                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Give your startup government recognition. Opt for quick MSME online registration. Documentation and filing by top Legal experts T&C* Track the progress of your application anytime, anywhere</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4 textAlignLeft">Give your startup government recognition. Opt for quick MSME online registration. Documentation and filing by top Legal experts T&C* Track the progress of your application anytime, anywhere</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
                                 <Image src={service5} alt="" className="lazy-img  h-auto m-auto icon border-img" />
                                 <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">One person Company</div>
-                                <p className="fs-16 ps-xxl-3 pe-xxl-3">Fully expert-assisted company registration process. Our packages include <b>DIN, PAN, DSC, MOA, AOA and SPICE+</b> Compliance. Start your One Person Company Registration</p>
+                                <p className="fs-16 ps-xxl-3 pe-xxl-3 textAlignLeft">Fully expert-assisted company registration process. Our packages include <b>DIN, PAN, DSC, MOA, AOA and SPICE+</b> Compliance. Start your One Person Company Registration</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
                                 <Image src={service6} alt="" className="lazy-img  h-auto m-auto icon border-img" />
                                 <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Partnership Firm</div>
-                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Partnership firm registration deed drafted within <b>3 days,</b> completely online & hasslefree Transparent process through follow-up and regular updates</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4 textAlignLeft">Partnership firm registration deed drafted within <b>3 days,</b> completely online & hasslefree Transparent process through follow-up and regular updates</p>
                             </div>
                         </div>
                     </div>
@@ -270,21 +271,21 @@ const Home = () => {
                             <div className="card-style-one text-center wow fadeInUp mt-40">
                                 <Image src={service7} alt="" className="lazy-img m-auto h-auto icon border-img" />
                                 <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Limited Liability Company</div>
-                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Application submission  Guaranteed within <b>14 days,</b> completely online & hasslefree. Transparent registration process starting</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4 textAlignLeft">Application submission  Guaranteed within <b>14 days,</b> completely online & hasslefree. Transparent registration process starting</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.1s">
                                 <Image src={service8} alt="" className="lazy-img  h-auto m-auto icon border-img" />
                                 <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Import and Export</div>
-                                <p className="fs-16 ps-xxl-3 pe-xxl-3">Guaranteed submission of IEC application within two days in the DGFT office. Make your business global. Apply from anywhere in India with IEC code</p>
+                                <p className="fs-16 ps-xxl-3 pe-xxl-3 textAlignLeft">Guaranteed submission of IEC application within two days in the DGFT office. Make your business global. Apply from anywhere in India with IEC code</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
                                 <Image src={service9} alt="" className="lazy-img  h-auto m-auto icon border-img" />
                                 <div className="fs-20 text-uppercase fw-500 fs-text mt-35 md-mt-30 mb-20">Sole Proprietorship</div>
-                                <p className="fs-16 ps-xxl-4 pe-xxl-4">Fastest registration turnaround time in India with Guaranteed document upload to the government portal under 7 days or get a full refund.Transparent process.</p>
+                                <p className="fs-16 ps-xxl-4 pe-xxl-4 textAlignLeft">Fastest registration turnaround time in India with Guaranteed document upload to the government portal under 7 days or get a full refund.Transparent process.</p>
                             </div>
                         </div>
                     </div>
@@ -315,7 +316,7 @@ const Home = () => {
                             <div className="block-two">
                                 <div className="bg-wrapper">
                                     <h4>Who we are?</h4>
-                                    <p className="fs-16 mt-20">Hailing from Hyderabad, India, Vijendra & Co was incorporated under the leading light of highly experienced and veteran professionals. The company came into existence with a view to provide broad spectrum of quality professional services in the domain of Corporate Management Consultancy.<br />
+                                    <p className="fs-18 mt-20">Hailing from Hyderabad, India, Vijendra & Co was incorporated under the leading light of highly experienced and veteran professionals. The company came into existence with a view to provide broad spectrum of quality professional services in the domain of Corporate Management Consultancy.<br />
                                         Over the years, with utmost dedication, we have been successfully serving the clientele with the unparalleled services that has helped us to boast our prominent position in the market.
                                     </p>
                                     {/* <div className="counter-wrapper ps-xl-3 pb-30 mt-45 mb-50">
@@ -548,21 +549,21 @@ const Home = () => {
                                     <div className="card-style-one text-center wow fadeInUp mt-40">
                                         <Image src={icon07} alt="" className="lazy-img m-auto icon border-img" style={{height:"auto"}} />
                                         <h5 className="mt-50 lg-mt-30 mb-15">Create Account</h5>
-                                        <p className="pe-xxl-4 ps-xxl-4">It’s very easy to open an account and start your journey.</p>
+                                        <p className="pe-xxl-4 ps-xxl-4 textAlignLeft">It’s very easy to open an account and start your journey.</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="card-style-one text-center wow fadeInUp mt-40 arrow position-relative" data-wow-delay="0.1s">
                                         <Image src={icon08} alt="" className="lazy-img m-auto icon border-img" style={{height:"auto"}}/>
                                         <h5 className="mt-50 lg-mt-30 mb-15">Find Service</h5>
-                                        <p className="pe-xxl-4 ps-xxl-4">Complete your profile with all the info to get attention of client.</p>
+                                        <p className="pe-xxl-4 ps-xxl-4 textAlignLeft">Complete your profile with all the info to get attention of client.</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="card-style-one text-center wow fadeInUp mt-40" data-wow-delay="0.2s">
                                         <Image src={icon09} alt="" className="lazy-img m-auto icon border-img" style={{height:"auto"}} />
                                         <h5 className="mt-50 lg-mt-30 mb-15">Quick Process</h5>
-                                        <p className="pe-xxl-4 ps-xxl-4">Our team will coordinate you and update your requirement status.</p>
+                                        <p className="pe-xxl-4 ps-xxl-4 textAlignLeft">Our team will coordinate you and update your requirement status.</p>
                                     </div>
                                 </div>
                             </div>
