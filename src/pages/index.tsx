@@ -130,7 +130,7 @@ const Home = () => {
                                         <div className="">
                                             <div className="input-box-one lg-mt-10">
                                                 <button className="fw-500 tran3s search-btn" onClick={() => setShowModal(true)}>Consult Our Expert</button>
-                                                <button className="fw-500 tran3s search-btn mt-3"><Link href={"/webForm"}>Web Form</Link></button>
+                                                <button className="fw-500 tran3s search-btn mt-3"><Link href={"/webForm"}>Join Hands with US</Link></button>
                                             </div>
                                         </div>
                                     </div>
