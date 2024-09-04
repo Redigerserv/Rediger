@@ -103,10 +103,10 @@ const Header = () => {
                                                 <li><Link href={"/services/start-business/onePersonCompany"} className="dropdown-item"><span>One Person Company</span></Link></li>
                                                 <li><Link href={"/services/start-business/limitedLiabilityCompany"} className="dropdown-item"><span>Limited Liability Company</span></Link></li>
                                                 <li><Link href={"/services/start-business/partnershipFirm"} className="dropdown-item"><span>Partnership Firm</span></Link></li>
-                                                <li><Link href="index-5.html" className="dropdown-item"><span>Nidhi Company Registration</span></Link></li>
-                                                <li><Link href="index-6.html" className="dropdown-item"><span>Sole Proprietorship</span></Link></li>
-                                                <li><Link href="index-7.html" className="dropdown-item"><span>Section 8 Company or NPO</span></Link></li>
-                                                <li><Link href="index-7.html" className="dropdown-item"><span>DSC</span></Link></li>
+                                                <li><Link href={"/services/start-business/nidhiRegistration"} className="dropdown-item"><span>Nidhi Company Registration</span></Link></li>
+                                                <li><Link href={"/services/start-business/soleProprietorship"} className="dropdown-item"><span>Sole Proprietorship</span></Link></li>
+                                                <li><Link href={"/services/start-business/section_8_company"} className="dropdown-item"><span>Section 8 Company or NPO</span></Link></li>
+                                                <li><Link href={"/services/start-business/DSC"} className="dropdown-item"><span>DSC</span></Link></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
@@ -114,12 +114,12 @@ const Header = () => {
                                                 data-bs-auto-close="outside" aria-expanded="false">Licence/Registration
                                             </Link>
                                             <ul className="dropdown-menu">
-                                                <li><Link href="index.html" className="dropdown-item"><span>Fssai Registration</span></Link></li>
-                                                <li><Link href="index-2.html" className="dropdown-item"><span>Msme  Registration</span></Link></li>
-                                                <li><Link href="index-3.html" className="dropdown-item"><span>Trademark  Registration</span></Link></li>
-                                                <li><Link href="index-4.html" className="dropdown-item"><span>Shop Act</span></Link></li>
-                                                <li><Link href="index-5.html" className="dropdown-item"><span>Trade Licence</span></Link></li>
-                                                <li><Link href="index-6.html" className="dropdown-item"><span>Import and Export</span></Link></li>
+                                                <li><Link href={"/services/license-registration/fssaiRegistration"} className="dropdown-item"><span>Fssai Registration</span></Link></li>
+                                                <li><Link href={"/services/license-registration/msmeRegistration"} className="dropdown-item"><span>Msme  Registration</span></Link></li>
+                                                <li><Link href={"/services/license-registration/trademarkRegistration"} className="dropdown-item"><span>Trademark  Registration</span></Link></li>
+                                                <li><Link href={"/services/license-registration/shopAct"} className="dropdown-item"><span>Shop Act</span></Link></li>
+                                                <li><Link href={"/services/license-registration/tradeLicence"} className="dropdown-item"><span>Trade Licence</span></Link></li>
+                                                <li><Link href={"/services/license-registration/ImportandExport"} className="dropdown-item"><span>Import and Export</span></Link></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
@@ -127,12 +127,12 @@ const Header = () => {
                                                 data-bs-auto-close="outside" aria-expanded="false">GST Registration 
                                             </a>
                                             <ul className="dropdown-menu">
-                                                <li><Link href="index.html" className="dropdown-item"><span>GST Registration</span></Link></li>
-                                                <li><Link href="index-2.html" className="dropdown-item"><span>LUT Filling Under GST</span></Link></li>
-                                                <li><Link href="index-3.html" className="dropdown-item"><span>TDS Return Filling</span></Link></li>
-                                                <li><Link href="index-4.html" className="dropdown-item"><span>Professional Tax Registration</span></Link></li>
-                                                <li><Link href="index-5.html" className="dropdown-item"><span>Provident Fund</span></Link></li>
-                                                <li><Link href="index-6.html" className="dropdown-item"><span>ESIS</span></Link></li>
+                                                <li><Link href={"/services/GST_Registration/GST_registration"} className="dropdown-item"><span>GST Registration</span></Link></li>
+                                                <li><Link href={"/services/GST_Registration/LUT_filing_Under_GST"} className="dropdown-item"><span>LUT Filling Under GST</span></Link></li>
+                                                <li><Link href={"/services/GST_Registration/TDS-ReturnFiling"} className="dropdown-item"><span>TDS Return Filing</span></Link></li>
+                                                <li><Link href={"/services/GST_Registration/professionalTax_Registration"} className="dropdown-item"><span>Professional Tax Registration</span></Link></li>
+                                                <li><Link href={"/services/GST_Registration/providentFund"} className="dropdown-item"><span>Provident Fund</span></Link></li>
+                                                <li><Link href={"/services/GST_Registration/ESIS"} className="dropdown-item"><span>ESIS</span></Link></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
@@ -140,9 +140,9 @@ const Header = () => {
                                                 data-bs-auto-close="outside" aria-expanded="false">Legal Draft
                                             </Link>
                                             <ul className="dropdown-menu">
-                                                <li><Link href="index.html" className="dropdown-item"><span>Non Disclosure Agreement</span></Link></li>
-                                                <li><Link href="index-2.html" className="dropdown-item"><span>Partnership Deed</span></Link></li>
-                                                <li><Link href="index-3.html" className="dropdown-item"><span>Memorandum of Understanding (MOU)</span></Link></li>
+                                                <li><Link href={"/services/legal-Draft/non-disclosure-agreement"} className="dropdown-item"><span>Non Disclosure Agreement</span></Link></li>
+                                                <li><Link href={"/services/legal-Draft/partnership-Deed"} className="dropdown-item"><span>Partnership Deed</span></Link></li>
+                                                <li><Link href={"/services/legal-Draft/MOU"} className="dropdown-item"><span>Memorandum of Understanding (MOU)</span></Link></li>
                                             </ul>
                                         </li>
                                         <li className="nav-item">

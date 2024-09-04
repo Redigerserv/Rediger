@@ -569,8 +569,10 @@ b{
 
 .formLabel {
   display: block;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
+  margin-top: 5px;
   font-weight: bold;
+  text-align: right;
 }
 
 .formInput,
@@ -624,4 +626,11 @@ b{
 
 .checkboxInput {
   margin-right: 10px;
+}
+
+.formSubmitBtn {
+  background: rgb(255, 103, 37) !important; 
+  border: none !important;
+  padding: 10px 30px;
+  margin-top: 15px;
 }
