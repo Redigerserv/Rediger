@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 
-import loadingLogo from '../../assets/images/portalRediger/rediger-preloader.jpeg'
+import loadingLogo from '../../assets/images/portalRediger/logo_icon.png'
 
 const Preloader = () => {
 
@@ -22,7 +22,7 @@ const Preloader = () => {
                 <div id="ctn-preloader" className="ctn-preloader">
                     <div className="icon"><Image src={loadingLogo} alt="" className="m-auto d-block" width="100" />
                     </div>
-                    {/* <div className="txt-loading" style={{fontSize:"30px" , fontWeight:'600'}}>
+                    <div className="txt-loading" style={{fontSize:"30px" , fontWeight:'600'}}>
                         <span data-text-preloader="R" className="letters-loading">
                             R
                         </span>
@@ -44,7 +44,7 @@ const Preloader = () => {
                         <span data-text-preloader="R" className="letters-loading">
                             R
                         </span>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </>

@@ -634,3 +634,13 @@ b{
   padding: 10px 30px;
   margin-top: 15px;
 }
+
+.succesPage{
+  background-image: url("../assets/images/portalRediger/successpage-BG.jpeg");
+}
+@media (min-width: 1200px) {
+  .succesDiv{
+    position: absolute;
+    padding-left: 200px;
+  }
+}

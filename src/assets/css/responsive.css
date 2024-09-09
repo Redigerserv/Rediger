@@ -41,7 +41,7 @@
   .search-wrapper-one.bg {padding: 15px;}
   .input-box-one .nice-select,.input-box-one .type-input {font-size: 16px;}
   .search-wrapper-one .bg-wrapper {padding: 20px 0;}
-  .search-wrapper-one .bg-wrapper .search-btn {font-size: 14px; line-height: 55px;}
+  .search-wrapper-one .bg-wrapper .search-btn {font-size: 14px; line-height: 55px; margin-top: 10px;}
   .listing-card-one .price,.listing-card-one.style-two .price {font-size: 24px;}
   .listing-card-one .title {font-size: 22px;}
   .listing-card-one .address {margin-top: 5px;}
@@ -257,6 +257,7 @@
 @media (max-width: 1199px) {
   body {font-size: 17px;}
   .fs-16 {font-size: 15px;}
+  .mobileView {display: block !important;}
   .btn-thirteen {width: 55px; height: 55px;}
   .theme-main-menu .gap-one {padding: 20px 12px;}
   .theme-main-menu .gap-two {padding: 15px 12px;}
