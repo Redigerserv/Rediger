@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const FssaiRegistration = () => {
+const ProvidentFund = () => {
     return (
         <>
             <Head>
@@ -16,14 +16,14 @@ const FssaiRegistration = () => {
                             <div className="col-lg-8">
                                 <div className="blog-post-meta mb-60 lg-mb-40">
                                     {/* <div className="post-info"><a href="blog_02.html">Rashed Kabir .</a> 6 min</div> */}
-                                    <h3 className="blog-title">Fssai Registration</h3>
+                                    <h3 className="blog-title">Provident Fund</h3>
                                 </div>
                             </div>
                         </div>
                         <div className="row gx-xl-5">
                             <div className="col-lg-12">
                                 <article className="blog-post-meta">
-                                    <figure className="post-img position-relative m0  figurebgImg">
+                                    <figure className="post-img position-relative m0  providentFundxbgImg">
                                         {/* <div className="fw-500 date d-inline-block">17 SEP</div> */}
                                     </figure>
                                     <div className="post-data pt-50 md-pt-30">
@@ -96,4 +96,4 @@ const FssaiRegistration = () => {
         </>
     )
 }
-export default FssaiRegistration;
+export default ProvidentFund;

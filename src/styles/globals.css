@@ -519,6 +519,75 @@ ul.slick-dots {
 .figurebgImg{
   background-image: url("../assets/images/blog/blog_img_11.jpg")
 }
+.privatebgImg{
+  background-image: url("../assets/images/pageImages/private_limited.jpg")
+}
+.onePersonbgImg{
+  background-image: url("../assets/images/pageImages/one_person_company.jpg")
+}
+.partnershipbgImg{
+  background-image: url("../assets/images/pageImages/partnership.jpg")
+}
+.nidhibgImg{
+  background-image: url("../assets/images/pageImages/nidhi.jpg")
+}
+.limitedbgImg{
+  background-image: url("../assets/images/pageImages/llc.jpg")
+}
+.solePbgImg{
+  background-image: url("../assets/images/pageImages/sole_propreitorship.jpg")
+}
+.section8bgImg{
+  background-image: url("../assets/images/pageImages/npm.jpg")
+}
+.dscbgImg{
+  background-image: url("../assets/images/pageImages/dsc.jpg")
+}
+.fassaibgImg{
+  background-image: url("../assets/images/pageImages/fssai.jpg")
+}
+.msmebgImg{
+  background-image: url("../assets/images/pageImages/msme.jpg")
+}
+.trademarkbgImg{
+  background-image: url("../assets/images/pageImages/trademark.jpg")
+}
+.shopActbgImg{
+  background-image: url("../assets/images/pageImages/labor_licence.jpg")
+}
+.teadebgImg{
+  background-image: url("../assets/images/pageImages/trade_licence.jpg")
+}
+.importExportbgImg{
+  background-image: url("../assets/images/pageImages/importandexport.jpg")
+}
+.gstbgImg{
+  background-image: url("../assets/images/pageImages/gst.jpg")
+}
+.lutbgImg{
+  background-image: url("../assets/images/pageImages/lut.jpg")
+}
+.tdsReturnbgImg{
+  background-image: url("../assets/images/pageImages/tds.jpg")
+}
+.professionalTaxbgImg{
+  background-image: url("../assets/images/pageImages/PTR.jpg")
+}
+.providentFundxbgImg{
+  background-image: url("../assets/images/pageImages/pf.jpg")
+}
+.esisbgImg{
+  background-image: url("../assets/images/pageImages/esis.jpg")
+}
+.moubgImg{
+  background-image: url("../assets/images/pageImages/mou.jpg")
+}
+.ndabgImg{
+  background-image: url("../assets/images/pageImages/nda.jpg")
+}
+.partnershipDeedbgImg{
+  background-image: url("../assets/images/pageImages/PartnershipDeed.jpg")
+}
 
 .list-item {
   padding: 10px 0 15px;
