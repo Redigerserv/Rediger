@@ -23,7 +23,7 @@ const GSTRegistration = () => {
                         <div className="row gx-xl-5">
                             <div className="col-lg-12">
                                 <article className="blog-post-meta">
-                                    <figure className="post-img position-relative m0  figurebgImg">
+                                    <figure className="post-img position-relative m0  gstbgImg">
                                         {/* <div className="fw-500 date d-inline-block">17 SEP</div> */}
                                     </figure>
                                     <div className="post-data pt-50 md-pt-30">

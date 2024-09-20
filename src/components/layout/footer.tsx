@@ -165,10 +165,10 @@ const Footer = () => {
                                     <div className="footer-nav mt-100 lg-mt-80 xs-mt-50">
                                         <h5 className="footer-title">Links</h5>
                                         <ul className="footer-nav-link style-none">
-                                            <li><Link href="/">Private Limited Company</Link></li>
-                                            <li><Link href="/" >Trade Licence</Link></li>
-                                            <li><Link href="/">Import & Export</Link></li>
-                                            <li><Link href="/">TDS Return Filing</Link></li>
+                                            <li><Link href={"/services/start-business/privateLimitedCompany"}>Private Limited Company</Link></li>
+                                            <li><Link href={"/services/license-registration/tradeLicence"} >Trade Licence</Link></li>
+                                            <li><Link href={"/services/license-registration/ImportandExport"}>Import & Export</Link></li>
+                                            <li><Link href={"/services/GST_Registration/TDS-ReturnFiling"}>TDS Return Filing</Link></li>
                                         </ul>
                                     </div>
                                     <div className="footer-nav mt-100 lg-mt-80 xs-mt-30">
