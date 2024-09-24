@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const TDSReturnFiling = () => {
     return (
@@ -10,40 +11,48 @@ const TDSReturnFiling = () => {
                 <link rel="icon" href="/favicon-new.jpeg" />
             </Head>
             <div className="DSC">
-                <div className="blog-details border-top mt-160 xl-mt-140 pt-100 xl-pt-80 mb-150 xl-mb-100">
+                <div className="inner-banner-one inner-banner bg-pink text-center z-1 pt-160 lg-pt-130 pb-80 xl-pb-80 md-pb-60 position-relative">
+                    <div className="container">
+                        <h3 className="mb-35 xl-mb-20 pt-15">TDS Return Filing</h3>
+                        <ul className="theme-breadcrumb style-none d-inline-flex align-items-center justify-content-center position-relative z-1 bottom-line">
+                            <li><Link href={'/'}>Home</Link></li>
+                            <li>/</li>
+                            <li>TDS Return Filing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="blog-details border-top pt-100 xl-pt-80 mb-150 xl-mb-100">
                     <div className="container">
                         <div className="row gx-xl-5">
                             <div className="col-lg-8">
-                                <div className="blog-post-meta mb-60 lg-mb-40">
-                                    {/* <div className="post-info"><a href="blog_02.html">Rashed Kabir .</a> 6 min</div> */}
-                                    <h3 className="blog-title">TDS Return Filing</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row gx-xl-5">
-                            <div className="col-lg-12">
                                 <article className="blog-post-meta">
                                     <figure className="post-img position-relative m0  tdsReturnbgImg">
                                         {/* <div className="fw-500 date d-inline-block">17 SEP</div> */}
                                     </figure>
                                     <div className="post-data pt-50 md-pt-30">
-                                        <p><b>TDS Filing</b></p>
-                                        <p>PLCs are required to deduct Tax Deducted at Source (TDS) while making payments to their vendors or suppliers. They are also required to file TDS payments to be done on monthly basis and Returns Quarterly basis.</p>
-                                        <p>It is important for PLCs to comply with these annual compliances to avoid penalties and legal implications. PLCs can seek professional help Company Secretaries to ensure timely compliance with these requirements.</p>
-                                        <div className="quote-wrapper">
-                                            <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto"><img src="images/lazy.svg" data-src="images/icon/icon_67.svg" alt="" className="lazy-img" /></div>
-                                            <div className="row">
-                                                <div className="col-xxl-10 col-xl-11 col-lg-12 col-md-9 m-auto">
-                                                    <h4>Quick solutions coupled with extraordinary nice performance—a recommendation that's great.</h4>
-                                                </div>
-                                            </div>
-                                            <h6>James Bond. <span>USA</span></h6>
-                                        </div>
                                     </div>
                                 </article>
                             </div>
+                            <div className="col-lg-4">
+                                <div className="blog-sidebar dot-bg ms-xxl-4 md-mt-60">
+                                    <div className="categories bg-white bg-wrapper mb-30">
+                                        <h5 className="mb-20">Other Services</h5>
+                                        <ul className="style-none">
+                                            <li><Link href={"/services/GST_Registration/GST_registration"}>GST Registration</Link></li>
+                                            <li><Link href={"/services/GST_Registration/LUT_filing_Under_GST"}>LUT Filling Under GST</Link></li>
+                                            {/* <li><Link href={"/services/GST_Registration/TDS-ReturnFiling"}>TDS Return Filing</Link></li> */}
+                                            <li><Link href={"/services/GST_Registration/professionalTax_Registration"}>Professional Tax Registration</Link></li>
+                                            <li><Link href={"/services/GST_Registration/providentFund"}>Provident Fund</Link></li>
+                                            <li><Link href={"/services/GST_Registration/ESIS"}>ESIS</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="div">
+                            <p><b>TDS Filing</b></p>
+                            <p>PLCs are required to deduct Tax Deducted at Source (TDS) while making payments to their vendors or suppliers. They are also required to file TDS payments to be done on monthly basis and Returns Quarterly basis.</p>
+                            <p>It is important for PLCs to comply with these annual compliances to avoid penalties and legal implications. PLCs can seek professional help Company Secretaries to ensure timely compliance with these requirements.</p>
                             <p><b>Documents to be submitted by Directors & Shareholders:</b></p>
                             <ul className="style-none list-item"><li>PAN Card (Compulsorily)
                             </li><li>Voters ID/ Passport/Driver’s License (Only any One as ID Proof)
@@ -59,11 +68,11 @@ const TDSReturnFiling = () => {
                             <form action="#" className="mt-30">
                                 <div className="input-wrapper mb-30">
                                     <label>Name*</label>
-                                    <input type="text" placeholder="Rashed Kabir" />
+                                    <input type="text" placeholder="User Name" />
                                 </div>
                                 <div className="input-wrapper mb-40">
                                     <label>Email*</label>
-                                    <input type="email" placeholder="rshdkabir@gmail.com" />
+                                    <input type="email" placeholder="username@gmail.com" />
                                 </div>
                                 <div className="input-wrapper mb-30">
                                     <textarea placeholder="Your Comment"></textarea>

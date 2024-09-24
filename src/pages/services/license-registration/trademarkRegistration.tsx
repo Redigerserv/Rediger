@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const TrademarkRegistration = () => {
     return (
@@ -10,51 +11,59 @@ const TrademarkRegistration = () => {
                 <link rel="icon" href="/favicon-new.jpeg" />
             </Head>
             <div className="DSC">
-                <div className="blog-details border-top mt-160 xl-mt-140 pt-100 xl-pt-80 mb-150 xl-mb-100">
+            <div className="inner-banner-one inner-banner bg-pink text-center z-1 pt-160 lg-pt-130 pb-80 xl-pb-80 md-pb-60 position-relative">
+                    <div className="container">
+                        <h3 className="mb-35 xl-mb-20 pt-15">Trademark Registration</h3>
+                        <ul className="theme-breadcrumb style-none d-inline-flex align-items-center justify-content-center position-relative z-1 bottom-line">
+                            <li><Link href={'/'}>Home</Link></li>
+                            <li>/</li>
+                            <li>Trademark Registration</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="blog-details border-top pt-100 xl-pt-80 mb-150 xl-mb-100">
                     <div className="container">
                         <div className="row gx-xl-5">
                             <div className="col-lg-8">
-                                <div className="blog-post-meta mb-60 lg-mb-40">
-                                    {/* <div className="post-info"><a href="blog_02.html">Rashed Kabir .</a> 6 min</div> */}
-                                    <h3 className="blog-title">Trademark Registration</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row gx-xl-5">
-                            <div className="col-lg-12">
                                 <article className="blog-post-meta">
                                     <figure className="post-img position-relative m0  trademarkbgImg">
                                         {/* <div className="fw-500 date d-inline-block">17 SEP</div> */}
                                     </figure>
                                     <div className="post-data pt-50 md-pt-30">
-                                        <p>With the rise of technology and digital communication, it is important for businesses to protect their brand and assets from infringement. Trade mark registration is an important step in this process. It allows businesses to protect their brand name, logo, slogan or other identifying marks from being used without their permission. By registering a trade mark, companies can prevent others from using the same or similar marks for commercial gain. Furthermore, it helps companies differentiate themselves from competitors by creating a unique identity. Companies must register a trade mark with the relevant authorities in order to be eligible for protection under the law. It is an essential part of company formation and helps ensure that businesses are able to protect their brand and assets in the long run.</p>
-                                        <div className="quote-wrapper">
-                                            <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto"><img src="images/lazy.svg" data-src="images/icon/icon_67.svg" alt="" className="lazy-img" /></div>
-                                            <div className="row">
-                                                <div className="col-xxl-10 col-xl-11 col-lg-12 col-md-9 m-auto">
-                                                    <h4>Quick solutions coupled with extraordinary nice performance—a recommendation that's great.</h4>
-                                                </div>
-                                            </div>
-                                            <h6>James Bond. <span>USA</span></h6>
-                                        </div>
                                     </div>
                                 </article>
+                            </div>
+                            <div className="col-lg-4">
+                                <div className="blog-sidebar dot-bg ms-xxl-4 md-mt-60">
+                                    <div className="categories bg-white bg-wrapper mb-30">
+                                        <h5 className="mb-20">Other Services</h5>
+                                        <ul className="style-none">
+                                            <li><Link href={"/services/license-registration/fssaiRegistration"}>Fssai Registration</Link></li>
+                                            <li><Link href={"/services/license-registration/msmeRegistration"}>Msme Registration</Link></li>
+                                            {/* <li><Link href={"/services/license-registration/trademarkRegistration"}>Trademark Registration</Link></li> */}
+                                            <li><Link href={"/services/license-registration/shopAct"}>Shop Act</Link></li>
+                                            <li><Link href={"/services/license-registration/tradeLicence"}>Trade Licence</Link></li>
+                                            <li><Link href={"/services/license-registration/ImportandExport"}>Import and Export</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div className="div">
-                        <p><b>Check Lists to apply for Trade Mark for Private Limited company:</b></p>
-      <p>
-        Applying for a trade mark is an important step in the formation of a private limited company. It is essential to understand the process and take all the necessary steps to ensure that your trade mark is legally protected. This article will provide you with a comprehensive checklist of all the steps involved in applying for a trade mark for your private limited company. It will help you understand what documents are needed, how to apply, and other important details that must be taken into account when filing for a trade mark. With this information, you can ensure that your business's intellectual property is properly protected and secured.
-      </p>
-      <p><b>Check Lists to apply for Trade Mark for Partnership Firm:</b></p>
-      <p>
-        Registering a partnership firm is an important step for businesses that want to protect their brand and ensure its success. It is also essential for companies to apply for a trademark to protect their business name, logo, and other intellectual property. Applying for a trademark can be complicated and time-consuming, but having the right checklists in place can make the process much smoother. This article will provide a comprehensive checklist of all the steps that need to be taken when applying for a trademark as part of company formation. 
-      </p>
-      <p><b>Check Lists to apply for Trade Mark for Private Limited Company:</b></p>
-      <p>
-        Starting a private limited company is an exciting journey. It is a great way to build a business, create value and generate wealth. But before you can do this, you must first apply for the trademark of your company. This process can be complicated and time consuming but with the right checklists in place, it can be much easier to complete. In this article, we will discuss the different steps that are required in order to successfully apply for a trademark for your private limited company. We will also provide some helpful tips on how to make sure that your application is successful and that you get the best results possible.
-      </p>
+                        <p>With the rise of technology and digital communication, it is important for businesses to protect their brand and assets from infringement. Trade mark registration is an important step in this process. It allows businesses to protect their brand name, logo, slogan or other identifying marks from being used without their permission. By registering a trade mark, companies can prevent others from using the same or similar marks for commercial gain. Furthermore, it helps companies differentiate themselves from competitors by creating a unique identity. Companies must register a trade mark with the relevant authorities in order to be eligible for protection under the law. It is an essential part of company formation and helps ensure that businesses are able to protect their brand and assets in the long run.</p>
+                            <p><b>Check Lists to apply for Trade Mark for Private Limited company:</b></p>
+                            <p>
+                                Applying for a trade mark is an important step in the formation of a private limited company. It is essential to understand the process and take all the necessary steps to ensure that your trade mark is legally protected. This article will provide you with a comprehensive checklist of all the steps involved in applying for a trade mark for your private limited company. It will help you understand what documents are needed, how to apply, and other important details that must be taken into account when filing for a trade mark. With this information, you can ensure that your business's intellectual property is properly protected and secured.
+                            </p>
+                            <p><b>Check Lists to apply for Trade Mark for Partnership Firm:</b></p>
+                            <p>
+                                Registering a partnership firm is an important step for businesses that want to protect their brand and ensure its success. It is also essential for companies to apply for a trademark to protect their business name, logo, and other intellectual property. Applying for a trademark can be complicated and time-consuming, but having the right checklists in place can make the process much smoother. This article will provide a comprehensive checklist of all the steps that need to be taken when applying for a trademark as part of company formation.
+                            </p>
+                            <p><b>Check Lists to apply for Trade Mark for Private Limited Company:</b></p>
+                            <p>
+                                Starting a private limited company is an exciting journey. It is a great way to build a business, create value and generate wealth. But before you can do this, you must first apply for the trademark of your company. This process can be complicated and time consuming but with the right checklists in place, it can be much easier to complete. In this article, we will discuss the different steps that are required in order to successfully apply for a trademark for your private limited company. We will also provide some helpful tips on how to make sure that your application is successful and that you get the best results possible.
+                            </p>
                         </div>
                         <div className="blog-comment-form mt-50">
                             <h3 className="blog-inner-title">Leave A Comment</h3>
@@ -62,11 +71,11 @@ const TrademarkRegistration = () => {
                             <form action="#" className="mt-30">
                                 <div className="input-wrapper mb-30">
                                     <label>Name*</label>
-                                    <input type="text" placeholder="Rashed Kabir" />
+                                    <input type="text" placeholder="User Name" />
                                 </div>
                                 <div className="input-wrapper mb-40">
                                     <label>Email*</label>
-                                    <input type="email" placeholder="rshdkabir@gmail.com" />
+                                    <input type="email" placeholder="username@gmail.com" />
                                 </div>
                                 <div className="input-wrapper mb-30">
                                     <textarea placeholder="Your Comment"></textarea>

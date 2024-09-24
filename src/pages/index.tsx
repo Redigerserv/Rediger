@@ -38,7 +38,8 @@ import icon09 from "../assets/images/portalRediger/quickProcess.jpeg"
 import titleshape08 from "../assets/images/shape/title_shape_08.svg"
 import ils02 from "../assets/images/assets/ils_02.svg"
 import Login from "@/components/shared/login";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSession } from 'next-auth/react';
 
 
 
@@ -48,8 +49,32 @@ import { useState } from "react";
 
 const Home = () => {
 
+    const { data: session } = useSession();
+    const [userInfo, setUserInfo] = useState(null);
+  
+    useEffect(() => {
+      if (session?.accessToken) {
+        fetchUserInfo(session.accessToken);
+      }
+    }, [session]);
+  
+    const fetchUserInfo = async (accessToken: string) => {
+      try {
+        const res = await fetch('https://www.googleapis.com/oauth2/v2/userinfo', {
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        });
+        const data = await res.json();
+        setUserInfo(data);
+      } catch (error) {
+        console.error('Error fetching user info:', error);
+      }
+    };
+
     const [showModal, setShowModal] = useState(false);
 
+console.log("userInfo",userInfo);
 
     useAOS({
         offset: 200,

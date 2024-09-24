@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const ImportandExport = () => {
     return (
@@ -10,124 +11,133 @@ const ImportandExport = () => {
                 <link rel="icon" href="/favicon-new.jpeg" />
             </Head>
             <div className="DSC">
-                <div className="blog-details border-top mt-160 xl-mt-140 pt-100 xl-pt-80 mb-150 xl-mb-100">
+                <div className="inner-banner-one inner-banner bg-pink text-center z-1 pt-160 lg-pt-130 pb-80 xl-pb-80 md-pb-60 position-relative">
+                    <div className="container">
+                        <h3 className="mb-35 xl-mb-20 pt-15">Import and Export</h3>
+                        <ul className="theme-breadcrumb style-none d-inline-flex align-items-center justify-content-center position-relative z-1 bottom-line">
+                            <li><Link href={'/'}>Home</Link></li>
+                            <li>/</li>
+                            <li>Import and Export</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="blog-details border-top pt-100 xl-pt-80 mb-150 xl-mb-100">
                     <div className="container">
                         <div className="row gx-xl-5">
                             <div className="col-lg-8">
-                                <div className="blog-post-meta mb-60 lg-mb-40">
-                                    {/* <div className="post-info"><a href="blog_02.html">Rashed Kabir .</a> 6 min</div> */}
-                                    <h3 className="blog-title">Import and Export</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row gx-xl-5">
-                            <div className="col-lg-12">
                                 <article className="blog-post-meta">
                                     <figure className="post-img position-relative m0  importExportbgImg">
                                         {/* <div className="fw-500 date d-inline-block">17 SEP</div> */}
                                     </figure>
                                     <div className="post-data pt-50 md-pt-30">
-                                        <p><b>For Private Limited Company:</b></p>
-                                        <p>Obtaining an Importer Exporter Code (IEC) is a crucial step for any private limited company that wishes to engage in international trade. This code is a prerequisite for all companies that intend to import or export goods and services from India. In this article, we will discuss the checklist of documents required to obtain an IEC from the Indian government. We will also provide some tips on how to ensure that the process goes smoothly and quickly. With this guide, you can be sure that your private limited company will have no trouble in obtaining its Importer Exporter Code!</p>
-                                        <div className="quote-wrapper">
-                                            <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto"><img src="images/lazy.svg" data-src="images/icon/icon_67.svg" alt="" className="lazy-img" /></div>
-                                            <div className="row">
-                                                <div className="col-xxl-10 col-xl-11 col-lg-12 col-md-9 m-auto">
-                                                    <h4>Quick solutions coupled with extraordinary nice performance—a recommendation that's great.</h4>
-                                                </div>
-                                            </div>
-                                            <h6>James Bond. <span>USA</span></h6>
-                                        </div>
                                     </div>
                                 </article>
+                            </div>
+                            <div className="col-lg-4">
+                                <div className="blog-sidebar dot-bg ms-xxl-4 md-mt-60">
+                                    <div className="categories bg-white bg-wrapper mb-30">
+                                        <h5 className="mb-20">Other Services</h5>
+                                        <ul className="style-none">
+                                            <li><Link href={"/services/license-registration/fssaiRegistration"}>Fssai Registration</Link></li>
+                                            <li><Link href={"/services/license-registration/msmeRegistration"}>Msme Registration</Link></li>
+                                            <li><Link href={"/services/license-registration/trademarkRegistration"}>Trademark Registration</Link></li>
+                                            <li><Link href={"/services/license-registration/shopAct"}>Shop Act</Link></li>
+                                            <li><Link href={"/services/license-registration/tradeLicence"}>Trade Licence</Link></li>
+                                            {/* <li><Link href={"/services/license-registration/ImportandExport"}>Import and Export</Link></li> */}
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div className="div">
-                        <p><b>Importer Exporter Code:</b></p>
-      <p>
-        The Importer Exporter Code (IEC) is a 10-digit code that is issued by
-        the Director General of Foreign Trade (DGFT), Ministry of Commerce and
-        Industry, Government of India. It is a unique identification number that
-        is mandatory for any person or business entity that wishes to import or
-        export goods or services from India, The PAN number of the Entity itself
-        a your IEC Code.
-      </p>
-      <p><b>Here are some key points to note about the IEC in India:</b></p>
-      <p>
-        <b>Who needs IEC :</b> Any person or business entity that is involved in
-        importing or exporting goods or services from India must obtain an IEC.
-      </p>
-      <p>
-        <b>How to apply for IEC :</b> The application for IEC can be made online
-        through the DGFT website or offline by submitting a physical application
-        form to the nearest DGFT office.
-      </p>
-      <p>
-        <b>Documents required for IEC :</b> The documents required for obtaining
-        an IEC include PAN card, Aadhaar card, passport size photograph, bank
-        certificate, and other relevant documents as specified by the DGFT.
-      </p>
-      <p>
-        <b>Validity of IEC :</b> The IEC is valid for the entire lifetime of the
-        entity or until it is surrendered or cancelled.
-      </p>
-      <p>
-        <b>Use of IEC :</b> The IEC is used as a unique identification number
-        while conducting import or export transactions with the customs
-        authorities.
-      </p>
-      <p>
-        <b>Benefits of IEC :</b> Having an IEC allows businesses to expand their
-        operations globally and participate in international trade. It also
-        enables them to avail of various benefits provided by the government of
-        India for exporters and importers.
-      </p>
-      <p>
-        It is important to note that the IEC is mandatory for any person or
-        business entity that wishes to engage in import or export activities in
-        India. Failure to obtain the IEC can result in penalties or legal
-        consequences.
-      </p>
-      <p><b>Check List to Obtain Importer Exporter Code (IEC) :</b></p>
-      <p>
-        <b>For Private Limited Company : </b> Obtaining an Importer Exporter
-        Code (IEC) is a mandatory requirement for companies that are involved in
-        the import and export of goods. To obtain this essential code, a company
-        must first be incorporated as a Private Limited Company. This article
-        outlines the steps that need to be taken for company incorporation and
-        obtaining an IEC. It will provide information about the documents
-        required, registration process, and other important details related to
-        the process. With this checklist, companies can easily understand what
-        needs to be done in order to obtain an IEC and start their import-export
-        business without any hassle.
-      </p>
-      <p>
-        <b>For Partnership Firm :</b>
-        an Importer Exporter Code (IEC) is essential for any partnership firm to
-        engage in international trade. To get the IEC, the partnership firm must
-        go through a few steps to ensure that their company is properly
-        registered and meets all the requirements for obtaining an IEC. This
-        checklist will help guide you through those steps and make sure that
-        your company is ready to receive its IEC. Following this checklist will
-        help ensure that your partnership firm is compliant with all the
-        necessary regulations and can start trading internationally as soon as
-        possible.
-      </p>
-      <p>
-        <b>Proprietor / Individual :</b>
-        Obtaining an Importer Exporter Code (IEC) is an important step for any
-        proprietor or individual looking to start a business in import-export.
-        It is a mandatory document required by the government to start any
-        trading activity.
-        <br/>
-        In this article, we will discuss the steps that you need to take in
-        order to obtain your IEC. We will also look into the company formation
-        process that needs to be completed before you can apply for your IEC. By
-        following this checklist, you can ensure that all the necessary steps
-        are taken and that you have all the documents required before applying
-        for your IEC.
-      </p>
+                            <p><b>For Private Limited Company:</b></p>
+                            <p>Obtaining an Importer Exporter Code (IEC) is a crucial step for any private limited company that wishes to engage in international trade. This code is a prerequisite for all companies that intend to import or export goods and services from India. In this article, we will discuss the checklist of documents required to obtain an IEC from the Indian government. We will also provide some tips on how to ensure that the process goes smoothly and quickly. With this guide, you can be sure that your private limited company will have no trouble in obtaining its Importer Exporter Code!</p>
+
+                            <p><b>Importer Exporter Code:</b></p>
+                            <p>
+                                The Importer Exporter Code (IEC) is a 10-digit code that is issued by
+                                the Director General of Foreign Trade (DGFT), Ministry of Commerce and
+                                Industry, Government of India. It is a unique identification number that
+                                is mandatory for any person or business entity that wishes to import or
+                                export goods or services from India, The PAN number of the Entity itself
+                                a your IEC Code.
+                            </p>
+                            <p><b>Here are some key points to note about the IEC in India:</b></p>
+                            <p>
+                                <b>Who needs IEC :</b> Any person or business entity that is involved in
+                                importing or exporting goods or services from India must obtain an IEC.
+                            </p>
+                            <p>
+                                <b>How to apply for IEC :</b> The application for IEC can be made online
+                                through the DGFT website or offline by submitting a physical application
+                                form to the nearest DGFT office.
+                            </p>
+                            <p>
+                                <b>Documents required for IEC :</b> The documents required for obtaining
+                                an IEC include PAN card, Aadhaar card, passport size photograph, bank
+                                certificate, and other relevant documents as specified by the DGFT.
+                            </p>
+                            <p>
+                                <b>Validity of IEC :</b> The IEC is valid for the entire lifetime of the
+                                entity or until it is surrendered or cancelled.
+                            </p>
+                            <p>
+                                <b>Use of IEC :</b> The IEC is used as a unique identification number
+                                while conducting import or export transactions with the customs
+                                authorities.
+                            </p>
+                            <p>
+                                <b>Benefits of IEC :</b> Having an IEC allows businesses to expand their
+                                operations globally and participate in international trade. It also
+                                enables them to avail of various benefits provided by the government of
+                                India for exporters and importers.
+                            </p>
+                            <p>
+                                It is important to note that the IEC is mandatory for any person or
+                                business entity that wishes to engage in import or export activities in
+                                India. Failure to obtain the IEC can result in penalties or legal
+                                consequences.
+                            </p>
+                            <p><b>Check List to Obtain Importer Exporter Code (IEC) :</b></p>
+                            <p>
+                                <b>For Private Limited Company : </b> Obtaining an Importer Exporter
+                                Code (IEC) is a mandatory requirement for companies that are involved in
+                                the import and export of goods. To obtain this essential code, a company
+                                must first be incorporated as a Private Limited Company. This article
+                                outlines the steps that need to be taken for company incorporation and
+                                obtaining an IEC. It will provide information about the documents
+                                required, registration process, and other important details related to
+                                the process. With this checklist, companies can easily understand what
+                                needs to be done in order to obtain an IEC and start their import-export
+                                business without any hassle.
+                            </p>
+                            <p>
+                                <b>For Partnership Firm :</b>
+                                an Importer Exporter Code (IEC) is essential for any partnership firm to
+                                engage in international trade. To get the IEC, the partnership firm must
+                                go through a few steps to ensure that their company is properly
+                                registered and meets all the requirements for obtaining an IEC. This
+                                checklist will help guide you through those steps and make sure that
+                                your company is ready to receive its IEC. Following this checklist will
+                                help ensure that your partnership firm is compliant with all the
+                                necessary regulations and can start trading internationally as soon as
+                                possible.
+                            </p>
+                            <p>
+                                <b>Proprietor / Individual :</b>
+                                Obtaining an Importer Exporter Code (IEC) is an important step for any
+                                proprietor or individual looking to start a business in import-export.
+                                It is a mandatory document required by the government to start any
+                                trading activity.
+                                <br />
+                                In this article, we will discuss the steps that you need to take in
+                                order to obtain your IEC. We will also look into the company formation
+                                process that needs to be completed before you can apply for your IEC. By
+                                following this checklist, you can ensure that all the necessary steps
+                                are taken and that you have all the documents required before applying
+                                for your IEC.
+                            </p>
 
                         </div>
                         <div className="blog-comment-form mt-50">
@@ -136,11 +146,11 @@ const ImportandExport = () => {
                             <form action="#" className="mt-30">
                                 <div className="input-wrapper mb-30">
                                     <label>Name*</label>
-                                    <input type="text" placeholder="Rashed Kabir" />
+                                    <input type="text" placeholder="User Name" />
                                 </div>
                                 <div className="input-wrapper mb-40">
                                     <label>Email*</label>
-                                    <input type="email" placeholder="rshdkabir@gmail.com" />
+                                    <input type="email" placeholder="username@gmail.com" />
                                 </div>
                                 <div className="input-wrapper mb-30">
                                     <textarea placeholder="Your Comment"></textarea>

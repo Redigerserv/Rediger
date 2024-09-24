@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const MOU = () => {
     return (
@@ -10,36 +11,53 @@ const MOU = () => {
                 <link rel="icon" href="/favicon-new.jpeg" />
             </Head>
             <div className="DSC">
-                <div className="blog-details border-top mt-160 xl-mt-140 pt-100 xl-pt-80 mb-150 xl-mb-100">
+                <div className="inner-banner-one inner-banner bg-pink text-center z-1 pt-160 lg-pt-130 pb-80 xl-pb-80 md-pb-60 position-relative">
+                    <div className="container">
+                        <h3 className="mb-35 xl-mb-20 pt-15">Memorandum of Understanding MOU</h3>
+                        <ul className="theme-breadcrumb style-none d-inline-flex align-items-center justify-content-center position-relative z-1 bottom-line">
+                            <li><Link href={'/'}>Home</Link></li>
+                            <li>/</li>
+                            <li>Memorandum of Understanding MOU</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="blog-details border-top pt-100 xl-pt-80 mb-150 xl-mb-100">
                     <div className="container">
                         <div className="row gx-xl-5">
                             <div className="col-lg-8">
-                                <div className="blog-post-meta mb-60 lg-mb-40">
-                                    {/* <div className="post-info"><a href="blog_02.html">Rashed Kabir .</a> 6 min</div> */}
-                                    <h3 className="blog-title">Memorandum of Understanding MOU</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row gx-xl-5">
-                            <div className="col-lg-12">
                                 <article className="blog-post-meta">
                                     <figure className="post-img position-relative m0  moubgImg">
                                         {/* <div className="fw-500 date d-inline-block">17 SEP</div> */}
                                     </figure>
                                     <div className="post-data pt-50 md-pt-30">
-                                        <ul className="style-none list-item">
-                                            <li>Place of entering Memorandum of Understanding</li>
-                                            <li>Parties to MOU</li>
-                                            <li>Purpose of MOU</li>
-                                            <li>Terms of MOU</li>
-                                            <li>consequences of not adhering terms of MOU</li>
-                                            <li>Arbitration</li>
-                                            <li>Witnesses</li>
-                                        </ul>
-                                        <p><b>Note: Reach our Legal team to help you on Drafting.</b></p>
+
                                     </div>
                                 </article>
                             </div>
+                            <div className="col-lg-4">
+                                <div className="blog-sidebar dot-bg ms-xxl-4 md-mt-60">
+                                    <div className="categories bg-white bg-wrapper mb-30">
+                                        <h5 className="mb-20">Other Services</h5>
+                                        <ul className="style-none">
+                                            <li><Link href={"/services/legal-Draft/non-disclosure-agreement"}>Non Disclosure Agreement</Link></li>
+                                            <li><Link href={"/services/legal-Draft/partnership-Deed"}>Partnership Deed</Link></li>
+                                            {/* <li><Link href={"/services/legal-Draft/MOU"}>Memorandum of Understanding (MOU)</Link></li> */}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <ul className="style-none list-item">
+                                <li>Place of entering Memorandum of Understanding</li>
+                                <li>Parties to MOU</li>
+                                <li>Purpose of MOU</li>
+                                <li>Terms of MOU</li>
+                                <li>consequences of not adhering terms of MOU</li>
+                                <li>Arbitration</li>
+                                <li>Witnesses</li>
+                            </ul>
+                            <p><b>Note: Reach our Legal team to help you on Drafting.</b></p>
                         </div>
                         <div className="blog-comment-form mt-50">
                             <h3 className="blog-inner-title">Leave A Comment</h3>
@@ -47,11 +65,11 @@ const MOU = () => {
                             <form action="#" className="mt-30">
                                 <div className="input-wrapper mb-30">
                                     <label>Name*</label>
-                                    <input type="text" placeholder="Rashed Kabir" />
+                                    <input type="text" placeholder="User Name" />
                                 </div>
                                 <div className="input-wrapper mb-40">
                                     <label>Email*</label>
-                                    <input type="email" placeholder="rshdkabir@gmail.com" />
+                                    <input type="email" placeholder="username@gmail.com" />
                                 </div>
                                 <div className="input-wrapper mb-30">
                                     <textarea placeholder="Your Comment"></textarea>

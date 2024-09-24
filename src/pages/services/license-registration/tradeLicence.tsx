@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const TradeLicence = () => {
     return (
@@ -10,106 +11,114 @@ const TradeLicence = () => {
                 <link rel="icon" href="/favicon-new.jpeg" />
             </Head>
             <div className="DSC">
-                <div className="blog-details border-top mt-160 xl-mt-140 pt-100 xl-pt-80 mb-150 xl-mb-100">
+                <div className="inner-banner-one inner-banner bg-pink text-center z-1 pt-160 lg-pt-130 pb-80 xl-pb-80 md-pb-60 position-relative">
+                    <div className="container">
+                        <h3 className="mb-35 xl-mb-20 pt-15">Trade Licence</h3>
+                        <ul className="theme-breadcrumb style-none d-inline-flex align-items-center justify-content-center position-relative z-1 bottom-line">
+                            <li><Link href={'/'}>Home</Link></li>
+                            <li>/</li>
+                            <li>Trade Licence</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="blog-details border-top pt-100 xl-pt-80 mb-150 xl-mb-100">
                     <div className="container">
                         <div className="row gx-xl-5">
                             <div className="col-lg-8">
-                                <div className="blog-post-meta mb-60 lg-mb-40">
-                                    {/* <div className="post-info"><a href="blog_02.html">Rashed Kabir .</a> 6 min</div> */}
-                                    <h3 className="blog-title">Trade Licence</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row gx-xl-5">
-                            <div className="col-lg-12">
                                 <article className="blog-post-meta">
                                     <figure className="post-img position-relative m0  teadebgImg">
                                         {/* <div className="fw-500 date d-inline-block">17 SEP</div> */}
                                     </figure>
                                     <div className="post-data pt-50 md-pt-30">
-                                        <p>A trade license, also known as a business license, is a legal document that grants permission to a business or individual to engage in a specific trade or commercial activity within a particular jurisdiction. The issuance of trade licenses is typically governed by the local municipal corporation or the local government authority responsible for trade regulation.</p>
-                                        <div className="quote-wrapper">
-                                            <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto"><img src="images/lazy.svg" data-src="images/icon/icon_67.svg" alt="" className="lazy-img" /></div>
-                                            <div className="row">
-                                                <div className="col-xxl-10 col-xl-11 col-lg-12 col-md-9 m-auto">
-                                                    <h4>Quick solutions coupled with extraordinary nice performance—a recommendation that's great.</h4>
-                                                </div>
-                                            </div>
-                                            <h6>James Bond. <span>USA</span></h6>
-                                        </div>
-                                        <p>The process of obtaining a trade license can vary depending on the location and the specific requirements of the issuing authority. However, here are the general steps involved:</p>
                                     </div>
                                 </article>
+                            </div>
+                            <div className="col-lg-4">
+                                <div className="blog-sidebar dot-bg ms-xxl-4 md-mt-60">
+                                    <div className="categories bg-white bg-wrapper mb-30">
+                                        <h5 className="mb-20">Other Services</h5>
+                                        <ul className="style-none">
+                                            <li><Link href={"/services/license-registration/fssaiRegistration"}>Fssai Registration</Link></li>
+                                            <li><Link href={"/services/license-registration/msmeRegistration"}>Msme Registration</Link></li>
+                                            <li><Link href={"/services/license-registration/trademarkRegistration"}>Trademark Registration</Link></li>
+                                            <li><Link href={"/services/license-registration/shopAct"}>Shop Act</Link></li>
+                                            {/* <li><Link href={"/services/license-registration/tradeLicence"}>Trade Licence</Link></li> */}
+                                            <li><Link href={"/services/license-registration/ImportandExport"}>Import and Export</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div className="div">
-                        <p><b>Determine the Applicable Authority:</b> Identify the local authority responsible for issuing trade licenses in your area. This is usually the municipal corporation or a designated trade licensing department.</p>
-      <p><b>Obtain the Application Form:</b> Self-explanatory web application form.</p>
-      <p><b>Complete the Application:</b> Fill out the application form with accurate information. The form may require details such as:</p>
-      <ul className="style-none list-item">
-        <li>Business name and address.</li>
-        <li>Nature of the business or trade activity.</li>
-        <li>Ownership details (proprietorship, partnership, or company information).</li>
-        <li>Information about the premises where the business will be conducted.</li>
-      </ul>
-      <p><b>Gather Required Documents:</b> Collect the necessary supporting documents to be submitted along with the application form. The specific documents required can vary, but they may include:</p>
-      <ul className="style-none list-item">
-        <li>Proof of identity and address of the applicant (proprietor, partners, or directors).</li>
-        <li>Proof of ownership or possession of the premises (rental agreement, property documents, or lease agreement).</li>
-        <li>NOC (No Objection Certificate) from the landlord or property owner.</li>
-        <li>Property tax receipt or proof of property tax payment.</li>
-        <li>Fire safety clearance certificate (if applicable).</li>
-        <li>Health department clearance (if applicable).</li>
-        <li>Any other documents specified by the local authority.</li>
-      </ul>
-      <p><b>Submit the Application:</b> Submit the completed application form along with the required documents to the designated authority. Ensure that you pay the prescribed application fee, which can vary depending on the jurisdiction.</p>
-      <p><b>Verification and Inspection:</b> The local authority may conduct an inspection of the premises to verify compliance with regulations and to ensure safety standards are met. They may also check the accuracy of the information provided in the application.</p>
-      <p><b>Issuance of Trade License:</b> If the application and premises meet the required standards and regulations, the local authority will issue the trade license. The license will typically mention the trade activity permitted, the validity period, and any other relevant conditions.</p>
-      <p><b>Renewal of Trade License:</b> Trade licenses are usually valid for a specific period, typically one to three years. You will need to renew the license before it expires by following the renewal process specified by the local authority.</p>
-      <p>It's important to note that the process and requirements for obtaining a trade license may vary depending on the jurisdiction. It is advisable to contact the local municipal corporation or the relevant authority to obtain accurate and up-to-date information on the specific requirements and procedures for obtaining a trade license in your area.</p>
-      <p><b>LICENSE FEE CAN BE CALCULATED BY THE TRADER HIMSELF AS UNDER</b></p>
-      <table className="table table-bordered table-responsive">
-        <thead>
-          <tr>
-            <th>S.no</th>
-            <th>No of Lanes</th>
-            <th>Road Width</th>
-            <th>Rate per Sft in Rs.</th>
-            <th>Maximum Amount in Rs.</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Single Lane</td>
-            <td>20 Feet</td>
-            <td>3/-</td>
-            <td>10,000/-</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Double Lane</td>
-            <td>30 Feet</td>
-            <td>4/-</td>
-            <td>50,000/-</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Multiple Lane</td>
-            <td>&gt;30 Feet</td>
-            <td>6/-</td>
-            <td>2,00,000/-</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Star Hotels, Corporate Hospitals</td>
-            <td>&gt;30 Feet</td>
-            <td>6/-</td>
-            <td>2,50,000/-</td>
-          </tr>
-        </tbody>
-      </table>
+                            <p>A trade license, also known as a business license, is a legal document that grants permission to a business or individual to engage in a specific trade or commercial activity within a particular jurisdiction. The issuance of trade licenses is typically governed by the local municipal corporation or the local government authority responsible for trade regulation.</p>
+                            <p>The process of obtaining a trade license can vary depending on the location and the specific requirements of the issuing authority. However, here are the general steps involved:</p>
+                            <p><b>Determine the Applicable Authority:</b> Identify the local authority responsible for issuing trade licenses in your area. This is usually the municipal corporation or a designated trade licensing department.</p>
+                            <p><b>Obtain the Application Form:</b> Self-explanatory web application form.</p>
+                            <p><b>Complete the Application:</b> Fill out the application form with accurate information. The form may require details such as:</p>
+                            <ul className="style-none list-item">
+                                <li>Business name and address.</li>
+                                <li>Nature of the business or trade activity.</li>
+                                <li>Ownership details (proprietorship, partnership, or company information).</li>
+                                <li>Information about the premises where the business will be conducted.</li>
+                            </ul>
+                            <p><b>Gather Required Documents:</b> Collect the necessary supporting documents to be submitted along with the application form. The specific documents required can vary, but they may include:</p>
+                            <ul className="style-none list-item">
+                                <li>Proof of identity and address of the applicant (proprietor, partners, or directors).</li>
+                                <li>Proof of ownership or possession of the premises (rental agreement, property documents, or lease agreement).</li>
+                                <li>NOC (No Objection Certificate) from the landlord or property owner.</li>
+                                <li>Property tax receipt or proof of property tax payment.</li>
+                                <li>Fire safety clearance certificate (if applicable).</li>
+                                <li>Health department clearance (if applicable).</li>
+                                <li>Any other documents specified by the local authority.</li>
+                            </ul>
+                            <p><b>Submit the Application:</b> Submit the completed application form along with the required documents to the designated authority. Ensure that you pay the prescribed application fee, which can vary depending on the jurisdiction.</p>
+                            <p><b>Verification and Inspection:</b> The local authority may conduct an inspection of the premises to verify compliance with regulations and to ensure safety standards are met. They may also check the accuracy of the information provided in the application.</p>
+                            <p><b>Issuance of Trade License:</b> If the application and premises meet the required standards and regulations, the local authority will issue the trade license. The license will typically mention the trade activity permitted, the validity period, and any other relevant conditions.</p>
+                            <p><b>Renewal of Trade License:</b> Trade licenses are usually valid for a specific period, typically one to three years. You will need to renew the license before it expires by following the renewal process specified by the local authority.</p>
+                            <p>It's important to note that the process and requirements for obtaining a trade license may vary depending on the jurisdiction. It is advisable to contact the local municipal corporation or the relevant authority to obtain accurate and up-to-date information on the specific requirements and procedures for obtaining a trade license in your area.</p>
+                            <p><b>LICENSE FEE CAN BE CALCULATED BY THE TRADER HIMSELF AS UNDER</b></p>
+                            <table className="table table-bordered table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>S.no</th>
+                                        <th>No of Lanes</th>
+                                        <th>Road Width</th>
+                                        <th>Rate per Sft in Rs.</th>
+                                        <th>Maximum Amount in Rs.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Single Lane</td>
+                                        <td>20 Feet</td>
+                                        <td>3/-</td>
+                                        <td>10,000/-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Double Lane</td>
+                                        <td>30 Feet</td>
+                                        <td>4/-</td>
+                                        <td>50,000/-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Multiple Lane</td>
+                                        <td>&gt;30 Feet</td>
+                                        <td>6/-</td>
+                                        <td>2,00,000/-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Star Hotels, Corporate Hospitals</td>
+                                        <td>&gt;30 Feet</td>
+                                        <td>6/-</td>
+                                        <td>2,50,000/-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
                         </div>
                         <div className="blog-comment-form mt-50">
@@ -118,11 +127,11 @@ const TradeLicence = () => {
                             <form action="#" className="mt-30">
                                 <div className="input-wrapper mb-30">
                                     <label>Name*</label>
-                                    <input type="text" placeholder="Rashed Kabir" />
+                                    <input type="text" placeholder="User Name" />
                                 </div>
                                 <div className="input-wrapper mb-40">
                                     <label>Email*</label>
-                                    <input type="email" placeholder="rshdkabir@gmail.com" />
+                                    <input type="email" placeholder="username@gmail.com" />
                                 </div>
                                 <div className="input-wrapper mb-30">
                                     <textarea placeholder="Your Comment"></textarea>

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const OnePersonCompany = () => {
     return (
@@ -10,26 +11,34 @@ const OnePersonCompany = () => {
                 <link rel="icon" href="/favicon-new.jpeg" />
             </Head>
             <div className="OnePersonCompany">
-                <div className="blog-details border-top mt-160 xl-mt-140 pt-100 xl-pt-80 mb-150 xl-mb-100">
+            <div className="inner-banner-one inner-banner bg-pink text-center z-1 pt-160 lg-pt-130 pb-80 xl-pb-80 md-pb-60 position-relative">
                     <div className="container">
-                        <div className="row gx-xl-5">
+                        <h3 className="mb-35 xl-mb-20 pt-15">One Person Company</h3>
+                        <ul className="theme-breadcrumb style-none d-inline-flex align-items-center justify-content-center position-relative z-1 bottom-line">
+                            <li><Link href={'/'}>Home</Link></li>
+                            <li>/</li>
+                            <li>One Person Company</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="blog-details border-top pt-100 xl-pt-80 mb-150 xl-mb-100">
+                    <div className="container">
+                        {/* <div className="row gx-xl-5">
                             <div className="col-lg-8">
                                 <div className="blog-post-meta mb-60 lg-mb-40">
-                                    {/* <div className="post-info"><a href="blog_02.html">Rashed Kabir .</a> 6 min</div> */}
+                                    <div className="post-info"><a href="blog_02.html">Rashed Kabir .</a> 6 min</div>
                                     <h3 className="blog-title">One Person Company</h3>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="row gx-xl-5">
-                            <div className="col-lg-12">
+                            <div className="col-lg-8">
                                 <article className="blog-post-meta">
                                     <figure className="post-img position-relative m0  onePersonbgImg">
                                         {/* <div className="fw-500 date d-inline-block">17 SEP</div> */}
                                     </figure>
                                     <div className="post-data pt-50 md-pt-30">
-                                        <p>The Companies Act, 2013 introduced the concept of One Person Company (OPC) in India. It allows a single person to start and activate a company on his/her own, without the need for a co-founder or partner. Here are some key features of an OPC under the Companies Act, 2013:</p>
-                                        <p>The documents that need to be submitted by directors and shareholders of a One Person Company include Articles of Association, Memorandum of Association, application for registration, declaration of compliance with all applicable laws and regulations, appointment forms for directors and secretary (if needed), share allotment forms and other relevant documents. It is important to ensure that all these documents are properly filled out and submitted in order to ensure a successful incorporation process.</p>
-                                        <div className="quote-wrapper">
+                                       {/* <div className="quote-wrapper">
                                             <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto"><img src="images/lazy.svg" data-src="images/icon/icon_67.svg" alt="" className="lazy-img" /></div>
                                             <div className="row">
                                                 <div className="col-xxl-10 col-xl-11 col-lg-12 col-md-9 m-auto">
@@ -37,13 +46,31 @@ const OnePersonCompany = () => {
                                                 </div>
                                             </div>
                                             <h6>James Bond. <span>USA</span></h6>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </article>
                             </div>
+                            <div className="col-lg-4">
+                                <div className="blog-sidebar dot-bg ms-xxl-4 md-mt-60">
+                                    <div className="categories bg-white bg-wrapper mb-30">
+                                        <h5 className="mb-20">Other Services</h5>
+                                        <ul className="style-none">
+                                            <li><Link href={"/services/start-business/privateLimitedCompany"}>Private Limited Company</Link></li>
+                                            <li><Link href={"/services/start-business/limitedLiabilityCompany"}>Limited Liability Company</Link></li>
+                                            <li><Link href={"/services/start-business/partnershipFirm"}>Partnership Firm</Link></li>
+                                            <li><Link href={"/services/start-business/nidhiRegistration"}>Nidhi Company Registration</Link></li>
+                                            <li><Link href={"/services/start-business/soleProprietorship"}>Sole Proprietorship</Link></li>
+                                            <li><Link href={"/services/start-business/section_8_company"}>Section 8 Company or NPO</Link></li>
+                                            <li><Link href={"/services/start-business/DSC"}>DSC</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
                         <div className="div">
+                        <p>The Companies Act, 2013 introduced the concept of One Person Company (OPC) in India. It allows a single person to start and activate a company on his/her own, without the need for a co-founder or partner. Here are some key features of an OPC under the Companies Act, 2013:</p>
+                                        <p>The documents that need to be submitted by directors and shareholders of a One Person Company include Articles of Association, Memorandum of Association, application for registration, declaration of compliance with all applicable laws and regulations, appointment forms for directors and secretary (if needed), share allotment forms and other relevant documents. It is important to ensure that all these documents are properly filled out and submitted in order to ensure a successful incorporation process.</p>
+                                        
                             <p>
                                 <b>Solo Shareholder :</b> An OPC can have only one shareholder, who is also the director of the company. This allows for complete control over the business and executive-making.
                             </p>
@@ -133,11 +160,11 @@ const OnePersonCompany = () => {
                             <form action="#" className="mt-30">
                                 <div className="input-wrapper mb-30">
                                     <label>Name*</label>
-                                    <input type="text" placeholder="Rashed Kabir" />
+                                    <input type="text" placeholder="User Name" />
                                 </div>
                                 <div className="input-wrapper mb-40">
                                     <label>Email*</label>
-                                    <input type="email" placeholder="rshdkabir@gmail.com" />
+                                    <input type="email" placeholder="username@gmail.com" />
                                 </div>
                                 <div className="input-wrapper mb-30">
                                     <textarea placeholder="Your Comment"></textarea>

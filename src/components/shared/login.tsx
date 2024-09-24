@@ -9,7 +9,12 @@ import googleImg from "../../assets/images/icon/google.png"
 import facebookImg from "../../assets/images/icon/facebook.png"
 import Link from "next/link";
 
+import { signIn } from 'next-auth/react';
+import { useSession, signOut } from 'next-auth/react';
+
 const Login = ({ showModal, setShowModal }: any) => {
+
+    const { data: session } = useSession();
     return (
         <>
             <Modal show={showModal} onHide={() => setShowModal(false)} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
@@ -114,25 +119,41 @@ const Login = ({ showModal, setShowModal }: any) => {
                                 </Row>
                             </Tab.Container>
 
-                            {/* <div className="d-flex align-items-center mt-30 mb-10">
+                            <div className="d-flex align-items-center mt-30 mb-10">
                                 <div className="line"></div>
                                 <span className="pe-3 ps-3 fs-6">OR</span>
                                 <div className="line"></div>
                             </div>
                             <div className="row">
-                                <div className="col-sm-6">
+                                {/* <div className="col-sm-6">
                                     <a href="#" className="social-use-btn d-flex align-items-center justify-content-center tran3s w-100 mt-10">
                                         <Image src={googleImg} alt="" />
-                                        <span className="ps-3">Signup with Google</span>
+                                        <span className="ps-3" onClick={() => signIn('google')}>Signup with Google</span>
                                     </a>
-                                </div>
-                                <div className="col-sm-6">
+                                </div> */}
+
+                                {!session ? (
+                                    <>
+                                        <div className="">
+                                            <a href="#" className="social-use-btn d-flex align-items-center justify-content-center tran3s w-100 mt-10">
+                                                <Image src={googleImg} alt="" />
+                                                <span className="ps-3" onClick={() => signIn('google')}>Signup with Google</span>
+                                            </a>
+                                        </div>
+                                    </>
+                                ) : (
+                                    <div>
+                                        <h2>Signed in as {session.user?.email}</h2>
+                                        <button onClick={() => signOut()}>Sign Out</button>
+                                    </div>
+                                )}
+                                {/* <div className="col-sm-6">
                                     <a href="#" className="social-use-btn d-flex align-items-center justify-content-center tran3s w-100 mt-10">
                                         <Image src={facebookImg} alt="" />
                                         <span className="ps-3">Signup with Facebook</span>
                                     </a>
-                                </div>
-                            </div> */}
+                                </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
