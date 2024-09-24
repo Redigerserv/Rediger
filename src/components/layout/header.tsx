@@ -77,17 +77,17 @@ const Header = () => {
                                 <ul className="d-flex align-items-center style-none">
 
                                     <li>
-                                    {!session ? (
-                                         <a data-bs-toggle="modal" data-bs-target="#loginModal" className="btn-one" onClick={() => setShowModal(true)}><i className="fa-regular fa-lock"></i> <span>Login/Register</span></a>
-                                    ) : (
-                                        <a data-bs-toggle="modal" data-bs-target="#loginModal" className="btn-one" onClick={() => signOut()}><i className="fa-regular fa-lock"></i> <span>Logout</span></a>
+                                        {!session ? (
+                                            <a data-bs-toggle="modal" data-bs-target="#loginModal" className="btn-one" onClick={() => setShowModal(true)}><i className="fa-regular fa-lock"></i> <span>Login/Register</span></a>
+                                        ) : (
+                                            <a data-bs-toggle="modal" data-bs-target="#loginModal" className="btn-one" onClick={() => signOut()}><i className="fa-regular fa-lock"></i> <span>Logout</span></a>
 
-                                    //     <div>
-                                    //     <h2>Signed in as {session.user?.email}</h2>
-                                    //     <button onClick={() => signOut()}>Sign Out</button>
-                                    // </div>
-                                    )}
-                                       
+                                            //     <div>
+                                            //     <h2>Signed in as {session.user?.email}</h2>
+                                            //     <button onClick={() => signOut()}>Sign Out</button>
+                                            // </div>
+                                        )}
+
                                     </li>
                                     {/* <li className="d-none d-md-inline-block ms-3">
                                         <a href="dashboard/add-property.html" className="btn-two" target="_blank"><span>Add Listing</span> <i className="fa-thin fa-arrow-up-right"></i></a>
@@ -136,7 +136,7 @@ const Header = () => {
                                         </li>
                                         <li className="nav-item dropdown">
                                             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                                data-bs-auto-close="outside" aria-expanded="false">GST Registration 
+                                                data-bs-auto-close="outside" aria-expanded="false">GST Registration
                                             </a>
                                             <ul className="dropdown-menu">
                                                 <li><Link href={"/services/GST_Registration/GST_registration"} className="dropdown-item"><span>GST Registration</span></Link></li>
@@ -207,7 +207,7 @@ const Header = () => {
             </header>
 
 
-           <Login showModal={showModal} setShowModal={setShowModal}/>
+            <Login showModal={showModal} setShowModal={setShowModal} />
 
             <Offcanvas show={show} onHide={handleClose} placement='end'>
                 <Offcanvas.Header closeButton>
@@ -224,31 +224,33 @@ const Header = () => {
                                 <Accordion.Header className='sideNavHeading'><RxDashboard size={22} className='mx-2' /> DASHBOARD</Accordion.Header>
                             </Accordion.Item>
                             <Accordion.Item eventKey="1">
-                                <Accordion.Header className='sideNavHeading'><LuAlignHorizontalJustifyStart size={22} className='mx-2' /> START A BUSINESS</Accordion.Header>
+                                <Accordion.Header className='sideNavHeading'><LuAlignHorizontalJustifyStart size={22} className='mx-2' />START A BUSINESS</Accordion.Header>
                                 <Accordion.Body className='p-0'>
                                     <div className="div">
                                         <ul style={{ margin: "0px" }}>
-                                            <li className='sideNavItem'>Private limited Company</li><hr className='m-0' />
-                                            <li className='sideNavItem'>One Person Company</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Limited Liability Comapny</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Partnership Firm</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Sole Proprietorship</li><hr className='m-0' />
-                                            <li className='sideNavItem'>DSC</li>
+                                            <li onClick={handleClose}><Link href={"/services/start-business/privateLimitedCompany"} className="sideNavItem"><span>Private Limited Company</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/start-business/onePersonCompany"} className="sideNavItem"><span>One Person Company</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/start-business/limitedLiabilityCompany"} className="sideNavItem"><span>Limited Liability Company</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/start-business/partnershipFirm"} className="sideNavItem"><span>Partnership Firm</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/start-business/nidhiRegistration"} className="sideNavItem"><span>Nidhi Company Registration</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/start-business/soleProprietorship"} className="sideNavItem"><span>Sole Proprietorship</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/start-business/section_8_company"} className="sideNavItem"><span>Section 8 Company or NPO</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/start-business/DSC"} className="sideNavItem"><span>DSC</span></Link></li>
                                         </ul>
                                     </div>
                                 </Accordion.Body>
                             </Accordion.Item>
                             <Accordion.Item eventKey="2">
-                                <Accordion.Header className='sideNavHeading'><MdOutlineAppRegistration size={22} className='mx-2' /> LICENCE / REGISTRATION</Accordion.Header>
+                                <Accordion.Header className='sideNavHeading'><MdOutlineAppRegistration size={22} className='mx-2' />LICENCE / REGISTRATION</Accordion.Header>
                                 <Accordion.Body className='p-0'>
                                     <div className="div">
                                         <ul style={{ margin: "0px" }}>
-                                            <li className='sideNavItem'>Fssai Registration</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Msme Registration</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Trade Registration</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Shop Act</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Trade Licence</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Import and Export</li>
+                                            <li onClick={handleClose}><Link href={"/services/license-registration/fssaiRegistration"} className="sideNavItem"><span>Fssai Registration</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/license-registration/msmeRegistration"} className="sideNavItem"><span>Msme Registration</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/license-registration/trademarkRegistration"} className="sideNavItem"><span>Trademark Registration</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/license-registration/shopAct"} className="sideNavItem"><span>Shop Act</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/license-registration/tradeLicence"} className="sideNavItem"><span>Trade Licence</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/license-registration/ImportandExport"} className="sideNavItem"><span>Import and Export</span></Link></li>
                                         </ul>
                                     </div>
                                 </Accordion.Body>
@@ -258,27 +260,27 @@ const Header = () => {
                                 <Accordion.Body className='p-0'>
                                     <div className="div">
                                         <ul style={{ margin: "0px" }}>
-                                            <li className='sideNavItem'>GST Registration</li><hr className='m-0' />
-                                            <li className='sideNavItem'>TDS Return Filing</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Professional Tax Registration</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Provident Fund</li><hr className='m-0' />
-                                            <li className='sideNavItem'>ESIS</li><hr className='m-0' />
-                                            <li className='sideNavItem'>LUT Filing Under GST</li>
+                                            <li onClick={handleClose}><Link href={"/services/GST_Registration/GST_registration"} className="sideNavItem"><span>GST Registration</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/GST_Registration/LUT_filing_Under_GST"} className="sideNavItem"><span>LUT Filling Under GST</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/GST_Registration/TDS-ReturnFiling"} className="sideNavItem"><span>TDS Return Filing</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/GST_Registration/professionalTax_Registration"} className="sideNavItem"><span>Professional Tax Registration</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/GST_Registration/providentFund"} className="sideNavItem"><span>Provident Fund</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/GST_Registration/ESIS"} className="sideNavItem"><span>ESIS</span></Link></li>
                                         </ul>
                                     </div>
                                 </Accordion.Body>
                             </Accordion.Item>
-                            <Accordion.Item eventKey="4">
+                            {/* <Accordion.Item eventKey="4">
                                 <Accordion.Header className='sideNavHeading careers'><MdOutlineWork size={22} className='mx-2' /> CAREERS</Accordion.Header>
-                            </Accordion.Item>
+                            </Accordion.Item> */}
                             <Accordion.Item eventKey="5">
                                 <Accordion.Header className='sideNavHeading'><SiTaxbuzz size={22} className='mx-2' />LEGAL DRAFT</Accordion.Header>
                                 <Accordion.Body className='p-0'>
                                     <div className="div">
                                         <ul style={{ margin: "0px" }}>
-                                            <li className='sideNavItem'>Non-Disclosure Agreement</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Partnership Deed</li><hr className='m-0' />
-                                            <li className='sideNavItem'>Memorandum of Understanding MOU</li>
+                                            <li onClick={handleClose}><Link href={"/services/legal-Draft/non-disclosure-agreement"} className="sideNavItem"><span>Non Disclosure Agreement</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/legal-Draft/partnership-Deed"} className="sideNavItem"><span>Partnership Deed</span></Link></li><hr className='m-0' />
+                                            <li onClick={handleClose}><Link href={"/services/legal-Draft/MOU"} className="sideNavItem"><span>Memorandum of Understanding (MOU)</span></Link></li>
                                         </ul>
                                     </div>
                                 </Accordion.Body>
