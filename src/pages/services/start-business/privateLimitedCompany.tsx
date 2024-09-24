@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const PrivateLimitedCompany = () => {
     return (
@@ -10,16 +11,28 @@ const PrivateLimitedCompany = () => {
                 <link rel="icon" href="/favicon-new.jpeg" />
             </Head>
             <div className="privateLimitedCompany">
-                <div className="blog-details border-top mt-160 xl-mt-140 pt-100 xl-pt-80 mb-150 xl-mb-100">
+                <div className="inner-banner-one inner-banner bg-pink text-center z-1 pt-160 lg-pt-130 pb-80 xl-pb-80 md-pb-60 position-relative">
                     <div className="container">
-                        <div className="row gx-xl-5">
+                        <h3 className="mb-35 xl-mb-20 pt-15">Private Limited Company</h3>
+                        <ul className="theme-breadcrumb style-none d-inline-flex align-items-center justify-content-center position-relative z-1 bottom-line">
+                            <li><Link href={'/'}>Home</Link></li>
+                            <li>/</li>
+                            <li>Private Limited Companys</li>
+                        </ul>
+                    </div>
+                    {/* <Image src={mainbgImg}  alt="" className="lazy-img shapes w-100 illustration" style={{height:"-webkit-fill-available"}}/> */}
+                </div>
+                {/* <div className="blog-details border-top pt-100 xl-pt-80 mb-150 xl-mb-100"> */}
+                <div className="blog-details border-top pt-100 xl-pt-80 mb-150 xl-mb-100">
+                    <div className="container">
+                        {/* <div className="row gx-xl-5">
                             <div className="col-lg-8">
                                 <div className="blog-post-meta mb-60 lg-mb-40">
-                                    {/* <div className="post-info"><a href="blog_02.html">Rashed Kabir .</a> 6 min</div> */}
+                                    <div className="post-info"><a href="blog_02.html">Rashed Kabir .</a> 6 min</div>
                                     <h3 className="blog-title">Private Limited Company</h3>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="row gx-xl-5">
                             <div className="col-lg-8">
                                 <article className="blog-post-meta">
@@ -27,9 +40,8 @@ const PrivateLimitedCompany = () => {
                                         {/* <div className="fw-500 date d-inline-block">17 SEP</div> */}
                                     </figure>
                                     <div className="post-data pt-50 md-pt-30">
-                                        <p>When setting up a private limited company, there are certain documents that need to be submitted by the directors and shareholders. These documents are essential for the incorporation of the company and include important information such as the company's name, registered office address, share capital details, and other pertinent information.</p>
-                                        <p>The documents that need to be submitted by directors and shareholders of a private limited company include Articles of Association, Memorandum of Association, application for registration, declaration of compliance with all applicable laws and regulations, appointment forms for directors and secretary (if needed), share allotment forms and other relevant documents. It is important to ensure that all these documents are properly filled out and submitted in order to ensure a successful incorporation process.</p>
-                                        <div className="quote-wrapper">
+
+                                        {/* <div className="quote-wrapper">
                                             <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto"><img src="images/lazy.svg" data-src="images/icon/icon_67.svg" alt="" className="lazy-img" /></div>
                                             <div className="row">
                                                 <div className="col-xxl-10 col-xl-11 col-lg-12 col-md-9 m-auto">
@@ -37,26 +49,26 @@ const PrivateLimitedCompany = () => {
                                                 </div>
                                             </div>
                                             <h6>James Bond. <span>USA</span></h6>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </article>
                             </div>
                             <div className="col-lg-4">
                                 <div className="blog-sidebar dot-bg ms-xxl-4 md-mt-60">
                                     <div className="categories bg-white bg-wrapper mb-30">
-                                        <h5 className="mb-20">Category</h5>
+                                        <h5 className="mb-20">Other Services</h5>
                                         <ul className="style-none">
-                                            <li><a href="#">Digital  (3)</a></li>
-                                            <li><a href="#">Marketing (4)</a></li>
-                                            <li><a href="#">Design (2)</a></li>
-                                            <li><a href="#">WordPress (8)</a></li>
-                                            <li><a href="#">Plugin (5)</a></li>
-                                            <li><a href="#">Developer (3)</a></li>
-                                            <li><a href="#">Account (7)</a></li>
+                                            <li><Link href={"/services/start-business/onePersonCompany"}>One Person Company</Link></li>
+                                            <li><Link href={"/services/start-business/limitedLiabilityCompany"}>Limited Liability Company</Link></li>
+                                            <li><Link href={"/services/start-business/partnershipFirm"}>Partnership Firm</Link></li>
+                                            <li><Link href={"/services/start-business/nidhiRegistration"}>Nidhi Company Registration</Link></li>
+                                            <li><Link href={"/services/start-business/soleProprietorship"}>Sole Proprietorship</Link></li>
+                                            <li><Link href={"/services/start-business/section_8_company"}>Section 8 Company or NPO</Link></li>
+                                            <li><Link href={"/services/start-business/DSC"}>DSC</Link></li>
                                         </ul>
                                     </div>
 
-                                    <div className="recent-news bg-white bg-wrapper mb-30">
+                                    {/* <div className="recent-news bg-white bg-wrapper mb-30">
                                         <h5 className="mb-20">Recent News</h5>
                                         <div className="news-block d-flex align-items-center pb-25">
                                             <div><img src="images/lazy.svg" data-src="images/blog/blog_img_08.jpg" alt="" className="lazy-img" /></div>
@@ -89,11 +101,13 @@ const PrivateLimitedCompany = () => {
                                             <li><a href="#">Development</a></li>
                                             <li><a href="#">Branding</a></li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
                         <div className="div">
+                            <p>When setting up a private limited company, there are certain documents that need to be submitted by the directors and shareholders. These documents are essential for the incorporation of the company and include important information such as the company's name, registered office address, share capital details, and other pertinent information.</p>
+                            <p>The documents that need to be submitted by directors and shareholders of a private limited company include Articles of Association, Memorandum of Association, application for registration, declaration of compliance with all applicable laws and regulations, appointment forms for directors and secretary (if needed), share allotment forms and other relevant documents. It is important to ensure that all these documents are properly filled out and submitted in order to ensure a successful incorporation process.</p>
                             <p>
                                 <b>Annual Compliances to be complied by Private Limited companies (PLCS)
                                     :
@@ -292,11 +306,11 @@ const PrivateLimitedCompany = () => {
                             <form action="#" className="mt-30">
                                 <div className="input-wrapper mb-30">
                                     <label>Name*</label>
-                                    <input type="text" placeholder="Rashed Kabir" />
+                                    <input type="text" placeholder="User Name" />
                                 </div>
                                 <div className="input-wrapper mb-40">
                                     <label>Email*</label>
-                                    <input type="email" placeholder="rshdkabir@gmail.com" />
+                                    <input type="email" placeholder="username@gmail.com" />
                                 </div>
                                 <div className="input-wrapper mb-30">
                                     <textarea placeholder="Your Comment"></textarea>

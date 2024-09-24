@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const NON_Disclosure_Agreement = () => {
     return (
@@ -10,38 +11,43 @@ const NON_Disclosure_Agreement = () => {
                 <link rel="icon" href="/favicon-new.jpeg" />
             </Head>
             <div className="DSC">
-                <div className="blog-details border-top mt-160 xl-mt-140 pt-100 xl-pt-80 mb-150 xl-mb-100">
+                <div className="inner-banner-one inner-banner bg-pink text-center z-1 pt-160 lg-pt-130 pb-80 xl-pb-80 md-pb-60 position-relative">
+                    <div className="container">
+                        <h3 className="mb-35 xl-mb-20 pt-15">NON-Disclosure Agreement</h3>
+                        <ul className="theme-breadcrumb style-none d-inline-flex align-items-center justify-content-center position-relative z-1 bottom-line">
+                            <li><Link href={'/'}>Home</Link></li>
+                            <li>/</li>
+                            <li>NON-Disclosure Agreement</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="blog-details border-top pt-100 xl-pt-80 mb-150 xl-mb-100">
                     <div className="container">
                         <div className="row gx-xl-5">
                             <div className="col-lg-8">
-                                <div className="blog-post-meta mb-60 lg-mb-40">
-                                    {/* <div className="post-info"><a href="blog_02.html">Rashed Kabir .</a> 6 min</div> */}
-                                    <h3 className="blog-title">NON-Disclosure Agreement</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row gx-xl-5">
-                            <div className="col-lg-12">
                                 <article className="blog-post-meta">
                                     <figure className="post-img position-relative m0  ndabgImg">
                                         {/* <div className="fw-500 date d-inline-block">17 SEP</div> */}
                                     </figure>
                                     <div className="post-data pt-50 md-pt-30">
-                                        <p>A non-disclosure agreement (NDA), also known as a confidentiality agreement, is a legally binding contract that establishes a confidential relationship between two or more parties. It is commonly used to protect sensitive or proprietary information shared between the parties, ensuring that the information remains confidential and cannot be disclosed to third parties without proper authorization. NDAs are frequently used in business transactions, employment relationships, and collaborations where the sharing of confidential information is necessary.</p>
-                                        <div className="quote-wrapper">
-                                            <div className="icon rounded-circle d-flex align-items-center justify-content-center m-auto"><img src="images/lazy.svg" data-src="images/icon/icon_67.svg" alt="" className="lazy-img" /></div>
-                                            <div className="row">
-                                                <div className="col-xxl-10 col-xl-11 col-lg-12 col-md-9 m-auto">
-                                                    <h4>Quick solutions coupled with extraordinary nice performance—a recommendation that's great.</h4>
-                                                </div>
-                                            </div>
-                                            <h6>James Bond. <span>USA</span></h6>
-                                        </div>
                                     </div>
                                 </article>
                             </div>
+                            <div className="col-lg-4">
+                                <div className="blog-sidebar dot-bg ms-xxl-4 md-mt-60">
+                                    <div className="categories bg-white bg-wrapper mb-30">
+                                        <h5 className="mb-20">Other Services</h5>
+                                        <ul className="style-none">
+                                            {/* <li><Link href={"/services/legal-Draft/non-disclosure-agreement"}>Non Disclosure Agreement</Link></li> */}
+                                            <li><Link href={"/services/legal-Draft/partnership-Deed"}>Partnership Deed</Link></li>
+                                            <li><Link href={"/services/legal-Draft/MOU"}>Memorandum of Understanding (MOU)</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="div">
+                            <p>A non-disclosure agreement (NDA), also known as a confidentiality agreement, is a legally binding contract that establishes a confidential relationship between two or more parties. It is commonly used to protect sensitive or proprietary information shared between the parties, ensuring that the information remains confidential and cannot be disclosed to third parties without proper authorization. NDAs are frequently used in business transactions, employment relationships, and collaborations where the sharing of confidential information is necessary.</p>
                             <p>Here are some key elements typically found in a non-disclosure agreement:</p>
                             <ul>
                                 <li><b>Parties:</b> The agreement will identify the parties involved, typically referred to as the "Disclosing Party" and the "Receiving Party." The Disclosing Party is the entity or individual sharing the confidential information, while the Receiving Party is the entity or individual receiving the information.</li>
@@ -68,11 +74,11 @@ const NON_Disclosure_Agreement = () => {
                             <form action="#" className="mt-30">
                                 <div className="input-wrapper mb-30">
                                     <label>Name*</label>
-                                    <input type="text" placeholder="Rashed Kabir" />
+                                    <input type="text" placeholder="User Name" />
                                 </div>
                                 <div className="input-wrapper mb-40">
                                     <label>Email*</label>
-                                    <input type="email" placeholder="rshdkabir@gmail.com" />
+                                    <input type="email" placeholder="username@gmail.com" />
                                 </div>
                                 <div className="input-wrapper mb-30">
                                     <textarea placeholder="Your Comment"></textarea>

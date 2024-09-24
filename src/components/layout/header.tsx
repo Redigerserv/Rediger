@@ -15,7 +15,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import { MdOutlineWork } from "react-icons/md";
 
 import backImg from "../../assets/images/portalRediger/blueimage.png"
-
+import { useSession, signOut } from 'next-auth/react';
 
 // import cart from "../../assets/img/icon/cart.svg"
 // import user from "../../assets/images/logo/logo_01.svg"
@@ -24,6 +24,7 @@ import { Modal } from 'react-bootstrap';
 import Login from '../shared/login';
 
 const Header = () => {
+    const { data: session } = useSession();
     const [show, setShow] = useState(false);
     const [showModal, setShowModal] = useState(false);
 
@@ -74,8 +75,19 @@ const Header = () => {
                             </div>
                             <div className="right-widget ms-auto ms-lg-0 me-3 me-lg-0 order-lg-3">
                                 <ul className="d-flex align-items-center style-none">
+
                                     <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" className="btn-one" onClick={() => setShowModal(true)}><i className="fa-regular fa-lock"></i> <span>Login/Register</span></a>
+                                    {!session ? (
+                                         <a data-bs-toggle="modal" data-bs-target="#loginModal" className="btn-one" onClick={() => setShowModal(true)}><i className="fa-regular fa-lock"></i> <span>Login/Register</span></a>
+                                    ) : (
+                                        <a data-bs-toggle="modal" data-bs-target="#loginModal" className="btn-one" onClick={() => signOut()}><i className="fa-regular fa-lock"></i> <span>Logout</span></a>
+
+                                    //     <div>
+                                    //     <h2>Signed in as {session.user?.email}</h2>
+                                    //     <button onClick={() => signOut()}>Sign Out</button>
+                                    // </div>
+                                    )}
+                                       
                                     </li>
                                     {/* <li className="d-none d-md-inline-block ms-3">
                                         <a href="dashboard/add-property.html" className="btn-two" target="_blank"><span>Add Listing</span> <i className="fa-thin fa-arrow-up-right"></i></a>
@@ -115,8 +127,8 @@ const Header = () => {
                                             </Link>
                                             <ul className="dropdown-menu">
                                                 <li><Link href={"/services/license-registration/fssaiRegistration"} className="dropdown-item"><span>Fssai Registration</span></Link></li>
-                                                <li><Link href={"/services/license-registration/msmeRegistration"} className="dropdown-item"><span>Msme  Registration</span></Link></li>
-                                                <li><Link href={"/services/license-registration/trademarkRegistration"} className="dropdown-item"><span>Trademark  Registration</span></Link></li>
+                                                <li><Link href={"/services/license-registration/msmeRegistration"} className="dropdown-item"><span>Msme Registration</span></Link></li>
+                                                <li><Link href={"/services/license-registration/trademarkRegistration"} className="dropdown-item"><span>Trademark Registration</span></Link></li>
                                                 <li><Link href={"/services/license-registration/shopAct"} className="dropdown-item"><span>Shop Act</span></Link></li>
                                                 <li><Link href={"/services/license-registration/tradeLicence"} className="dropdown-item"><span>Trade Licence</span></Link></li>
                                                 <li><Link href={"/services/license-registration/ImportandExport"} className="dropdown-item"><span>Import and Export</span></Link></li>
